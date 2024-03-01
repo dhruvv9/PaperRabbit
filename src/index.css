@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Katibeh&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html {
+        font-family: "Katibeh", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family:'Revelstoke';
+        src: url('../src/fonts/website fonts/Revelstoke Grunge.ttf') format('ttf');
+
+    }
+    @font-face {
+        font-family:'Heaven';
+        src: url('../src/fonts/website fonts/Heaven-Regular.otf') format('opentype');
+
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@layer base {
+    html {  
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings:
+          "slnt" 0;
+    }}
