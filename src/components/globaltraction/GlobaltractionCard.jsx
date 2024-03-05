@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useRef, useState } from 'react'
+//comment to check commit
 
 function GlobaltractionCard({ data, id }) {
 
@@ -63,4 +64,4 @@ function GlobaltractionCard({ data, id }) {
   )
 }
 
-export default GlobaltractionCard
+export default GlobaltractionCard;
