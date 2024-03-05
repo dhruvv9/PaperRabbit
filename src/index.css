@@ -13,24 +13,43 @@
         font-weight: 400;
         font-style: normal;
     }
+
     @font-face {
-        font-family:'Revelstoke';
+        font-family: 'Revelstoke';
         src: url('../src/fonts/website fonts/Revelstoke Grunge.ttf') format('ttf');
 
     }
+
     @font-face {
-        font-family:'Heaven';
+        font-family: 'Heaven';
         src: url('../src/fonts/website fonts/Heaven-Regular.otf') format('opentype');
 
     }
 }
 
 @layer base {
-    html {  
+    html {
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
         font-style: normal;
         font-variation-settings:
-          "slnt" 0;
-    }}
+            "slnt" 0;
+    }
+}
+
+@layer utilities {
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}

@@ -3,6 +3,7 @@ import Aboutus from './components/aboutus/Aboutus';
 import Article from './components/article/Article';
 import Banner from './components/banner/Banner';
 import Branding from './components/branding/Branding';
+import Clients from './components/clients/Clients';
 import Footer from './components/footer/Footer';
 import GlobalTraction from './components/globaltraction/GlobalTraction';
 import Header from './components/header/Header';
@@ -19,6 +20,7 @@ function App() {
       <Banner/>
       <Branding/>
       <Services/>
+      <Clients/>
       <Portfolio/>
       <GlobalTraction/>
       <Article/>

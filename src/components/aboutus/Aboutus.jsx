@@ -1,4 +1,4 @@
- import React from 'react'
+import React from 'react'
 import pic1 from "../../assets/aboutuspngs/aboutus1.png";
 import pic2 from "../../assets/aboutuspngs/aboutus2.png"
 import pic3 from "../../assets/aboutuspngs/aboutus3.png"
@@ -38,7 +38,7 @@ function Aboutus() {
                         <div className="w-[220px] h-[220px] relative">
                             <div className="w-[142.58px] h-[179.56px] left-[38.71px] top-[20.22px] absolute">
 
-                                <img className="logoimg" src={aboutuslogo} alt='logo'/>
+                                <img className="logoimg" src={aboutuslogo} alt='logo' />
                             </div>
                         </div>
                     </div>
