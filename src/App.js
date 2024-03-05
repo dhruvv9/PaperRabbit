@@ -21,14 +21,14 @@ function App() {
       <Branding/>
       <Services/>
       <Clients/>
-      <Portfolio/>
+      {/* <Portfolio/> */}
       <GlobalTraction/>
-      <Article/>
-      <Review/>
+      {/* <Article/> */}
+      {/* <Review/>
       <Insights/>
       <Aboutus/>
       <Workwithus/>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }
