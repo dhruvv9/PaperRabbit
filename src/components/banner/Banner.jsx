@@ -22,30 +22,30 @@ function Banner() {
     }
 
     return (
-        <div className="w-full h-screen relative flex flex-col items-center justify-center">
+        <div className="relative flex flex-col items-center justify-center lg:w-full h-screen">
             <img className="absolute -z-10 w-full h-full" src={images[currentIndex]} alt='' />
 
-            <div className="w-[646px] h-[415px] md:relative lg:right-[15rem] lg:bottom-[10rem] lg:absolute lg:z-20 flex flex-col items-end justify-start">
-                <div className="w-[646px] h-[416px] absolute  bg-white bg-opacity-5 rounded-[20px] backdrop-blur-2xl" />
-                <div className="w-[340px] h-[31px] relative text-justify text-black text-[64px] font-normal font-['Katibeh'] leading-[64px] mt-[30px] mr-[30px] ">What Makes You</div>
-                <div className=" relative text-justify text-black text-8xl font-normal font-['Revelstoke'] leading-[64px] mt-[20px] mr-[30px]">Creative!</div>
-                <div className="relative text-justify text-black text-[15px] font-normal font-['Inter'] leading-normal mt-[30px] mr-[30px]">We are barnd enthusiasts. We are storyteller. We are a full service creative agency <br />Combining strategic thinking and sharp design to build great brands in this cut-<br />throat business competition.</div>
+            <div className="mx-[20px] m-5 bottom-[58px] right-[10px] absolute flex flex-col items-end justify-start lg:w-[646px] lg:h-[415px] lg:right-[15rem] lg:bottom-[10rem] lg:absolute lg:z-20">
+                <div className="w-full h-full absolute  bg-white bg-opacity-5 rounded-[20px] backdrop-blur-2xl lg:w-[646px] lg:h-[416px]" />
+                <div className="mr-[22px] mt-[15px] relative text-justify text-black text-[40px] lg:text-[64px] font-normal font-['Katibeh'] lg:w-[340px] lg:h-[31px] lg:leading-[64px] lg:mt-[30px] lg:mr-[30px] ">What Makes You</div>
+                <div className="mr-[22px] mt-[6px] relative text-justify text-black text-5xl leading-18 lg:text-8xl font-normal font-['Revelstoke'] lg:leading-[64px] lg:mt-[20px] lg:mr-[30px]">Creative!</div>
+                <div className="mr-[22px] mt-[10px] relative text-right text-black text-[14px] lg:text-[15px] font-normal font-['Inter'] leading-normal lg:mt-[30px] lg:mr-[30px]">We are barnd enthusiasts. We are storyteller. We are a full service creative agency Combining strategic thinking and sharp design to build great brands in this cut throat business competition.</div>
 
-                <div className="relative text-justify text-black text-5xl font-normal font-['Heaven'] leading-normal mt-[15px] mr-[30px]"># What makes you creative</div>
+                <div className="mr-[22px] mt-[10px] relative text-justify text-black text-[32px] font-normal font-['Heaven'] leading-normal lg:text-5xl  lg:mt-[15px] lg:mr-[30px]"># What makes you creative</div>
 
-                <div className="w-[122px] h-11 relative mt-[15px] mr-[30px]">
-                    <button className="w-[122px] h-11  bg-zinc-950 rounded-[10px] text-center text-white text-sm font-normal font-['Inter'] leading-none ">Let's Make Art</button>
+                <div className="mr-[22px] mt-[14px] h-[64px] w-[110px] lg:w-[122px] lg:h-11 relative lg:mt-[15px] lg:mr-[30px]">
+                    <button className="lg:w-[122px] h-11  bg-zinc-950 rounded-[10px] text-center text-white text-xs lg:text-sm font-normal font-['Inter'] leading-none ">Let's Make Art</button>
                 </div>
             </div>
 
             <button onClick={navigatePrevious}>
-                <img className="w-[72px] h-[72px] px-[21px] py-[18px] left-[178px] top-[504px] absolute justify-center items-center inline-flex" src={arrowleft} alt='' />
+                <img className="absolute justify-center items-center inline-flex w-5 h-5 left-[16px] top-[454px] lg:w-[72px] lg:h-[72px] lg:px-[21px] lg:py-[18px] lg:left-[178px] lg:top-[504px]  " src={arrowleft} alt='' />
             </button>
             <button onClick={navigateNext} >
-                <img className="w-[72px] h-[72px] px-[21px] py-[18px] right-[178px] top-[504px] absolute justify-center items-center inline-flex" src={arrowright} alt='' />
+                <img className=" absolute justify-center items-center inline-flex w-5 h-5 right-[16px] top-[454px] lg:w-[72px] lg:h-[72px] lg:px-[21px] lg:py-[18px] lg:right-[178px] lg:top-[504px] " src={arrowright} alt='' />
             </button>
 
-            <div className="w-[126px] left-[50%] bottom-[2rem] absolute">
+            <div className="w-[126px] lg:left-[50%] bottom-[2rem] absolute">
                {currentIndex == 0 ? <div className="w-2 h-2 left-[20px] top-[5px] absolute bg-zinc-900 rounded-full" /> : <div className="w-2 h-2 left-[20px] top-[5px] absolute bg-zinc-500 rounded-full" /> }
                {currentIndex == 1 ? <div className="w-2 h-2 left-[30px] top-[5px] absolute bg-zinc-900 rounded-full" /> : <div className="w-2 h-2 left-[30px] top-[5px] absolute bg-zinc-500 rounded-full" /> }
                {currentIndex == 2 ? <div className="w-2 h-2 left-[40px] top-[5px] absolute bg-zinc-900 rounded-full" /> : <div className="w-2 h-2 left-[40px] top-[5px] absolute bg-zinc-500 rounded-full" /> }

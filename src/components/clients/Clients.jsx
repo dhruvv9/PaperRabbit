@@ -14,59 +14,59 @@ import client12 from '../../assets/clients/purple.png'
 
 function Clients() {
     return (
-        <div className="w-full h-[940px] relative flex flex-col items-center justify-start gap-10 mt-[50px] ">
+        <div className="w-full h-full lg:h-[940px] relative flex flex-col items-center justify-start gap-10 lg:mt-[50px] ">
 
             <div className="flex-col items-center justify-center relative mt-[96px] ">
                 <div className="relative text-center text-zinc-950 text-[64px] font-normal font-['Revelstoke'] leading-[64px]">Our</div>
                 <div className="relative text-center text-sky-200 text-8xl font-normal font-['Heaven'] leading-[64px]">Clientele</div>
             </div>
 
-            <div className="w-[1420px] grid lg:grid-cols-6 md:grid-cols-3 md:grid-rows-4 lg:grid-rows-2 relative gap-5">
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
+            <div className="w-screen place-items-center grid grid-cols-2 grid-rows-6 lg:w-[1420px]  lg:grid-cols-6 md:grid-cols-3 md:grid-rows-4 lg:grid-rows-2 relative lg:gap-5">
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
                     {/* <div className=" left-0 top-0 absolute" /> */}
                     <img className="w-[135px] h-[53px] " src={client1  } />
                 </div>
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
                     {/* <div className=" left-0 top-0 absolute" /> */}
                     <img className="w-[95px] h-[61px] " src={client2  } />
                 </div>
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
                     {/* <div className=" left-0 top-0 absolute" /> */}
                     <img className="w-[76px] h-[110px] " src={client3  } />
                 </div>
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
                     {/* <div className=" left-0 top-0 absolute" /> */}
                     <img className="w-[106px] h-[117px] " src={client4  } />
                 </div>
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
                     {/* <div className=" left-0 top-0 absolute" /> */}
                     <img className="w-[145px] h-[134px] " src={client5  } />
                 </div>
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
-                    {/* <div className="flex items-center justify-center w-[220px] h-[220px]" /> */}
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
+                    {/* <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]" /> */}
                     <img className="w-[149px] h-[55px] " src={client6  } />
                 </div>
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
                     {/* <div className=" left-0 top-0 absolute" /> */}
                     <img className="w-[119px] h-[117px] " src={client7  } />
                 </div>
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
                     {/* <div className=" left-0 top-0 absolute" /> */}
                     <img className="w-[139px] h-[76px] " src={client8  } />
                 </div>
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
                     {/* <div className=" left-0 top-0 absolute" /> */}
                     <img className="w-[168px] h-[84px] " src={client9  } />
                 </div>
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
                     {/* <div className=" left-0 top-0 absolute" /> */}
                     <img className="w-[105px] h-[105px] " src={client10  } />
                 </div>
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
                     {/* <div className=" left-0 top-0 absolute" /> */}
                     <img className="w-[149px] h-[55px] " src={client11  } />
                 </div>
-                <div className="flex items-center justify-center w-[220px] h-[220px]">
+                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
                     {/* <div className=" left-0 top-0 absolute" /> */}
                     <img className="w-[209px] h-[81px] " src={client12  } />
                 </div>

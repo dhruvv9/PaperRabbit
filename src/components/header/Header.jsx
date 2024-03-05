@@ -19,12 +19,12 @@ function Header() {
     }
 
     return (
-        <div className="fixed top-0 left-0 w-full h-11 bg-gray-50  z-50 flex justify-center items-center gap-2.5 bg-opacity-50 backdrop-blur-sm">
-            <div className="w-[1420px] h-11 relative flex items-center justify-between">
+        <div className="fixed top-0 w-full h-11 bg-gray-50  z-50 flex justify-center items-center gap-2.5 bg-opacity-50 backdrop-blur-sm">
+            <div className="lg:w-[1420px] w-full  h-11 relative flex items-center justify-between">
 
-                <div className="text-black text-[2.2rem] font-normal font-['Revelstoke'] leading-[30px] mx-3">PAPER RABBIT</div>
+                <div className="p-[1rem] text-black text-[2.2rem] font-normal font-['Revelstoke'] lg:leading-[30px] lg:mx-3">PAPER RABBIT</div>
 
-                <div className='w-[941px]  items-center justify-evenly md:hidden sm:hidden lg:flex'>
+                <div className='w-[941px]  items-center justify-evenly hidden lg:flex'>
 
                     <div className="w-14 h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(1)} onMouseLeave={() => mousehover(0)}>
                         Home
@@ -78,7 +78,7 @@ function Header() {
                 </div>
 
 
-                <div className="w-10 h-[22px]  justify-center items-center  md:hidden sm:hidden lg:inline-flex">
+                <div className="w-10 h-[22px]  justify-center items-center hidden lg:inline-flex">
                     <div className="w-10 h-[22px] relative">
                         <div className="w-10 h-[22px] left-0 top-0 absolute bg-blue-300 rounded-[65px] border border-black" />
                         <div className="w-[15.32px] h-[15.23px] left-[3.40px] top-[3.38px] absolute bg-white rounded-[52.50px]" />
@@ -90,7 +90,7 @@ function Header() {
                 </div>
 
                 <div className="w-fit flex items-center justify-evenly">
-                    <img className="w-9 h-9 mx-4" src={search} />
+                    <img className="w-7 h-7 mx-4" src={search} />
                     <img className="w-9 h-9 mx-4" src={primg} />
                 </div>
             </div>
