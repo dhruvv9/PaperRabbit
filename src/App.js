@@ -25,11 +25,11 @@ function App() {
       {/* <Portfolio/> */}
       <GlobalTraction/>
       {/* <Article/> */}
-      {/* <Review/>
-      <Insights/>
-      <Aboutus/>
+      <Review/>
+      {/* <Insights/>
+      <Aboutus/> */}
       <Workwithus/>
-      <Footer/> */}
+      <Footer/>
     </div>
   );
 }
