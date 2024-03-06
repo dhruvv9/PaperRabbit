@@ -14,7 +14,7 @@ function Branding() {
     };
 
     return (
-        <div className="w-full  relative md:h-full flex flex-col items-center justify-center ">
+        <div className="w-[1420px]  lg:w-full lg:mx-auto  relative md:h-full flex flex-col items-center justify-center ">
             <div className="w-full h-[139px] lg:h-fit relative flex flex-col justify-center items-center">
                 <div className="text-center text-black text-4xl lg:text-[64px] font-normal font-['Revelstoke'] leading-[64px]">
                     Rabbit

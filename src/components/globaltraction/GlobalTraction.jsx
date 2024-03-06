@@ -6,7 +6,7 @@ import data from './data.json';
 function GlobalTraction(props) {
 
   return (
-    <div className="w-full lg:h-[470px] flex-col  justify-between items-center relative" >
+    <div className="lg:w-[1420px] w-full lg:mx-auto lg:h-[470px] flex-col  justify-between items-center relative" >
 
       <div className="relative w-full">
         <div className=" text-center text-black text-[2.3rem] lg:text-[64px] font-normal font-['Revelstoke'] lg:leading-[64px]">Global</div>
