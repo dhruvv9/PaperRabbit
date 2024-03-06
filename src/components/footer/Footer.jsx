@@ -10,10 +10,10 @@ import youtube from "../../assets/footer_assets/youtube.svg";
 function Footer() {
     return (
         <div className='w-screen h-full flex lg:flex-row flex-col items-center justify-center  bg-neutral-100 backdrop-blur-[20px] mt-[100px]'>
-            <div className="lg:w-[1920px] w-full h-full lg:mx-auto lg:h-[496px] relative flex flex-col items-center justify-center">
+            <div className="lg:w-[1420px] w-full h-full lg:mx-auto lg:h-[496px] relative flex flex-col items-center justify-center">
                 <div className='flex lg:flex-row w-full h-full lg:h-[296px] flex-col items-center justify-evenly'>
-                    <div>
-                        <img className='w-200px h-200px' src={footerlogo} alt="" />
+                    <div className='w-[250px] h-[250px] flex flex-col items-center justify-evenly' >
+                        <img  src={footerlogo} alt="" />
                     </div>
                     <div className='w-full h-full flex items-center justify-evenly relative'>
                         <div className="w-[98px] h-[190px] relative flex flex-col gap-3 ">
