@@ -3,6 +3,10 @@ import primg from "../../assets/PR.png"
 import search from '../../assets/portfolioimg/Icons/search_24px.svg'
 import { useState, useEffect } from 'react';
 import Hutch from './subnavbars/Hutch';
+import Services from './subnavbars/Services';
+import Portfolio from './subnavbars/Portfolio';
+import Lounge from './subnavbars/Lounge';
+import AboutUs from './subnavbars/About Us';
 
 
 
@@ -26,44 +30,38 @@ function Header() {
 
                 <div className='w-[941px]  items-center justify-evenly hidden lg:flex'>
 
-                    <div className="w-14 h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(1)} onMouseLeave={() => mousehover(0)}>
+                    <div className="w-14 h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover()} onMouseLeave={() => mousehover(0)}>
                         Home
                     </div>
 
-                    <div className="w-16 h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(2)} onMouseLeave={() => mousehover(0)}>
+                    <div className="w-16 h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(2)} onMouseLeave={() => mousehover(2)}>
                         Hutch
                     </div>
                     { (hoverstatus && id == 2) && <Hutch /> }
                     
-                    <div className="w-[74px] h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(1)} onMouseLeave={() => mousehover(0)}>
+                    <div className="w-[74px] h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(3)} onMouseLeave={() => mousehover(3)}>
                         Services
                     </div>
-                    { (hoverstatus && id == 1) && <Hutch /> }
+                    { (hoverstatus && id == 3) && <Services /> }
 
-                    <div className="w-[81px] h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(1)} onMouseLeave={() => mousehover(0)}>
+                    <div className="w-[81px] h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(4)} onMouseLeave={() => mousehover(4)}>
                         Portfolio
                     </div>
-                    { (hoverstatus && id == 1) && <Hutch /> }
+                    { (hoverstatus && id == 4) && <Portfolio /> }
 
-                    <div className="w-[81px] h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(1)} onMouseLeave={() => mousehover(0)}>
+                    <div className="w-[81px] h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(5)} onMouseLeave={() => mousehover(5)}>
                         Lounge
                     </div>
-                    { (hoverstatus && id == 1) && <Hutch /> }
+                    { (hoverstatus && id == 5) && <Lounge /> }
 
-                    <div className="w-[98px] h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(1)} onMouseLeave={() => mousehover(0)}>
+                    <div className="w-[98px] h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(6)} onMouseLeave={() => mousehover(6)}>
                         About Us
                     </div>
-                    { (hoverstatus && id == 1) && <Hutch /> }
+                    { (hoverstatus && id == 6) && <AboutUs /> }
 
-                    <div className="w-[61px] h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(1)} onMouseLeave={() => mousehover(0)}>
-                        Carrer
-                    </div>
-                    { (hoverstatus && id == 1) && <Hutch /> }
+                    
 
-                    <div className="w-[52px] h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(1)} onMouseLeave={() => mousehover(0)}>
-                        Store
-                    </div>
-                    { (hoverstatus && id == 1) && <Hutch /> }
+                   
 
                     <div className="w-[55px] h-11 flex-col gap-2.5  text-center flex items-center justify-center text-zinc-950 text-sm font-normal font-['Inter'] leading-normal" onMouseEnter={() => mousehover(1)} onMouseLeave={() => mousehover(0)}>
                         World
