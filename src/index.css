@@ -16,7 +16,7 @@
 
     @font-face {
         font-family: 'Revelstoke';
-        src: url('../src/fonts/website fonts/Revelstoke Grunge.ttf') format('ttf');
+        src: url('../src/fonts/website fonts/Revelstoke Grunge.otf') format('opentype');
 
     }
 
