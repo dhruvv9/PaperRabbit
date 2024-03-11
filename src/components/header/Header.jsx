@@ -6,6 +6,7 @@ import Services from "./subnavbars/Services";
 import Portfolio from "./subnavbars/Portfolio";
 import Lounge from "./subnavbars/Lounge";
 import AboutUs from "./subnavbars/About Us";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -31,7 +32,7 @@ function Header() {
 
           <div className="w-16 h-11 flex-col gap-2.5  text-center flex items-center justify-center group/item">
             <div className=" text-zinc-950 text-sm font-normal font-['Inter'] leading-normal ">
-              Services
+              <Link to="/services"> Services </Link>
             </div>
             <Services />
           </div>
