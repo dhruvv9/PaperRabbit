@@ -11,7 +11,7 @@ function Header() {
   return (
     <div className="fixed top-0 w-full h-11 bg-gray-50  z-50 flex justify-center items-center gap-2.5 bg-opacity-50 backdrop-blur-sm">
       <div className="lg:w-[1420px] w-full  h-11 relative flex items-center justify-between">
-        <div className="p-[1rem] text-black text-[2.2rem] font-normal font-['Revelstoke'] lg:leading-[30px] lg:mx-3">
+        <div className=" text-black text-[2.2rem] font-normal font-['Revelstoke'] lg:leading-[30px] ">
           PAPER RABBIT
         </div>
 
@@ -83,9 +83,9 @@ function Header() {
           </div>
         </div>
 
-        <div className="w-fit flex items-center justify-evenly">
-          <img className="w-7 h-7 mx-4" src={search} />
-          <img className="w-9 h-9 mx-4" src={primg} />
+        <div className="w-fit flex items-center justify-between">
+          <img className="w-7 h-7 mx-5" src={search} />
+          <img className="w-9 h-9" src={primg} />
         </div>
       </div>
       {/* </div> */}

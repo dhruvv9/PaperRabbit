@@ -20,7 +20,7 @@ function Services() {
 
             <div className="w-full h-[420px] lg:h-[600px] relative flex items-start gap-5 overflow-x-scroll no-scrollbar my-12 ">
 
-                    <div className="w-full ml-[20px] md:ml-[250px] h-[420px] lg:h-[600px] relative">
+                    <div className="w-full ml-[20px] lg:ml-[570px] h-[420px] lg:h-[600px] relative">
                         <img className="w-[197px] lg:w-[340px] h-[420px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services0} alt='' />
                         <div className="w-[197px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
                             <div className="text-zinc-950 text-xs md:text-sm font-normal font-['Inter'] leading-none">Lorum Ipsum</div>
