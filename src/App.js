@@ -22,7 +22,7 @@ function App() {
       
       <Services/>
       <Clients/>
-      {/* <Portfolio/> */}
+      <Portfolio/>
       <GlobalTraction/>
       {/* <Article/> */}
       <Review/>

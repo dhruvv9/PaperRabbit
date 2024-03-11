@@ -16,7 +16,7 @@ function Review() {
                   {/* <div className="w-full h-[464.95px] pt-8 pb-[32.95px] justify-end items-center inline-flex"> */}
                   <div className="w-full h-[400px] relative flex items-start gap-5 overflow-x-scroll no-scrollbar">
 
-                        <div className="w-[340px] h-[400px] relative flex items-end justify-end ml-[50px] lg:ml-[250px]">
+                        <div className="w-[340px] h-[400px] relative flex items-end justify-end ml-[50px] lg:ml-[570px]">
                               <img className="w-[340px] h-[400px] absolute -z-10 rounded-[20px]" src={review1} alt="review image1" />
                               <div className="  w-[340px]  opacity-95 rounded-[10px] backdrop-blur-[20px] p-4 m-4 relative text-justify"><span className="text-zinc-950 text-sm font-bold font-['Inter']">Flexinutria </span><span className="text-zinc-950 text-sm font-normal font-['Inter']">|</span><span className="text-zinc-950 text-sm font-bold font-['Inter']"> </span><span className="text-zinc-950 text-sm font-normal font-['Inter']">Company <br /></span><span className="text-zinc-950 text-sm font-normal font-['Inter'] leading-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam et dolore magna aliqua. Ut enim ad minim veniam.  Ut enim ad minim veniam et dolore magna aliqua. Ut enim ad minim veniam.</span></div>
                         </div>
