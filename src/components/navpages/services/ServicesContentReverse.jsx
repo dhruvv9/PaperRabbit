@@ -1,7 +1,7 @@
 import React from 'react'
 import servicesImage from "../../../assets/services/servicesPage/img.png"
 
-function ServicesContentReverse() {
+function ServicesContentReverse({name}) {
   return (
     <div className="lg:w-[55%] w-screen h-full relative flex lg:flex-row-reverse flex-col justify-center items-center lg:p-0 p-3 " >
     <div className="" >
@@ -10,7 +10,7 @@ function ServicesContentReverse() {
 
     <div className="lg:w-[50%] lg:h-[31rem] w-full h-full flex flex-col items-center justify-start gap-5 lg:mr-[1.2rem] m-2" >
         <div className="flex flex-col items-center justify-center text-black text-2xl font-bold font-['Inter'] leading-normal ">
-            Lorem, ipsum.123
+            {name ? name : 'none'}
         </div>
         <div className="flex flex-col items-center justify-center text-black text-xs font-bold font-['Inter'] leading-3">
             Lorem ipsum dolor sit amet.
