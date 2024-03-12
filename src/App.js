@@ -21,20 +21,7 @@ function App() {
         </Routes>
         <Footer/>
       </Router>
-
-{/* 
-      <Banner/>
-      <Branding/>
-      <Services/>
-      <Clients/>
-      <Portfolio/>
-      <GlobalTraction/>
-      <Article/>
-      <Review/>
-      <Insights/>
-      <Aboutus/>
-      <Workwithus/> */}
-
+      
 
     </div>
   );

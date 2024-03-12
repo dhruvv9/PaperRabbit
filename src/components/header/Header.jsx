@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="fixed top-0 w-full h-11 bg-gray-50  z-50 flex justify-center items-center gap-2.5 bg-opacity-50 backdrop-blur-sm">
+    <div className="sticky top-0 w-full h-11 bg-gray-50  z-50 flex justify-center items-center gap-2.5 bg-opacity-50 backdrop-blur-sm">
       <div className="lg:w-[1420px] w-full  h-11 relative flex items-center justify-between">
         <div className=" text-black text-[2.2rem] font-normal font-['Revelstoke'] lg:leading-[30px] ">
           PAPER RABBIT
