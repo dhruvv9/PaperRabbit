@@ -14,11 +14,13 @@ import client12 from '../../assets/clients/purple.png'
 
 function Clients() {
     return (
-        <div className="lg:w-[1420px] lg:mx-auto w-full lg:h-[940px] relative flex flex-col items-center justify-start gap-10 lg:mt-[50px] ">
+        <div className="w-full lg:h-full relative flex flex-col items-center justify-center gap-10 mt-10 lg:mt-20">
 
-            <div className="flex-col items-center justify-center relative mt-[96px] ">
-                <div className="relative text-center text-zinc-950 text-[64px] font-normal font-['Revelstoke'] leading-[64px]">Our</div>
-                <div className="relative text-center text-sky-200 text-8xl font-normal font-['Heaven'] leading-[64px]">Clientele</div>
+            <div className="w-full h-full relative flex flex-col justify-center items-center">
+                <div class="w-[24rem] h-[6rem] relative content-center">
+                    <div class="w-full left-0 top-[2.1rem] absolute text-red-200 lg:text-8xl text-[3.5rem] font-normal font-['Heaven'] leading-[64px] flex flex-col items-center justify-center">Clients</div>
+                    <div class="w-full left-0 top-0 absolute text-black lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">Our</div>
+                </div>
             </div>
 
             <div
@@ -28,9 +30,9 @@ function Clients() {
                         ul.insertAdjacentHTML('afterend', ul.outerHTML);
                         ul.nextSibling.setAttribute('aria-hidden', 'true');
                     })"
-                class="w-screen h-[420px] lg:w-[1420px] lg:mx-auto inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+                class="w-screen h-[420px] lg:w-[55%] relative  inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
             >
-                <ul x-ref="logos" class="h-full flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                <ul x-ref="logos" class="h-full flex items-center justify-center md:justify-start relative [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                     <li className='group/items' >
                         <img className="w-[135px] h-[53px] " src={client1} alt="client1" />
                     </li>
@@ -38,22 +40,22 @@ function Clients() {
                         <img src={client2} alt="client2" />
                     </li>
                     <li>
-                        <img src={client3 } alt="client3" />
+                        <img src={client3} alt="client3" />
                     </li>
                     <li>
-                        <img src={client4 } alt="client4" />
+                        <img src={client4} alt="client4" />
                     </li>
                     <li>
                         <img src={client5} alt="client5" />
                     </li>
                     <li>
-                        <img src={client6 } alt="client6" />
+                        <img src={client6} alt="client6" />
                     </li>
                     <li>
-                        <img src={client7 } alt="client7" />
+                        <img src={client7} alt="client7" />
                     </li>
                     <li>
-                        <img src={client8 } alt="client8" />
+                        <img src={client8} alt="client8" />
                     </li>
                 </ul>
                 <ul x-ref="logos" class=" flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
@@ -64,27 +66,27 @@ function Clients() {
                         <img src={client2} alt="client2" />
                     </li>
                     <li>
-                        <img src={client3 } alt="client3" />
+                        <img src={client3} alt="client3" />
                     </li>
                     <li>
-                        <img src={client4 } alt="client4" />
+                        <img src={client4} alt="client4" />
                     </li>
                     <li>
                         <img src={client5} alt="client5" />
                     </li>
                     <li>
-                        <img src={client6 } alt="client6" />
+                        <img src={client6} alt="client6" />
                     </li>
                     <li>
-                        <img src={client7 } alt="client7" />
+                        <img src={client7} alt="client7" />
                     </li>
                     <li>
-                        <img src={client8 } alt="client8" />
+                        <img src={client8} alt="client8" />
                     </li>
                 </ul>
             </div>
 
-            
+
             <div className="w-[122px] h-11 relative">
                 <button className="w-[122px] h-11  bg-zinc-950 rounded-[10px] text-center text-white text-sm font-normal font-['Inter'] leading-none ">View More</button>
             </div>

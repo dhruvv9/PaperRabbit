@@ -13,19 +13,21 @@ import Services from './components/services/Services';
 import Workwithus from './components/workwithus/Workwithus';
 
 
-function Main() {
+function Main(props) {
+
+    const {mode} = props;
     return (
         <>
-            <Banner />
+            <Banner mode={mode}/>
             <Branding />
             <Services />
             <Clients />
-            <Portfolio />
-            <GlobalTraction />
-            <Article />
+            {/* <Portfolio /> */}
+            {/* <GlobalTraction /> */}
+            {/* <Article /> */}
             <Review />
-            <Insights />
-            <Aboutus />
+            {/* <Insights />
+            <Aboutus /> */}
             <Workwithus />
         </>
     )

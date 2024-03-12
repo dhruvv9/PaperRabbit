@@ -14,28 +14,42 @@ function Branding() {
     };
 
     return (
-        <div className="w-full lg:w-full lg:mx-auto relative md:h-full flex flex-col items-center justify-around ">
-            <div className="w-full h-[139px] lg:h-fit relative flex flex-col justify-center items-center">
-                <div className="text-center text-black text-4xl lg:text-[64px] font-normal font-['Revelstoke'] leading-[64px]">
-                    Rabbit
-                </div>
-                <div className=" text-center text-red-200 text-5xl lg:text-8xl font-normal font-['Heaven'] leading-[64px]">
-                    Hutch
+        <div className="w-full h-full relative flex flex-col items-center justify-around mt-10 lg:mt-20 ">
+
+            <div className="w-full relative flex flex-col justify-center items-center">
+                <div class="w-[24rem] h-[6rem] relative content-center">
+                    <div class="w-full left-0 top-[2.1rem] absolute text-red-200 lg:text-8xl text-[3.5rem] font-normal font-['Heaven'] leading-[64px] flex flex-col items-center justify-center">Advertising</div>
+                    <div class="w-full left-0 top-0 absolute text-black lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">branding</div>
                 </div>
             </div>
 
-            <div className="w-screen lg:w-screen lg:h-[940px]  flex flex-col lg:flex-row items-center justify-evenly relative ">
+            {/* <div className="w-screen lg:w-screen  flex flex-col lg:flex-row items-center justify-center relative "> */}
 
-                <div className="lg:grid lg:grid-cols-2 lg:grid-rows-1 flex flex-col items-center justify-center " >
-                    <div className="w-screen lg:w-[710px] relative lg:h-[820px] flex items-center justify-center ">
+                <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 lg:w-[58%] brand1:w-full flex flex-col items-center justify-center brand1:p-5 " >
+                    <div className="w-full  relative flex items-center justify-center ">
                         <img
                             className="w-[406px] h-[310px] lg:w-[700px] lg:h-[528px] relative rounded-[20px] shadow"
                             src={hatch}
                             alt=""
                         />
 
+                        <div className="w-[349px] h-[268px] left-[-5rem] bottom-[-4rem] hidden absolute  justify-center items-center lg:inline-flex">
+                            <img
+                                className="w-[349px] h-[268px] rounded-[20px] shadow"
+                                src={hatch2}
+                                alt=""
+                            />
+                        </div>
+                        <div className="w-[242px] h-[186px] top-[0rem] right-[-5rem] hidden absolute justify-center items-center lg:inline-flex">
+                            <img
+                                className="w-[242px] h-[186px] rounded-[20px] shadow"
+                                src={hatch1}
+                                alt=""
+                            />
+                        </div>
+
                         <div
-                            className="w-5 h-5 left-[512px] top-[364px] hidden lg:block absolute"
+                            className="w-5 h-5 left-[-10rem] top-[5rem] hidden lg:block relative"
                             onMouseEnter={() => mousehover(1)}
                             onMouseLeave={() => mousehover(0)}
                         >
@@ -43,7 +57,7 @@ function Branding() {
                             <div className="w-[16.08px] h-[16.08px] left-[1.96px] top-[1.96px] absolute bg-sky-200 rounded-full" />
                         </div>
                         <div
-                            className="w-5 h-5 left-[190px] top-[254px] hidden lg:block absolute"
+                            className="w-5 h-5 left-[-31rem] top-[0rem] hidden lg:block relative"
                             onMouseEnter={() => mousehover(2)}
                             onMouseLeave={() => mousehover(0)}
                         >
@@ -51,7 +65,7 @@ function Branding() {
                             <div className="w-[16.08px] h-[16.08px] left-[1.96px] top-[1.96px] absolute bg-emerald-200 rounded-full" />
                         </div>
                         <div
-                            className="w-5 h-5 left-[462px] top-[164px] hidden lg:block absolute "
+                            className="w-5 h-5 left-[-38rem] top-[12rem] hidden lg:block relative "
                             onMouseEnter={() => mousehover(3)}
                             onMouseLeave={() => mousehover(0)}
                         >
@@ -59,7 +73,7 @@ function Branding() {
                             <div className="w-[16.08px] h-[16.08px] left-[1.96px] top-[1.96px] absolute bg-red-200 rounded-full" />
                         </div>
                         <div
-                            className="w-5 h-5 z-10 left-[262px] top-[464px] hidden lg:block absolute "
+                            className="w-5 h-5 z-10 left-[-8rem] top-[-5rem] hidden lg:block relative "
                             onMouseEnter={() => mousehover(4)}
                             onMouseLeave={() => mousehover(0)}
                         >
@@ -142,8 +156,8 @@ function Branding() {
                         )}
                     </div>
 
-                    <div className="w-screen h-full lg:w-[710px]  lg:h-[820px] lg:pl-[7rem] lg:p-0 relative flex flex-col items-center justify-center gap-5 place-items-center">
-                        <div className="relative text-justify text-black text-xs leading-[18px] lg:text-sm font-normal font-['Inter']  md:w-[814px] md:leading-normal">
+                    <div className="w-screen h-full lg:w-full  lg:h-[820px] lg:pl-[7rem] lg:p-0 relative flex flex-col items-center justify-center gap-5 place-items-center">
+                        <div className="relative text-justify text-black text-sm leading-[20px] lg:text-sm font-normal font-['Inter'] ">
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                             nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -159,21 +173,6 @@ function Branding() {
                             labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore.
-                        </div>
-                        <div className="relative hidden lg:block text-justify text-black text-sm font-normal font-['Inter'] leading-normal  lg:mt-3">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.{" "}
                         </div>
 
                         <div className="w-full relative p-[1rem] flex items-center justify-center lg:mt-3 ">
@@ -202,21 +201,8 @@ function Branding() {
                     <div className="w-[16.08px] h-[16.08px] left-[1.96px] top-[1.96px] absolute bg-red-200 rounded-full" />
                 </div> */}
 
-                <div className="w-[349px] h-[268px] left-[25rem] bottom-28 hidden absolute  justify-center items-center lg:inline-flex">
-                    <img
-                        className="w-[349px] h-[268px] rounded-[20px] shadow"
-                        src={hatch2}
-                        alt=""
-                    />
-                </div>
-                <div className="w-[242px] h-[186px] top-[10rem] left-[70rem] hidden absolute justify-center items-center lg:inline-flex">
-                    <img
-                        className="w-[242px] h-[186px] rounded-[20px] shadow"
-                        src={hatch1}
-                        alt=""
-                    />
-                </div>
-            </div>
+
+            {/* </div> */}
         </div>
     );
 }
