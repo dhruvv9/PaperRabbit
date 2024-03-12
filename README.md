@@ -1,70 +1,22 @@
-# Getting Started with Create React App - first open source contribution by shyam 
+# PAPER RABBIT SOLUTIONS PRIVATE LIMITED
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Paper Rabbit Solutions, where creativity and innovation collide to bring your brand to life. We are pioneers in the realm of branding, advertising, and content creation, embarking on a new path that sets us apart from the rest. With a team of visionary thinkers and expert storytellers, we craft captivating narratives that resonate with your target audience, leaving a lasting impression. We want you to know that our approach is driven by the belief that every brand has a unique story to tell, and we are here to help you unearth that perspective. Let us guide you through this exciting journey of unlocking your brand's full potential, one paper rabbit at a time.
 
-## Available Scripts
 
-In the project directory, you can run:
+### ABOUT US.
 
-### `npm start`
+Paper Rabbit is a boutique branding and advertising agency in Bangalore. We have witnessed the changes in web, mobile, and social media and mastered the art of adding new dimensions to art and creativity. We have learned how to use technology to tell a story – a story that will appeal to the mass audience to increase your brand value and sales. Today, we deliver crafted and customized designs with creative strategies that resonate with resounding clarity and innovation in all media. We focus on marketing, advertising, branding, web, and digital strategy – all with intense R&D carried out for each project before initiating the main work. We are here for the future, bringing futuristic tools like AI into the present. Artificial Intelligence will be incorporated in apps & websites, which will help you grow. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+When you work with us, you’re working with all of us – a project manager, a designer, a creative director, and a copywriter. You get the vision of each team member as we look at things from every possible angle, from the beginning of a project to the end. We support start-ups as well as evolving brands in creating a niche in the market till a history is made and the company is established.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+We build strong relationships with our clients – trusting partnerships that allow us to share strengths and ideas and work together to create one significant result.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### So, what does working with a boutique agency mean?
 
-### `npm run build`
+ It means working with an agency that consistently adapts their resources and methodology to fit the needs for each client, keeping the time frame in mind. It means working with an agency that works hard to stay ahead of ideas and innovation, maximizes their resources optimally, and actually offers you the best of solutions with their tested methodologies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### LINKS
+ Our Website [paperrabbit.world](https://paperrabbit.world) for more information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -4,7 +4,7 @@ import ServicesContentReverse from './ServicesContentReverse'
 
 function ServicesPage() {
     return (
-        <div className='flex flex-col items-center justify-center gap-20 w-screen h-full' >
+        <div className='flex flex-col items-center justify-center gap-20 w-screen h-full mt-[80px]' >
             <ServicesContent />
             <ServicesContentReverse />
             <ServicesContent />
