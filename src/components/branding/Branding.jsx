@@ -25,8 +25,8 @@ function Branding() {
 
             {/* <div className="w-screen lg:w-screen  flex flex-col lg:flex-row items-center justify-center relative "> */}
 
-                <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 lg:w-[58%] brand1:w-full flex flex-col items-center justify-center brand1:p-5 " >
-                    <div className="w-full  relative flex items-center justify-center ">
+                <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 lg:w-[58%] mac:w-full flex flex-col items-center justify-center mac:p-5 " >
+                    <div className="w-full relative flex items-center justify-center mt-5">
                         <img
                             className="w-[406px] h-[310px] lg:w-[700px] lg:h-[528px] relative rounded-[20px] shadow"
                             src={hatch}
@@ -157,7 +157,7 @@ function Branding() {
                     </div>
 
                     <div className="w-screen h-full lg:w-full  lg:h-[820px] lg:pl-[7rem] lg:p-0 relative flex flex-col items-center justify-center gap-5 place-items-center">
-                        <div className="relative text-justify text-black text-sm leading-[20px] lg:text-sm font-normal font-['Inter'] ">
+                        <div className="relative text-justify text-black text-sm leading-[20px] lg:text-sm font-normal font-['Inter'] p-4 ">
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                             nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
