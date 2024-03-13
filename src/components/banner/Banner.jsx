@@ -1,11 +1,5 @@
 import React, { useEffect } from 'react'
-import main from "../../assets/bannerimgs/bannerimg1.jpg";
 import { useState } from 'react';
-
-import main3 from '../../assets/bannerimgs/main3.jpg'
-import main4 from '../../assets/bannerimgs/main4.jpg';
-import main5 from '../../assets/bannerimgs/main5.jpg';
-import main6 from '../../assets/bannerimgs/main6.jpg';
 
 
 import day1 from '../../assets/bannerimgs/1 background.png'
@@ -32,6 +26,7 @@ import dark9 from '../../assets/bannerimgs/9 background-dark.png'
 
 import arrowleft from '../../assets/bannerimgs/Arrow---Left-2.jpg';
 import arrowright from '../../assets/bannerimgs/Arrow---Right-2.jpg';
+import { useFetcher } from 'react-router-dom';
 
 
 function Banner(props) {
@@ -56,33 +51,33 @@ function Banner(props) {
         setAnimate(!animate)
     }
 
-
     return (
-        <div className="animate relative flex flex-col items-center justify-center lg:w-full h-screen">
-            {/* <div className={`${(animate) ? 'animate-fade animate-duration-[2000ms] animate-ease-linear absolute' : ''}`} > */}
-                <img className="absolute top-0 left-0 right-0 -z-10 w-screen h-screen     animate-fade animate-duration-[2000ms] animate-ease-linear  " src={mode ? images_dark[currentIndex] : images_day[currentIndex]} alt='bannerimage' />
-            {/* </div> */}
+        <div className="w-screen h-screen animate relative flex flex-col items-center justify-end">
 
-            {currentIndex % 2 == 0 ? <div className="mx-[20px] m-5 md:ml-10 bottom-[58px] right-[10px] absolute flex flex-col items-end justify-start lg:w-[646px] lg:h-[415px] lg:right-[15rem] lg:bottom-[10rem] lg:absolute lg:z-20">
+            <div className={`${(animate) ? 'w-screen h-screen animate-fade animate-duration-[2000ms] animate-ease-linear absolute' : 'w-screen h-screen animate-fade animate-duration-[3000ms] animate-ease-in absolute'}`} >
+                <img className="absolute top-0 left-0 right-0 -z-10 w-screen h-screen object-cover  " src={mode ? images_dark[currentIndex] : images_day[currentIndex]} alt='bannerimage' />
+            </div>
+
+            {currentIndex % 2 == 0 ? <div className="mx-[20px]  md:bottom-[10px] md:right-[5px] sm:relative sm:mb-20 absolute flex flex-col items-end justify-start  w-[450px] sm:w-[330px]  sm:h-[330px] lg:w-[646px] lg:h-[415px] mac:w-[446px] mac:h-[380px] lg:right-[15rem] lg:bottom-[10rem] mac:right-[5rem] mac:bottom-[5rem] lg:absolute lg:z-20">
                 <div className="w-full h-full absolute  bg-white dark:bg-black bg-opacity-5 dark:bg-opacity-5 rounded-[20px] backdrop-blur-2xl lg:w-[646px] lg:h-[416px]" />
-                <div className="mr-[22px] mt-[15px] relative text-justify text-black dark:text-white text-[40px] lg:text-[64px] font-normal font-['Katibeh'] lg:w-[340px] lg:h-[31px] lg:leading-[64px] lg:mt-[30px] lg:mr-[30px] ">What Makes You</div>
-                <div className="mr-[22px] mt-[6px] relative text-justify text-black dark:text-white text-5xl leading-18 lg:text-8xl font-normal font-['Revelstoke'] lg:leading-[64px] lg:mt-[20px] lg:mr-[30px]">{title[currentIndex]}!</div>
-                <div className="mr-[22px] mt-[10px] ml-[20px] relative text-right text-black dark:text-white text-[14px] lg:text-[15px] font-normal font-['Inter'] leading-normal lg:mt-[30px] lg:mr-[30px]">We are barnd enthusiasts. We are storyteller. We are a full service creative agency Combining strategic thinking and sharp design to build great brands in this cut throat business competition.</div>
+                <div className="mr-[22px] mt-[15px] sm:mt-[18px] sm:text-[30px] relative  text-black dark:text-white text-[40px] lg:text-[64px] font-normal font-['Katibeh'] lg:w-[340px] lg:h-[31px] lg:leading-[64px] lg:mt-[30px] lg:mr-[30px] ">What Makes You</div>
+                <div className="mr-[22px] mt-[6px] sm:mt-[0px] sm:text-[45px] relative text-justify text-black dark:text-white text-5xl leading-18 lg:text-8xl mac:text-7xl font-normal font-['Revelstoke'] lg:leading-[64px] lg:mt-[20px] lg:mr-[30px]">{title[currentIndex]}!</div>
+                <div className="mr-[22px] mt-[10px] ml-[20px] sm:text-[14px] relative text-right text-black dark:text-white text-[14px] lg:text-[15px] font-normal font-['Inter'] leading-normal lg:mt-[30px] lg:mr-[30px]">We are barnd enthusiasts. We are storyteller. We are a full service creative agency Combining strategic thinking and sharp design to build great brands in this cut throat business competition.</div>
 
-                <div className="mr-[22px] mt-[10px] relative text-justify text-black dark:text-white text-[32px] font-normal font-['Heaven'] leading-normal lg:text-5xl  lg:mt-[15px] lg:mr-[30px]"># What makes you creative</div>
+                <div className="mr-[22px] mt-[10px] sm:text-[30px] relative text-justify text-black dark:text-white text-[32px] font-normal font-['Heaven'] leading-normal lg:text-5xl  lg:mt-[15px] lg:mr-[30px]"># What makes you creative</div>
 
                 <div className="mr-[22px] mt-[14px] h-[64px] w-[110px] lg:w-[122px] lg:h-11 relative lg:mt-[15px] lg:mr-[30px]">
                     <button className="lg:w-[122px] h-11  bg-zinc-950 dark:bg-white rounded-[10px] text-center text-white dark:text-black text-xs lg:text-sm font-normal font-['Inter'] leading-none ">Let's Make Art</button>
                 </div>
             </div> :
 
-                <div className="mx-[20px] m-5 md:ml-10 bottom-[58px] right-[10px] absolute flex flex-col items-end justify-start lg:w-[646px] lg:h-[415px] lg:left-[15rem] lg:bottom-[10rem] lg:absolute lg:z-20">
+                <div className="mx-[20px]  md:bottom-[10px] md:right-[5px] sm:relative sm:mb-20 absolute flex flex-col items-end justify-start  w-[450px] sm:w-[350px]  sm:h-[350px] lg:w-[646px] lg:h-[415px] mac:w-[446px] mac:h-[380px] lg:left-[15rem] lg:bottom-[10rem] mac:left-[5rem] mac:bottom-[5rem] lg:absolute lg:z-20">
                     <div className="w-full h-full absolute  bg-white dark:bg-black bg-opacity-5 dark:bg-opacity-5 rounded-[20px] backdrop-blur-2xl lg:w-[646px] lg:h-[416px]" />
-                    <div className="mr-[22px] mt-[15px] relative text-justify text-black dark:text-white text-[40px] lg:text-[64px] font-normal font-['Katibeh'] lg:w-[340px] lg:h-[31px] lg:leading-[64px] lg:mt-[30px] lg:mr-[30px] ">What Makes You</div>
-                    <div className="mr-[22px] mt-[6px] relative text-justify text-black dark:text-white text-5xl leading-18 lg:text-8xl font-normal font-['Revelstoke'] lg:leading-[64px] lg:mt-[20px] lg:mr-[30px]">{title[currentIndex]}!</div>
-                    <div className="mr-[22px] mt-[10px] ml-[20px] relative text-right text-black dark:text-white text-[14px] lg:text-[15px] font-normal font-['Inter'] leading-normal lg:mt-[30px] lg:mr-[30px]">We are barnd enthusiasts. We are storyteller. We are a full service creative agency Combining strategic thinking and sharp design to build great brands in this cut throat business competition.</div>
+                    <div className="mr-[22px] mt-[15px] sm:mt-[18px] sm:text-[30px] relative  text-black dark:text-white text-[40px] lg:text-[64px] font-normal font-['Katibeh'] lg:w-[340px] lg:h-[31px] lg:leading-[64px] lg:mt-[30px] lg:mr-[30px] ">What Makes You</div>
+                    <div className="mr-[22px] mt-[6px] sm:mt-[0px] sm:text-[45px] relative text-justify text-black dark:text-white text-5xl leading-18 lg:text-8xl mac:text-7xl font-normal font-['Revelstoke'] lg:leading-[64px] lg:mt-[20px] lg:mr-[30px]">{title[currentIndex]}!</div>
+                    <div className="mr-[22px] mt-[10px] ml-[20px] sm:text-[14px] relative text-right text-black dark:text-white text-[14px] lg:text-[15px] font-normal font-['Inter'] leading-normal lg:mt-[30px] lg:mr-[30px]">We are barnd enthusiasts. We are storyteller. We are a full service creative agency Combining strategic thinking and sharp design to build great brands in this cut throat business competition.</div>
 
-                    <div className="mr-[22px] mt-[10px] relative text-justify text-black dark:text-white text-[32px] font-normal font-['Heaven'] leading-normal lg:text-5xl  lg:mt-[15px] lg:mr-[30px]"># What makes you creative</div>
+                    <div className="mr-[22px] mt-[10px] sm:text-[30px] relative text-justify text-black dark:text-white text-[32px] font-normal font-['Heaven'] leading-normal lg:text-5xl  lg:mt-[15px] lg:mr-[30px]"># What makes you creative</div>
 
                     <div className="mr-[22px] mt-[14px] h-[64px] w-[110px] lg:w-[122px] lg:h-11 relative lg:mt-[15px] lg:mr-[30px]">
                         <button className="lg:w-[122px] h-11  bg-zinc-950 dark:bg-white rounded-[10px] text-center text-white dark:text-black text-xs lg:text-sm font-normal font-['Inter'] leading-none ">Let's Make Art</button>
@@ -94,13 +89,13 @@ function Banner(props) {
 
 
             <button onClick={navigatePrevious}>
-                <img className="absolute justify-center items-center inline-flex w-2 h-2 left-[16px] top-[454px] lg:w-[72px] lg:h-[72px] lg:px-[21px] lg:py-[18px] lg:left-[178px] lg:top-[504px]  " src={arrowleft} alt='' />
+                <img className="absolute justify-center items-center inline-flex left-2 top-[50%] w-5 h-5  lg:w-10 lg:h-10  mac:w-10 mac:h-10 " src={arrowleft} alt='' />
             </button>
             <button onClick={navigateNext} >
-                <img className=" absolute justify-center items-center inline-flex w-2 h-2 right-[16px] top-[454px] lg:w-[72px] lg:h-[72px] lg:px-[21px] lg:py-[18px] lg:right-[178px] lg:top-[504px] " src={arrowright} alt='' />
+                <img className=" absolute justify-center items-center inline-flex right-2 top-[50%] w-5 h-5  lg:w-10 lg:h-10  mac:w-10 mac:h-10 " src={arrowright} alt='' />
             </button>
 
-            <div className="w-[126px] lg:left-[50%] bottom-[5rem] absolute">
+            <div className="w-[126px] lg:left-[50%] lg:bottom-[5rem] bottom-[2.5rem] absolute">
                 {currentIndex == 0 ? <div className="w-2 h-2 left-[20px] top-[5px] absolute bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-2 h-2 left-[20px] top-[5px] absolute bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
                 {currentIndex == 1 ? <div className="w-2 h-2 left-[30px] top-[5px] absolute bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-2 h-2 left-[30px] top-[5px] absolute bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
                 {currentIndex == 2 ? <div className="w-2 h-2 left-[40px] top-[5px] absolute bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-2 h-2 left-[40px] top-[5px] absolute bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
