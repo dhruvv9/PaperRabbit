@@ -27,7 +27,7 @@ function Header(props) {
           PAPER RABBIT
         </div>
 
-        <div className="w-[941px]  items-center justify-evenly hidden lg:flex">
+        <div className="w-[941px]  items-center justify-evenly hidden mac:flex lg:flex">
           <div className="w-16 h-11 flex-col gap-2.5  text-center flex items-center justify-center group/item">
             <div className=" text-zinc-950 dark:text-white  text-sm font-normal font-['Inter'] leading-normal ">
               Home

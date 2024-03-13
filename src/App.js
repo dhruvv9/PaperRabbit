@@ -8,6 +8,8 @@ import ServicesPage from './components/navpages/services/ServicesPage';
 
 import Main from "./Main";
 import { useState } from "react";
+import ArticlesPage from "./components/navpages/articles/ArticlesPage";
+import TeamsPage from "./components/navpages/teams/TeamsPage";
 
 function App() {
   const names = ['shyam', 'dhruv']
@@ -23,6 +25,8 @@ function App() {
           <Route path='/' element={<Main mode={mode} />} />
           <Route path='/services' element={<ServicesPage data={names} id={1} />} />
           <Route path='/clients' element={<ClientsPage />} />
+          <Route path='/articles' element={<ArticlesPage/>} />
+          <Route path='/teams' element={<TeamsPage/>} />
         </Routes>
         <Footer />
       </Router>
