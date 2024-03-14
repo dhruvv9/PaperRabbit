@@ -11,6 +11,7 @@ import client9 from '../../assets/clients/darkrobber.png'
 import client10 from '../../assets/clients/Aiyaana_Final_Logo_10_oct_2019 1.png'
 import client11 from '../../assets/clients/arvind.png'
 import client12 from '../../assets/clients/purple.png'
+import { Link } from 'react-router-dom'
 
 function Clients() {
     return (
@@ -30,9 +31,9 @@ function Clients() {
                         ul.insertAdjacentHTML('afterend', ul.outerHTML);
                         ul.nextSibling.setAttribute('aria-hidden', 'true');
                     })"
-                class="w-screen h-[420px] lg:w-[55%] relative  inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+                class="w-screen h-[220px] lg:w-[55%] relative inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_left,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
             >
-                <ul x-ref="logos" class="h-full flex items-center justify-center md:justify-start relative [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                <ul x-ref="logos" class="h-full flex items-center justify-center md:justify-start relative [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-right">
                     <li className='group/items' >
                         <img className="w-[135px] h-[53px] " src={client1} alt="client1" />
                     </li>
@@ -58,7 +59,7 @@ function Clients() {
                         <img src={client8} alt="client8" />
                     </li>
                 </ul>
-                <ul x-ref="logos" class=" flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                <ul x-ref="logos" class=" flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-right">
                     <li>
                         <img className="w-[135px] h-[53px] " src={client1} alt="client1" />
                     </li>
@@ -86,9 +87,74 @@ function Clients() {
                 </ul>
             </div>
 
+            <div
+                x-data="{}"
+                x-init="$nextTick(() => {
+                        let ul = $refs.logos;
+                        ul.insertAdjacentHTML('afterend', ul.outerHTML);
+                        ul.nextSibling.setAttribute('aria-hidden', 'true');
+                    })"
+                class="w-screen h-[220px] lg:w-[55%] relative inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_left,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+            >
+                <ul x-ref="logos" class="h-full flex items-center justify-center md:justify-start relative [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-left">
+                    <li className='group/items' >
+                        <img className="w-[135px] h-[53px] " src={client1} alt="client1" />
+                    </li>
+                    <li>
+                        <img src={client2} alt="client2" />
+                    </li>
+                    <li>
+                        <img src={client3} alt="client3" />
+                    </li>
+                    <li>
+                        <img src={client4} alt="client4" />
+                    </li>
+                    <li>
+                        <img src={client5} alt="client5" />
+                    </li>
+                    <li>
+                        <img src={client6} alt="client6" />
+                    </li>
+                    <li>
+                        <img src={client7} alt="client7" />
+                    </li>
+                    <li>
+                        <img src={client8} alt="client8" />
+                    </li>
+                </ul>
+                <ul x-ref="logos" class=" flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-left">
+                    <li>
+                        <img className="w-[135px] h-[53px] " src={client1} alt="client1" />
+                    </li>
+                    <li>
+                        <img src={client2} alt="client2" />
+                    </li>
+                    <li>
+                        <img src={client3} alt="client3" />
+                    </li>
+                    <li>
+                        <img src={client4} alt="client4" />
+                    </li>
+                    <li>
+                        <img src={client5} alt="client5" />
+                    </li>
+                    <li>
+                        <img src={client6} alt="client6" />
+                    </li>
+                    <li>
+                        <img src={client7} alt="client7" />
+                    </li>
+                    <li>
+                        <img src={client8} alt="client8" />
+                    </li>
+                </ul>
+            </div>
+
+            
+
 
             <div className="w-[122px] h-11 relative">
-                <button className="w-[122px] h-11  bg-zinc-950 rounded-[10px] text-center text-white text-sm font-normal font-['Inter'] leading-none ">View More</button>
+                <button className="w-[122px] h-11  bg-zinc-950 rounded-[10px] text-center text-white text-sm font-normal font-['Inter'] leading-none "><Link to='/clients' >View More</Link></button>
             </div>
 
         </div>

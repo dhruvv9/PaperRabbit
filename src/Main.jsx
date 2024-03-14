@@ -12,6 +12,8 @@ import Review from './components/review/Review';
 import Services from './components/services/Services';
 import Workwithus from './components/workwithus/Workwithus';
 import ArticlesPage from './components/navpages/articles/ArticlesPage';
+import Blog from './components/blog/Blog';
+import HutchPage from './components/navpages/hutch/HutchPage';
 
 
 function Main(props) {
@@ -24,12 +26,14 @@ function Main(props) {
             <Services />
             <Clients />
             {/* <Portfolio /> */}
-            {/* <GlobalTraction /> */}
+            <GlobalTraction />
             {/* <Article /> */}
             <Review />
-            {/* <Insights />
-            <Aboutus /> */}
+            {/* <Insights /> */}
+            {/* <Aboutus /> */}
             <Workwithus />
+            <Blog/>
+            {/* <HutchPage/> */}
             {/* <ArticlesPage/> */}
         </>
     )

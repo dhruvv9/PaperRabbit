@@ -9,7 +9,7 @@ import ReviewCards from './ReviewCards';
 function Review() {
 
       return (
-            <div className="w-full h-full pb-14 flex-col justify-start items-center gap-[0.18px] inline-flex">
+            <div className="w-full h-full pb-14 flex-col justify-start items-center gap-[0.18px] inline-flex mt-20">
 
                   <div className="w-full h-full relative flex flex-col justify-center items-center">
                         <div class="w-[24rem] h-[6rem] relative content-center">

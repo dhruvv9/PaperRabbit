@@ -9,18 +9,18 @@ function ClientsContent() {
                 <img className="w-[21rem] lg:h-[21rem]  h-[15rem] rounded-[20px]" src={clientimg} alt="clientsimage" />
             </div>
             <div className="w-full flex flex-col items-center justify-center" >
-                <div className="flex items-center justify-center gap-3">
+                <div className="w-full flex items-center justify-start gap-3">
                     <div>
-                        <img className="w-[2rem] h-[2rem] " src={link} alt="clientsimage" />
+                        <img className="lg:w-[1.5rem] lg:h-[1.5rem] w-[1rem] h-[1rem] " src={link} alt="clientsimage" />
                     </div>
-                    <div className="flex items-center justify-center text-black g:text-[2rem] text-[1.5rem] font-normal font-['Katibeh'] leading-10">
+                    <div className="w-full flex flex-col items-center justify-center text-black lg:text-[2rem] text-[1.5rem] font-normal font-['Katibeh'] ">
                         Name of the company
                     </div>
                 </div>
-                <div className="flex flex-col items-center justify-center text-black lg:text-[2rem] text-[1.5rem] font-normal font-['Katibeh'] leading-loose">
+                <div className="w-full flex flex-col items-center justify-center text-black lg:text-[2rem] text-[1.5rem] font-normal font-['Katibeh'] leading-loose">
                     Domain - Lorum Ipsum
                 </div>
-                <div className="flex flex-col items-center justify-center text-black lg:text-[2rem] text-[1.5rem] font-normal font-['Katibeh'] leading-loose">
+                <div className="w-full flex flex-col items-center justify-center text-black lg:text-[2rem] text-[1.5rem] font-normal font-['Katibeh'] leading-loose">
                     Industry - Lorum Ipsum
                 </div>
             </div>
