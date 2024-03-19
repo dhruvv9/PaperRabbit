@@ -14,6 +14,10 @@ function HutchPage() {
                 <HutchPageCards2/>
                 <HutchPageCards/>
                 <HutchPageCards2/>
+                <HutchPageCards/>
+                <HutchPageCards2/>
+                <HutchPageCards/>
+                <HutchPageCards2/>
             </div>
         </div>
     )
