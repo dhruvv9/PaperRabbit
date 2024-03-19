@@ -34,7 +34,8 @@ function Main(props) {
             <Workwithus />
             <Blog/>
             {/* <HutchPage/> */}
-            {/* <ArticlesPage/> */}
+
+            <ArticlesPage/>
         </>
     )
 }
