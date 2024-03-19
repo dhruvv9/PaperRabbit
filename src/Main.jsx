@@ -14,6 +14,7 @@ import Workwithus from './components/workwithus/Workwithus';
 import ArticlesPage from './components/navpages/articles/ArticlesPage';
 import Blog from './components/blog/Blog';
 import HutchPage from './components/navpages/hutch/HutchPage';
+import Casestudy from './components/navpages/casestudy/Casestudy';
 
 
 function Main(props) {
@@ -33,9 +34,12 @@ function Main(props) {
             {/* <Aboutus /> */}
             <Workwithus />
             <Blog/>
-            {/* <HutchPage/> */}
+
+            <HutchPage/>
 
             <ArticlesPage/>
+            
+            <Casestudy/>
         </>
     )
 }
