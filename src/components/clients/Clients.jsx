@@ -20,7 +20,7 @@ function Clients() {
             <div className="w-full h-full relative flex flex-col justify-center items-center">
                 <div class="w-[24rem] h-[6rem] relative content-center">
                     <div class="w-full left-0 top-[2.1rem] absolute text-red-200 lg:text-8xl text-[3.5rem] font-normal font-['Heaven'] leading-[64px] flex flex-col items-center justify-center">Clients</div>
-                    <div class="w-full left-0 top-0 absolute text-black lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">Our</div>
+                    <div class="w-full left-0 top-0 absolute text-black dark:text-white lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">Our</div>
                 </div>
             </div>
 
@@ -154,7 +154,7 @@ function Clients() {
 
 
             <div className="w-[122px] h-11 relative">
-                <button className="w-[122px] h-11  bg-zinc-950 rounded-[10px] text-center text-white text-sm font-normal font-['Inter'] leading-none "><Link to='/clients' >View More</Link></button>
+                <button className="w-[122px] h-11  bg-zinc-950 dark:bg-white rounded-[10px] text-center text-white dark:text-black text-sm font-normal font-['Inter'] leading-none "><Link to='/clients' >View More</Link></button>
             </div>
 
         </div>

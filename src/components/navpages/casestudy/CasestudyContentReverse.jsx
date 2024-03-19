@@ -27,5 +27,4 @@ function CasestudyContentReverse() {
         </div>
         )
 }
-
 export default CasestudyContentReverse

@@ -10,6 +10,7 @@ import Main from "./Main";
 import { useState } from "react";
 import ArticlesPage from "./components/navpages/articles/ArticlesPage";
 import TeamsPage from "./components/navpages/teams/TeamsPage";
+import HutchPage from "./components/navpages/hutch/HutchPage";
 
 function App() {
   const names = ['shyam', 'dhruv']
@@ -18,7 +19,7 @@ function App() {
   console.log(mode + "this is inside main");
 
   return (
-    <div className={`${mode ? 'dark' : ''}`}>
+    <div className={`${mode ? 'dark' : ''} dark:bg-black `}>
       <Router>
         <Header setMode={setMode} mode={mode} />
         <Routes>
@@ -27,6 +28,7 @@ function App() {
           <Route path='/clients' element={<ClientsPage />} />
           <Route path='/articles' element={<ArticlesPage/>} />
           <Route path='/teams' element={<TeamsPage/>} />
+          <Route path='/hutch' element={<HutchPage/>} />
         </Routes>
         <Footer />
       </Router>

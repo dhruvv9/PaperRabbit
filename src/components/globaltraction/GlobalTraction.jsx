@@ -11,7 +11,7 @@ function GlobalTraction(props) {
 <div className="w-full  relative flex flex-col justify-center items-center">
                 <div class="w-[24rem] h-[6rem] relative content-center">
                     <div class="w-full left-0 top-[2.1rem] absolute text-red-200 lg:text-8xl text-[3.5rem] font-normal font-['Heaven'] leading-[64px] flex flex-col items-center justify-center">Traction</div>
-                    <div class="w-full left-0 top-0 absolute text-black lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">Global</div>
+                    <div class="w-full left-0 top-0 absolute text-black dark:text-white lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">Global</div>
                 </div>
             </div>
 
