@@ -9,6 +9,9 @@ import service3 from '../../assets/navbar_layers/services2.jpg';
 
 function Servicelayer() {
   return (
+
+
+  
     <div className="w-full h-full lg:w-64.063 lg:h-[5930px] flex justify-center items-center relative bg-neutral-100">
             <img className="w-430px h-430px lg:w-full lg:h-476px left-0 top-0 absolute" src={bannerimg} alt='' />
      
