@@ -19,7 +19,7 @@ function Branding() {
             <div className="w-full relative flex flex-col justify-center items-center">
                 <div class="w-[24rem] h-[6rem] relative content-center">
                     <div class="w-full left-0 top-[2.1rem] absolute text-red-200 lg:text-8xl text-[3.5rem] font-normal font-['Heaven'] leading-[64px] flex flex-col items-center justify-center">Advertising</div>
-                    <div class="w-full left-0 top-0 absolute text-black lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">branding</div>
+                    <div class="w-full left-0 top-0 absolute text-black dark:text-white lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">branding</div>
                 </div>
             </div>
 
@@ -157,7 +157,7 @@ function Branding() {
                     </div>
 
                     <div className="w-screen h-full lg:w-full  lg:h-[820px] lg:pl-[7rem] lg:p-0 relative flex flex-col items-center justify-center gap-5 place-items-center">
-                        <div className="relative text-justify text-black text-sm leading-[20px] lg:text-sm font-normal font-['Inter'] p-4 ">
+                        <div className="relative text-justify text-black dark:text-white text-sm leading-[20px] lg:text-sm font-normal font-['Inter'] p-4 ">
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                             nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -176,16 +176,16 @@ function Branding() {
                         </div>
 
                         <div className="w-full relative p-[1rem] flex items-center justify-center lg:mt-3 ">
-                            <div className="w-[120px] h-10 mx-2 bg-zinc-950 rounded-[10px] justify-center items-center inline-flex">
+                            <div className="w-[120px] h-10 mx-2 bg-zinc-950 dark:bg-white rounded-[10px] justify-center items-center inline-flex">
                                 <div className="h-[30px] px-2.5 justify-between items-center inline-flex">
-                                    <div className="text-white text-sm font-bold font-['Inter'] leading-[30px]">
+                                    <div className="text-white dark:text-black text-sm font-bold font-['Inter'] leading-[30px]">
                                         Know More
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-[120px]  h-10 mx-2 bg-zinc-950 rounded-[10px] justify-center items-center inline-flex">
+                            <div className="w-[120px]  h-10 mx-2 bg-zinc-950 dark:bg-white rounded-[10px] justify-center items-center inline-flex">
                                 <div className="h-[30px] px-2.5 justify-between items-center inline-flex">
-                                    <div className="text-white text-sm font-bold font-['Inter'] leading-[30px]">
+                                    <div className="text-white dark:text-black  text-sm font-bold font-['Inter'] leading-[30px]">
                                         Reach Us
                                     </div>
                                 </div>

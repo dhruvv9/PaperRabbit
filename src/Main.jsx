@@ -23,23 +23,23 @@ function Main(props) {
     return (
         <>
             <Banner mode={mode}/>
-            <Branding />
-            <Services />
-            <Clients />
+            <Branding mode={mode} />
+            <Services mode={mode} />
+            <Clients mode={mode}/>
             {/* <Portfolio /> */}
-            <GlobalTraction />
+            <GlobalTraction mode={mode}/>
             {/* <Article /> */}
-            <Review />
+            <Review mode={mode}/>
             {/* <Insights /> */}
             {/* <Aboutus /> */}
-            <Workwithus />
-            <Blog/>
+            <Workwithus mode={mode}/>
+            <Blog mode={mode}/>
 
-            <HutchPage/>
+            <HutchPage mode={mode}/>
 
-            <ArticlesPage/>
+            <ArticlesPage mode={mode}/>
             
-            <Casestudy/>
+            <Casestudy mode={mode}/>
         </>
     )
 }

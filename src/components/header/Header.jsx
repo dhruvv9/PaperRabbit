@@ -38,17 +38,22 @@ function Header(props) {
         <div className="w-[58rem]  items-center justify-evenly hidden mac:flex lg:flex">
 
           <div className={`${hide ? 'w-16 h-11 flex-col gap-2.5  text-center flex items-center justify-center' : 'w-16 h-11 flex-col gap-2.5  text-center flex items-center justify-center group/item'}`} onClick={disappear}>
+          <Link to='/'>
             <div className=" text-zinc-950 dark:text-white  text-sm font-normal font-['Inter'] leading-normal ">
               Home
             </div>
+            </Link>
           </div>
 
           <div className={`${hide ? 'w-16 h-11 flex-col gap-2.5  text-center flex items-center justify-center' : 'w-16 h-11 flex-col gap-2.5  text-center flex items-center justify-center group/item'}`} onClick={disappear}>
+          <Link to='/hutch'>
             <div className=" text-zinc-950 dark:text-white text-sm font-normal font-['Inter'] leading-normal ">
               Hutch
             </div>
             <Hutch />
+            </Link>
           </div>
+
 
           <div className={`${hide ? 'w-16 h-11 flex-col gap-2.5  text-center flex items-center justify-center' : 'w-16 h-11 flex-col gap-2.5  text-center flex items-center justify-center group/item'}`} onClick={disappear}>
             <Link to="/services">
