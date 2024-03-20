@@ -27,7 +27,7 @@ function Workwithus() {
           </div>
         </div>
         <div className="relative flex flex-col items-center justify-center gap-4">
-          <button class="lg:w-[122px] lg:h-[44px] lg:mr-[100px] relative text-xs bg-zinc-950 rounded-[10px] text-white lg:text-sm font-bold font-['Inter'] leading-[30px] justify-center items-center inline-flex block-bg ">
+          <button class="lg:w-[122px] lg:h-[44px] lg:mr-[100px] relative text-xs bg-zinc-950 rounded-[10px] text-white lg:text-sm font-bold font-['Inter'] leading-[30px] justify-center items-center inline-flex">
             Work with US
           </button>
           <button class=" lg:w-[122px] lg:h-[44px] lg:mr-[100px] relative text-xs bg-zinc-950 rounded-[10px] text-white lg:text-sm font-bold font-['Inter'] leading-[30px] justify-center items-center inline-flex block-bg">

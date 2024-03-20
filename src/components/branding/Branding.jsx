@@ -14,7 +14,7 @@ function Branding() {
     };
 
     return (
-        <div className="w-full h-full relative flex flex-col items-center justify-around mt-10 lg:mt-20 ">
+        <div className="w-full relative flex flex-col items-center justify-around mt-10 lg:mt-20 ">
 
             <div className="w-full relative flex flex-col justify-center items-center">
                 <div class="w-[24rem] h-[6rem] relative content-center">
@@ -25,7 +25,7 @@ function Branding() {
 
             {/* <div className="w-screen lg:w-screen  flex flex-col lg:flex-row items-center justify-center relative "> */}
 
-                <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 lg:w-[58%] mac:w-full flex flex-col items-center justify-center mac:p-5 " >
+                <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 lg:w-[58%] mac:w-full flex flex-col items-center justify-center mac:p-5 lg:mb-20 " >
                     <div className="w-full relative flex items-center justify-center mt-5">
                         <img
                             className="w-[406px] h-[310px] lg:w-[700px] lg:h-[528px] relative rounded-[20px] shadow"
