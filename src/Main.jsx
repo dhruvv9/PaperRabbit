@@ -15,6 +15,7 @@ import ArticlesPage from './components/navpages/articles/ArticlesPage';
 import Blog from './components/blog/Blog';
 import HutchPage from './components/navpages/hutch/HutchPage';
 import Casestudy from './components/navpages/casestudy/Casestudy';
+import Hutchicons from './components/hutchicons/Hutchicons';
 
 
 function Main(props) {
@@ -24,9 +25,10 @@ function Main(props) {
         <>
             <Banner mode={mode}/>
             <Branding mode={mode} />
+            <Hutchicons/>
             <Services mode={mode} />
             <Clients mode={mode}/>
-            {/* <Portfolio /> */}
+            <Portfolio />
             <GlobalTraction mode={mode}/>
             {/* <Article /> */}
             <Review mode={mode}/>
@@ -35,11 +37,11 @@ function Main(props) {
             <Workwithus mode={mode}/>
             <Blog mode={mode}/>
 
-            <HutchPage mode={mode}/>
+            {/* <HutchPage mode={mode}/> */}
 
-            <ArticlesPage mode={mode}/>
+            {/* <ArticlesPage mode={mode}/> */}
             
-            <Casestudy mode={mode}/>
+            {/* <Casestudy mode={mode}/> */}
         </>
     )
 }
