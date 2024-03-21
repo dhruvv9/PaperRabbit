@@ -1,104 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react'
 import day1 from '../../assets/bannerimgs/1 background.png'
 import day2 from '../../assets/bannerimgs/2 background.png'
 import day3 from '../../assets/bannerimgs/3 background.png'
-import day4 from '../../assets/bannerimgs/4 background.png'
-import day5 from '../../assets/bannerimgs/5 background.png'
-import day6 from '../../assets/bannerimgs/6 background.png'
-import day7 from '../../assets/bannerimgs/7 background.png'
-import day8 from '../../assets/bannerimgs/8 background.png'
-import day9 from '../../assets/bannerimgs/9 background.png'
+
+
+import arrowleft from '../../assets/bannerimgs/left arrow.png';
+import arrowright from '../../assets/bannerimgs/right arrow.png';
+import FirstPage from './FirstPage'
+import SecondPage from './SecondPage'
+import ThirdPage from './ThirdPage'
+import hutchimg from '../../assets/bannerimgs/hutchiconimg.svg'
 
 function Hutchicons() {
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const page = [day1, day2, day3]
+
+    const pages = [ <FirstPage/>  , <SecondPage/>, <ThirdPage/>  ]
+
+
+    const navigateNext = ()=>{
+        setCurrentIndex((previndex)=> (previndex === page.length - 1 ? 0 : previndex + 1))
+    }
+
+    const navigatePrevious = ()=>{
+        setCurrentIndex((previndex) => (previndex === 0 ? page.length-1 : previndex - 1))
+    }
+
     return (
-        <div className="w-screen h-screen relative flex flex-col items-center justify-center lg:mt-20">
-            <img className="w-full h-full left-0 top-0 absolute backdrop-blur-sm" src={day6} />
-            <div className="w-full h-full left-0 top-0 absolute bg-white bg-opacity-5 backdrop-blur-2xl" />
+        <div className="w-screen h-[1180px] sm:h-[800px] relative flex flex-col items-center justify-center lg:mt-20">
+            <img className="w-screen h-full object-cover left-0 top-0 absolute backdrop-blur-sm" src={hutchimg} alt='banner'/>
+            <div className="w-full h-full left-0 top-0 absolute bg-white dark:bg-black bg-opacity-5 backdrop-blur-xl dark:bg-opacity-5 dark:backdrop-blur-xl" />
 
-            <div className='flex flex-col items-center justify-center h-full gap-20 sm:gap-8'>
+            <div div className='w-screen h-[1180px] flex flex-col items-center justify-center'>
+                { pages[currentIndex] }
+            </div>
+            
 
-                <div className="relative flex gap-20 sm:gap-4 ">  
-                    <div className="w-[8rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative">
-                        <div className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-50 rounded-full shadow  border-gray-50 border-opacity-50 flex flex-col items-center justify-center">
-                            <img className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full" src={day1} />
-                        </div>
-                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                    </div>
+            <button onClick={navigatePrevious}>
+                <img className="absolute justify-center items-center inline-flex left-[120px] top-[40%] sm:left-[20px] sm:top-[20%] w-8 h-8  lg:w-10 lg:h-10  mac:w-10 mac:h-10 " src={arrowleft} alt='' />
+            </button>
+            <button onClick={navigateNext} >
+                <img className=" absolute justify-center items-center inline-flex right-[120px] top-[40%] sm:right-[20px] sm:top-[20%] w-8 h-8  lg:w-10 lg:h-10  mac:w-10 mac:h-10 " src={arrowright} alt='' />
+            </button>
 
-                   <div className="w-[8rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative">
-                        <div className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-50 rounded-full shadow  border-gray-50 border-opacity-50 flex flex-col items-center justify-center">
-                            <img className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full" src={day1} />
-                        </div>
-                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                    </div>
-                    
-                   <div className="w-[8rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative">
-                        <div className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-50 rounded-full shadow  border-gray-50 border-opacity-50 flex flex-col items-center justify-center">
-                            <img className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full" src={day1} />
-                        </div>
-                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                    </div>
-                   <div className="w-[8rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative">
-                        <div className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-50 rounded-full shadow  border-gray-50 border-opacity-50 flex flex-col items-center justify-center">
-                            <img className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full" src={day1} />
-                        </div>
-                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                    </div>
-                </div>
-
-                <div className='flex gap-36 sm:gap-4'>
-                   <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative">
-                        <div className="w-[9rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-50 rounded-full shadow  border-gray-50 border-opacity-50 flex flex-col items-center justify-center">
-                            <img className="w-[9rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full" src={day1} />
-                        </div>
-                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                    </div>
-                   <div className="w-[8rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative">
-                        <div className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-50 rounded-full shadow  border-gray-50 border-opacity-50 flex flex-col items-center justify-center">
-                            <img className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full" src={day1} />
-                        </div>
-                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                    </div>
-                   <div className="w-[8rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative">
-                        <div className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-50 rounded-full shadow  border-gray-50 border-opacity-50 flex flex-col items-center justify-center">
-                            <img className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full" src={day1} />
-                        </div>
-                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                    </div>
-
-                   <div className="w-[8rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative">
-                        <div className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-50 rounded-full shadow  border-gray-50 border-opacity-50 flex flex-col items-center justify-center">
-                            <img className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full" src={day1} />
-                        </div>
-                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                    </div>
-
-                  
-                </div>
-                <div className='flex gap-40 sm:gap-8'>
-                   <div className="w-[8rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative">
-                        <div className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-50 rounded-full shadow  border-gray-50 border-opacity-50 flex flex-col items-center justify-center">
-                            <img className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full" src={day1} />
-                        </div>
-                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                    </div>
-                   <div className="w-[8rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative">
-                        <div className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-50 rounded-full shadow  border-gray-50 border-opacity-50 flex flex-col items-center justify-center">
-                            <img className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full" src={day1} />
-                        </div>
-                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                    </div>
-                    <div className="w-[8rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative">
-                        <div className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-50 rounded-full shadow  border-gray-50 border-opacity-50 flex flex-col items-center justify-center">
-                            <img className="w-[7rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full" src={day1} />
-                        </div>
-                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                    </div>
-                </div>
-
+            <div className="w-[70px] h-5 lg:left-[50%] lg:bottom-[5rem] bottom-[2.5rem] absolute bg-gray-300 rounded-xl flex items-center justify-center gap-4">
+                {currentIndex === 0 ? <div className="w-2 h-2  relative bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-2 h-2 relative bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
+                {currentIndex === 1 ? <div className="w-2 h-2  relative bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-2 h-2 relative bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
+                {currentIndex === 2 ? <div className="w-2 h-2  relative bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-2 h-2 relative bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
             </div>
 
-            <div className="w-[151.48px] h-[120px] left-[177px] top-[528px] absolute">
+            {/* <div className="w-[151.48px] h-[120px] left-[177px] top-[528px] absolute">
                 <div className="w-[46.34px] h-[120px] left-[105.14px] top-0 absolute bg-white bg-opacity-25 rounded-[50px] shadow border border-gray-50 border-opacity-50" />
                 <div className="w-[88.54px] left-[57px] top-[7.42px] absolute">
                     <div className="w-[34.46px] h-[34.46px] left-[54.08px] top-0 absolute">
@@ -122,7 +75,7 @@ function Hutchicons() {
                     </div>
                     <div className="w-[86.44px] h-[26.89px] left-0 top-0 absolute text-right text-black text-sm font-normal font-['Revelstoke']">Trending</div>
                 </div>
-            </div>
+            </div> */}
         </div>)
 }
 

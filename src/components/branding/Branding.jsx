@@ -25,24 +25,24 @@ function Branding() {
 
             {/* <div className="w-screen lg:w-screen  flex flex-col lg:flex-row items-center justify-center relative "> */}
 
-                <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 lg:w-[58%] mac:w-full flex flex-col items-center justify-center mac:p-5 lg:mb-20 " >
+                <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 lg:w-[58%]  mac:grid mac:grid-cols-2  mac:grid-rows-1 mac:w-[100%] flex flex-col items-center justify-center mac:p-5 lg:mb-20 " >
                     <div className="w-full relative flex items-center justify-center mt-5">
                         <img
-                            className="w-[406px] h-[310px] lg:w-[700px] lg:h-[528px] relative rounded-[20px] shadow"
+                            className="w-[406px] h-[310px] lg:w-[700px] lg:h-[528px] mac:w-[500px] mac:h-[328px] relative rounded-[20px] "
                             src={hatch}
                             alt=""
                         />
 
-                        <div className="w-[349px] h-[268px] left-[-5rem] bottom-[-4rem] hidden absolute  justify-center items-center lg:inline-flex">
+                        <div className="w-[349px] h-[268px] mac:w-[242px] mac:h-[186px] left-[-5rem] bottom-[-4rem] mac:left-[0rem] mac:bottom-[-4rem] hidden absolute  justify-center items-center lg:inline-flex mac:inline-flex">
                             <img
-                                className="w-[349px] h-[268px] rounded-[20px] shadow"
+                                className="mac:w-[242px] mac:h-[186px] rounded-[20px] "
                                 src={hatch2}
                                 alt=""
                             />
                         </div>
-                        <div className="w-[242px] h-[186px] top-[0rem] right-[-5rem] hidden absolute justify-center items-center lg:inline-flex">
+                        <div className="w-[242px] h-[186px] mac:w-[242px] mac:h-[186px] top-[0rem] right-[-5rem] hidden absolute justify-center items-center lg:inline-flex mac:inline-flex">
                             <img
-                                className="w-[242px] h-[186px] rounded-[20px] shadow"
+                                className="w-[242px] h-[186px] rounded-[20px] "
                                 src={hatch1}
                                 alt=""
                             />
@@ -83,7 +83,7 @@ function Branding() {
 
                         {/* ----------------------------popups-------------------------------------------- */}
 
-                        {mouse && id == 1 && (
+                        {mouse && id === 1 && (
                             <div className="w-80 left-[542px] top-[364px] absolute z-50 flex-col items-center justify-center bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]">
                                 {/* <div className="w-80 h-[250px] left-0 top-0 relative bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]" /> */}
                                 <div className="p-4 relative text-white text-xl font-bold font-['Inter']">
@@ -101,7 +101,7 @@ function Branding() {
                             </div>
                         )}
 
-                        {mouse && id == 2 && (
+                        {mouse && id === 2 && (
                             <div className="w-80  left-[230px] top-[2px] absolute z-50 flex-col items-center justify-center bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]">
                                 {/* <div className="w-80 h-[250px] left-0 top-0 relative bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]" /> */}
                                 <div className="p-4 relative text-white text-xl font-bold font-['Inter']">
@@ -119,7 +119,7 @@ function Branding() {
                             </div>
                         )}
 
-                        {mouse && id == 3 && (
+                        {mouse && id === 3 && (
                             <div className="w-80  left-[140px] top-[155px] absolute z-50 flex-col items-center justify-center bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]">
                                 {/* <div className="w-80 h-[250px] left-0 top-0 relative bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]" /> */}
                                 <div className="p-4 relative text-white text-xl font-bold font-['Inter']">
@@ -137,7 +137,7 @@ function Branding() {
                             </div>
                         )}
 
-                        {mouse && id == 4 && (
+                        {mouse && id === 4 && (
                             <div className="w-80 left-[285px] top-[200px] absolute z-50 flex-col items-center justify-center bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]">
                                 {/* <div className="w-80 h-[250px] left-0 top-0 relative bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]" /> */}
                                 <div className="p-4 relative text-white text-xl font-bold font-['Inter']">
@@ -156,7 +156,7 @@ function Branding() {
                         )}
                     </div>
 
-                    <div className="w-screen h-full lg:w-full  lg:h-[820px] lg:pl-[7rem] lg:p-0 relative flex flex-col items-center justify-center gap-5 place-items-center">
+                    <div className="w-screen h-full lg:w-full  lg:h-[820px] lg:pl-[7rem] lg:p-0 mac:w-full  mac:h-[820px] mac:pl-[7rem] mac:p-0 relative flex flex-col items-center justify-center gap-5 place-items-center">
                         <div className="relative text-justify text-black dark:text-white text-sm leading-[20px] lg:text-sm font-normal font-['Inter'] p-4 ">
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                             nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
