@@ -1,155 +1,73 @@
 import React from "react";
 import article1 from "../../assets/articalimgs/artical1.jpg";
-import article2 from "../../assets/articalimgs/artical1.jpg";
-import article3 from "../../assets/articalimgs/artical1.jpg";
-import article4 from "../../assets/articalimgs/artical1.jpg";
-import { useState } from "react";
+import article2 from "../../assets/articalimgs/artical2.jpg";
+import article3 from "../../assets/articalimgs/artical3.jpg";
+import article4 from "../../assets/articalimgs/artical4.jpg";
 
 function Article() {
-    const [isHovered, setIsHovered] = useState(false);
-    const [id, setId] = useState(0);
 
-    const hover = (id) => {
-        setIsHovered(!isHovered);
-        setId(id);
-    };
 
     return (
-        <div class="flex justify-center items-center h-screen mt-20">
-            <div class="w-screen h-full lg:w-[1420px] lg:h-[672px] relative flex flex-col items-center justify-center ">
-                <div className="relative lg:w-[369px] lg:h-24 flex flex-col justify-start items-start w-full h-full">
-                    <div className="text-black text-[44px] lg:text-[64px] font-normal font-['Revelstoke'] leading-[64px]">
-                        Article
-                    </div>
-                    <div className="text-emerald-200  text-5xl lg:text-8xl font-normal font-['Heaven'] leading-[64px]">
-                        Advertising
-                    </div>
-                </div>
+        <div class="w-screen flex flex-col justify-center items-center h-full mt-20">
 
-                <div className="lg:w-[1420px] lg:h-[76px] relative text-center text-black text-2xl font-bold font-['Inter'] lg:leading-9">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-                    odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-                    quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-                    mauris. <br />
-                    <br />
-                </div>
-
-                <div className="relative grid grid-cols-2 grid-rows-2 gap-2 lg:w-[1420px] lg:h-[340px] lg:grid-cols-4 lg:grid-rows-1">
-                    <div
-                        className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px] group/items"
-                        // onMouseEnter={() => hover(1)}
-                        // onMouseLeave={() => hover(0)}
-                        flex items-baseline
-                    >
-                        <img
-                            className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px] absolute top-0  rounded-[20px] "
-                            src={article1}
-                            alt="article1"
-                        />
-
-                        {/* {
-                            (isHovered && id == 1) ? ( */}
-                        <div className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px] absolute top-0 z-10 invisible group-hover/items:visible bg-blue-300 bg-opacity-50 rounded-[20px] justify-center items-center inline-flex">
-                            <div className="text-center text-zinc-950 text-sm font-bold font-['Inter'] uppercase">
-                                Article hover Dblue
-                            </div>
-                        </div>
-                        {/* ) */}
-                        {/* : ( */}
-                        <div className="w-[168px] h-10  relative group-hover/items:invisible bg-red-300 bg-opacity-50 rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px] justify-center items-center inline-flex">
-                                <div className=" text-center text-zinc-950 text-sm font-bold font-['Inter'] uppercase leading-tight">
-                                    Read More
-                                </div>
-                            </div>
-                        {/* )
-                        } */}
-                    </div>
-
-                    <div
-                        className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px] "
-                        onMouseEnter={() => hover(2)}
-                        onMouseLeave={() => hover(0)}
-                    >
-                        <img
-                            className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px]  rounded-[20px]"
-                            src={article2}
-                            alt="article2"
-                        />
-                        {/* {isHovered && id == 2 ? ( */}
-                            <div className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px] absolute top-0 z-10 bg-red-300  bg-opacity-50 rounded-[20px] justify-center items-center inline-flex">
-                                <div className="text-center text-zinc-950 text-sm font-bold font-['Inter'] uppercase">
-                                    Article hover Dblue
-                                </div>
-                            </div>
-                        {/* // ) : ( */}
-                            <div className="w-[168px] h-10 px-[42px] py-2.5 lg:left-[132px] lg:top-[200px] lg:absolute bg-blue-300 bg-opacity-50 rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px] justify-center items-center inline-flex">
-                                <div className="text-center text-zinc-950 text-sm font-bold font-['Inter'] uppercase leading-tight">
-                                    Read More
-                                </div>
-                            </div>
-                        {/* // )} */}
-                    </div>
-
-                    <div
-                        className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px] "
-                        onMouseEnter={() => hover(3)}
-                        onMouseLeave={() => hover(0)}
-                    >
-                        <img
-                            className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px] rounded-[20px] border border-violet-300 border-opacity-50"
-                            src={article4}
-                            alt="article4"
-                        />
-                        {/* {isHovered && id == 3 ? ( */}
-                            <div className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px] absolute top-0 z-10  bg-blue-300  bg-opacity-50 rounded-[20px] justify-center items-center inline-flex">
-                                <div className="text-center text-zinc-950 text-sm font-bold font-['Inter'] uppercase">
-                                    Article hover Dblue
-                                </div>
-                            </div>
-                        {/* ) : ( */}
-                            <div className="w-[168px] h-10 px-[42px] py-2.5 lg:left-[172px] lg:top-[300px] lg:absolute bg-blue-300 bg-opacity-50 rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px] justify-center items-center inline-flex">
-                                <div className="text-center text-zinc-950 text-sm font-bold font-['Inter'] uppercase leading-tight">
-                                    Read More
-                                </div>
-                            </div>
-                        {/* )} */}
-                    </div>
-
-                    <div
-                        className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px] "
-                        onMouseEnter={() => hover(4)}
-                        onMouseLeave={() => hover(0)}
-                    >
-                        <img
-                            className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px]  rounded-[20px]"
-                            src={article3}
-                            alt="article3"
-                        />
-                        {isHovered && id == 4 ? (
-                            <div className="w-[197px] h-[197px] lg:w-[340px] lg:h-[340px] absolute top-0 z-10 bg-red-300 bg-opacity-50 rounded-[20px] justify-center items-center inline-flex">
-                                <div className="text-center text-zinc-950 text-sm font-bold font-['Inter'] uppercase">
-                                    Article hover Dblue
-                                </div>
-                            </div>
-                        ) : (
-                            <div className="w-[168px] h-10 px-[42px] py-2.5 bottom-0 right-0 z-10 absolute bg-red-300 bg-opacity-50 rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px] justify-center items-center inline-flex">
-                                <div className="text-center text-zinc-950 text-sm font-bold font-['Inter'] uppercase leading-tight">
-                                    Read More
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </div>
-                <div className="w-[120px] h-10 pl-[26px] pr-[27px] py-[5px] lg:left-[649px] lg:top-[632px] lg:absolute bg-zinc-950 rounded-[10px] justify-center items-center inline-flex">
-                    <div className="h-[30px] px-2.5 justify-between items-center inline-flex">
-                        <div className="text-white text-sm font-bold font-['Inter'] leading-[30px]">
-                            More
-                        </div>
-                    </div>
+            <div className="w-full h-full relative flex flex-col justify-center items-center">
+                <div class="w-[24rem] h-[6rem] relative content-center">
+                    <div class="w-full left-0 top-[2.1rem] absolute text-red-200 lg:text-8xl text-[3.5rem] font-normal font-['Heaven'] leading-[64px] flex flex-col items-center justify-center">Definitions</div>
+                    <div class="w-full left-0 top-0 absolute text-black dark:text-white lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">Blog</div>
                 </div>
             </div>
+
+            <div className="lg:w-[56%] mac:w-[97%] w-[95%] h-full grid grid-rows-1 grid-cols-4 md:grid-cols-2 md:grid-rows-2 sm:grid-cols-2 sm:grid-rows-2 gap-4 mt-20 sm:p-8 md:p-8">
+                <div className="w-full h-full relative m-1 group/items">
+                    <img className="w-full h-full z-20 rounded-[20px]" src={article1} alt='' />
+                    <div className=" w-full h-full -z-10 left-0 top-0  absolute bg-emerald-200 rounded-[20px]" />
+                    <div className="w-[77%] h-[50px] pl-[73px] pr-[72px] py-[15px] right-0 bottom-0 absolute bg-emerald-200 bg-opacity-50 rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px] justify-center items-center inline-flex text-center text-white text-lg font-bold font-['Inter'] leading-tight">
+                        Take A Look
+                    </div>
+                    <div className="w-full h-full absolute z-20 top-0 left-0  bg-emerald-200 rounded-[20px] flex flex-col items-center justify-center invisible group-hover/items:visible" >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita saepe adipisci sunt reprehenderit maxime itaque deserunt, pariatur voluptatem repellat nulla!
+                    </div>
+                </div>
+                <div className="w-full h-full relative m-1 group/items">
+                    <img className="w-full h-full z-20 rounded-[20px]" src={article2} alt='' />
+                    <div className=" w-full h-full -z-10 left-0 top-0  absolute bg-emerald-200 rounded-[20px]" />
+                    <div className="w-[77%] h-[50px] pl-[73px] pr-[72px] py-[15px] right-0 bottom-0 absolute bg-emerald-200 bg-opacity-50 rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px] justify-center items-center inline-flex text-center text-white text-lg font-bold font-['Inter'] leading-tight">
+                        Take A Look
+                    </div>
+                    <div className="w-full h-full absolute z-20 top-0 left-0  bg-emerald-200 rounded-[20px] flex flex-col items-center justify-center invisible group-hover/items:visible" >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita saepe adipisci sunt reprehenderit maxime itaque deserunt, pariatur voluptatem repellat nulla!
+                    </div>
+                </div>
+                <div className="w-full h-full relative m-1 group/items">
+                    <img className="w-full h-full z-20 rounded-[20px]" src={article3} alt='' />
+                    <div className=" w-full h-full -z-10 left-0 top-0  absolute bg-emerald-200 rounded-[20px]" />
+                    <div className="w-[77%] h-[50px] pl-[73px] pr-[72px] py-[15px] right-0 bottom-0 absolute bg-emerald-200 bg-opacity-50 rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px] justify-center items-center inline-flex text-center text-white text-lg font-bold font-['Inter'] leading-tight">
+                        Take A Look
+                    </div>
+                    <div className="w-full h-full absolute z-20 top-0 left-0  bg-emerald-200 rounded-[20px] flex flex-col items-center justify-center invisible group-hover/items:visible" >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita saepe adipisci sunt reprehenderit maxime itaque deserunt, pariatur voluptatem repellat nulla!
+                    </div>
+                </div>
+                <div className="w-full h-full relative m-1 group/items">
+                    <img className="w-full h-full z-20 rounded-[20px]" src={article4} alt='' />
+                    <div className=" w-full h-full -z-10 left-0 top-0  absolute bg-emerald-200 rounded-[20px]" />
+                    <div className="w-[77%] h-[50px] pl-[73px] pr-[72px] py-[15px] right-0 bottom-0 absolute bg-emerald-200 bg-opacity-50 rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px] justify-center items-center inline-flex text-center text-white text-lg font-bold font-['Inter'] leading-tight">
+                        Take A Look
+                    </div>
+                    <div className="w-full h-full absolute z-20 top-0 left-0  bg-emerald-200 rounded-[20px] flex flex-col items-center justify-center invisible group-hover/items:visible" >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita saepe adipisci sunt reprehenderit maxime itaque deserunt, pariatur voluptatem repellat nulla!
+                    </div>
+                </div>
+
+                {/* <div className="w-[350px] h-[360px] absolute top-[-19.5rem] left-[-5rem] rounded-xl bg-red-100" >
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita saepe adipisci sunt reprehenderit maxime itaque deserunt, pariatur voluptatem repellat nulla!
+                        </div> */}
+            </div>
+
         </div>
     );
 }
 
 export default Article;
+
+

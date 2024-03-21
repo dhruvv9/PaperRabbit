@@ -7,10 +7,10 @@ import client5 from '../../assets/clients/violetpetal.png'
 import client6 from '../../assets/clients/theara.png'
 import client7 from '../../assets/clients/profunda.png'
 import client8 from '../../assets/clients/biere.png'
-import client9 from '../../assets/clients/darkrobber.png'
-import client10 from '../../assets/clients/Aiyaana_Final_Logo_10_oct_2019 1.png'
-import client11 from '../../assets/clients/arvind.png'
-import client12 from '../../assets/clients/purple.png'
+// import client9 from '../../assets/clients/darkrobber.png'
+// import client10 from '../../assets/clients/Aiyaana_Final_Logo_10_oct_2019 1.png'
+// import client11 from '../../assets/clients/arvind.png'
+// import client12 from '../../assets/clients/purple.png'
 import { Link } from 'react-router-dom'
 
 function Clients() {
@@ -163,46 +163,3 @@ function Clients() {
 
 export default Clients
 
-
-{/* 
-
-<div className="w-screen lg:w-[1420px] lg:mx-auto place-items-center grid grid-cols-2 grid-rows-6   lg:grid-cols-6 md:grid-cols-3 md:grid-rows-4 lg:grid-rows-2 relative lg:gap-5">
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[135px] h-[53px] " src={client1} />
-                </div>
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[95px] h-[61px] " src={client2} />
-                </div>
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[76px] h-[110px] " src={client3} />
-                </div>
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[106px] h-[117px] " src={client4} />
-                </div>
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[145px] h-[134px] " src={client5} />
-                </div>
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[149px] h-[55px] " src={client6} />
-                </div>
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[119px] h-[117px] " src={client7} />
-                </div>
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[139px] h-[76px] " src={client8} />
-                </div>
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[168px] h-[84px] " src={client9} />
-                </div>
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[105px] h-[105px] " src={client10} />
-                </div>
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[149px] h-[55px] " src={client11} />
-                </div>
-                <div className="flex items-center justify-center w-[190px] h-[190px] md:w-[220px] md:h-[220px]">
-                    <img className="w-[209px] h-[81px] " src={client12} />
-                </div>
-            </div> 
-        
-        */}

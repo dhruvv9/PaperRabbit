@@ -5,7 +5,6 @@ import services2 from '../../assets/services/services2.jpg';
 import services3 from '../../assets/services/services3.jpg';
 import add from "../../assets/services/add.svg";
 
-import { ScrollMenu } from 'react-horizontal-scrolling-menu';
 
 function Services() {
 

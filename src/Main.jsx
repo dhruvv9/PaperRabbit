@@ -1,20 +1,20 @@
 import React from 'react'
 
-import Aboutus from './components/aboutus/Aboutus';
+// import Aboutus from './components/aboutus/Aboutus';
 import Article from './components/article/Article';
 import Banner from './components/banner/Banner';
 import Branding from './components/branding/Branding';
 import Clients from './components/clients/Clients';
 import GlobalTraction from './components/globaltraction/GlobalTraction';
-import Insights from './components/insights/Insights';
+// import Insights from './components/insights/Insights';
 import Portfolio from './components/portfolio/Portfolio';
 import Review from './components/review/Review';
 import Services from './components/services/Services';
 import Workwithus from './components/workwithus/Workwithus';
-import ArticlesPage from './components/navpages/articles/ArticlesPage';
+// import ArticlesPage from './components/navpages/articles/ArticlesPage';
 import Blog from './components/blog/Blog';
-import HutchPage from './components/navpages/hutch/HutchPage';
-import Casestudy from './components/navpages/casestudy/Casestudy';
+// import HutchPage from './components/navpages/hutch/HutchPage';
+// import Casestudy from './components/navpages/casestudy/Casestudy';
 import Hutchicons from './components/hutchicons/Hutchicons';
 
 
@@ -30,7 +30,7 @@ function Main(props) {
             <Clients mode={mode}/>
             <Portfolio />
             <GlobalTraction mode={mode}/>
-            {/* <Article /> */}
+            <Article />
             <Review mode={mode}/>
             {/* <Insights /> */}
             {/* <Aboutus /> */}
