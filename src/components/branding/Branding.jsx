@@ -14,9 +14,9 @@ function Branding() {
     };
 
     return (
-        <div className="w-full relative flex flex-col items-center justify-around mt-10 lg:mt-20 ">
+        <div className="w-full z-20 relative flex flex-col items-center justify-around  bg-white dark:bg-black ">
 
-            <div className="w-full relative flex flex-col justify-center items-center">
+            <div className="w-full relative flex flex-col justify-center items-center pt-10 lg:pt-20">
                 <div class="w-[24rem] h-[6rem] relative content-center">
                     <div class="w-full left-0 top-[2.1rem] absolute text-red-200 lg:text-8xl text-[3.5rem] font-normal font-['Heaven'] leading-[64px] flex flex-col items-center justify-center">Advertising</div>
                     <div class="w-full left-0 top-0 absolute text-black dark:text-white lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">branding</div>

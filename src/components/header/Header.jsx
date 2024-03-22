@@ -27,7 +27,7 @@ function Header(props) {
   }
 
   return (
-    <div className="fixed top-0 w-full h-11 bg-gray-50 dark:bg-black  z-50 flex justify-center items-center gap-2.5 bg-opacity-50 backdrop-blur-sm dark:bg-opacity-50 dark:backdrop-blur-sm">
+    <div className="fixed top-0 w-[98%] h-11 bg-gray-50 dark:bg-black  z-50 flex justify-center items-center gap-2.5 bg-opacity-50 backdrop-blur-sm dark:bg-opacity-50 dark:backdrop-blur-sm">
       <div className="lg:w-[56%] mac:w-[97%] w-full  h-11 relative flex items-center justify-between">
         <Link to='/'>
           <div className=" text-zinc-950 dark:text-white relative lg:text-[2.2rem] brand1:text-[1.5rem] font-normal font-['Revelstoke'] lg:leading-[30px] ">

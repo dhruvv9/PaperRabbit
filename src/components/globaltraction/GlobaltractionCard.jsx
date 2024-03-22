@@ -8,8 +8,8 @@ function GlobaltractionCard({ data, id }) {
   const { duration, number } = data.counts[id];
 
   //--------------------------------------------------creating intersection observer------------------------------------------------------------
-
-  const [num, setNum] = useState(0);
+console.log(number)
+  // const [num, setNum] = useState(0);
   const [isintersecting, setIsintersecting] = useState(false);
 
   const ref = useRef(null);
@@ -19,7 +19,9 @@ function GlobaltractionCard({ data, id }) {
     const observer = new IntersectionObserver(
       ([entry]) => {
         // console.log(entry); //needs to be destructured as it gives a array
-        setIsintersecting(entry.isIntersecting)
+        if(entry.isIntersecting){
+          setIsintersecting(true)
+      }
       },
     )
 
@@ -41,7 +43,7 @@ function GlobaltractionCard({ data, id }) {
 
   useEffect(() => {
     let start = 0;
-    let end = number;
+    let end = 100;
 
     if (start === end) return;
 
@@ -51,7 +53,7 @@ function GlobaltractionCard({ data, id }) {
       start+=1
       setCounter(start);
 
-      if(start == end) clearInterval(timer);
+      if(start === end) clearInterval(timer);
 
     },incrementtime)
 
