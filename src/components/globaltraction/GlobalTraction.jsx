@@ -3,7 +3,7 @@ import GlobaltractionCard from './GlobaltractionCard';
 import data from './data.json';
 
 
-function GlobalTraction(props) {
+function GlobalTraction() {
 
   return (
     <div className="lg:w-[1420px] w-full h-full lg:mx-auto  flex-col  justify-between items-center relative mt-20" >

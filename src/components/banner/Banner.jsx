@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState , useRef } from 'react';
 
 
 import day1 from '../../assets/bannerimgs/1 background.svg'
@@ -11,7 +11,7 @@ import day6 from '../../assets/bannerimgs/6 background.png'
 import day7 from '../../assets/bannerimgs/7 background.png'
 import day8 from '../../assets/bannerimgs/8 background.png'
 import day9 from '../../assets/bannerimgs/9 background.png'
-import day10 from '../../assets/bannerimgs/10 background.png'
+import day10 from '../../assets/bannerimgs/12 background.png'
 import day11 from '../../assets/bannerimgs/11 background.png'
 
 
@@ -29,7 +29,13 @@ import dark9 from '../../assets/bannerimgs/9 background-dark.png'
 
 import arrowleft from '../../assets/bannerimgs/left arrow.png';
 import arrowright from '../../assets/bannerimgs/right arrow.png';
-// import { useFetcher } from 'react-router-dom';
+
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+
+
+gsap.registerPlugin(useGSAP);
+
 
 
 function Banner(props) {
@@ -45,20 +51,52 @@ function Banner(props) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [animate, setAnimate] = useState(0);
 
+
+
     const navigateNext = () => {
         setCurrentIndex((preIndex) => (preIndex === images_day.length - 1 ? 0 : preIndex + 1));
+        // setAnimateRight(!animateRight)
         setAnimate(!animate)
+
+        
     };
     const navigatePrevious = () => {
         setCurrentIndex((preIndex) => (preIndex === 0 ? images_day.length - 1 : preIndex - 1));
+        // setAnimateRight(!animateRight)
         setAnimate(!animate)
     }
 
-    return (
-        <div className="w-screen h-screen animate relative flex flex-col items-center justify-end">
 
-            <div className= "w-screen h-screen animate-fade animate-duration-[3000ms] animate-ease-in absolute" >
-                <img className="absolute top-0 left-0 right-0 -z-10 w-screen h-screen object-cover  " src={mode ? images_dark[currentIndex] : images_day[currentIndex]} alt='bannerimage' />
+
+
+
+    const image = useRef();
+
+    // useGSAP(()=>{
+    //     gsap.from(image.current , {
+    //         ease:"back",
+    //         x:'-200',
+    //         duration:1,
+    //         fillOpacity : 10,
+    //     })
+    // },[animateRight])
+
+    useGSAP(()=>{
+        gsap.from(image.current , {
+            ease:"back",
+            y:'-200',
+            duration:1,
+            yoyo : true,
+            autoAlpha : 0
+        })
+    },[animate])
+
+
+    return (
+        <div className="w-screen h-screen animate relative flex flex-col items-center justify-end overflow-hidden">
+
+            <div className= "w-screen h-screen absolute overflow-hidden" >
+                <img className="absolute top-0 left-0 right-0 -z-10 w-screen h-screen object-cover  " src={mode ? images_dark[currentIndex] : images_day[currentIndex]} alt='bannerimage' ref={image} />
             </div>
 
             {currentIndex % 2 === 0 ? <div className="mx-[20px]   md:right-[5px] sm:relative sm:mb-20 absolute flex flex-col items-end justify-start  w-[450px] sm:w-[350px]  sm:h-[350px] lg:w-[646px] lg:h-[415px] mac:w-[446px] mac:h-[380px] lg:right-[15rem] lg:bottom-[10rem] md:bottom-[5rem] mac:right-[5rem] mac:bottom-[5rem] lg:absolute lg:z-20">

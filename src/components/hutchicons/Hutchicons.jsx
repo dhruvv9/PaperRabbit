@@ -1,49 +1,48 @@
-import React, { useState } from 'react'
-import day1 from '../../assets/bannerimgs/1 background.png'
-import day2 from '../../assets/bannerimgs/2 background.png'
-import day3 from '../../assets/bannerimgs/3 background.png'
+import React, { useState  } from 'react'
+// import day1 from '../../assets/bannerimgs/1 background.png'
+// import day2 from '../../assets/bannerimgs/2 background.png'
+// import day3 from '../../assets/bannerimgs/3 background.png'
 
 
-import arrowleft from '../../assets/bannerimgs/left arrow.png';
-import arrowright from '../../assets/bannerimgs/right arrow.png';
+// import arrowleft from '../../assets/bannerimgs/left arrow.png';
+// import arrowright from '../../assets/bannerimgs/right arrow.png';
 import FirstPage from './FirstPage'
-import SecondPage from './SecondPage'
-import ThirdPage from './ThirdPage'
+// import SecondPage from './SecondPage'
+// import ThirdPage from './ThirdPage'
 import hutchimg from '../../assets/bannerimgs/hutchiconimg.svg'
 
 function Hutchicons() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const page = [day1, day2, day3]
-
-    const pages = [ <FirstPage/>  , <SecondPage/>, <ThirdPage/>  ]
+    // const page = [day1, day2, day3]
 
 
-    const navigateNext = ()=>{
-        setCurrentIndex((previndex)=> (previndex === page.length - 1 ? 0 : previndex + 1))
-    }
+    // const pages = [ <FirstPage />  , <SecondPage/>, <ThirdPage/>  ]
 
-    const navigatePrevious = ()=>{
-        setCurrentIndex((previndex) => (previndex === 0 ? page.length-1 : previndex - 1))
-    }
+
+    // const navigateNext = ()=>{
+    //     setCurrentIndex((previndex)=> (previndex === page.length - 1 ? 0 : previndex + 1))
+    // }
+
+    // const navigatePrevious = ()=>{
+    //     setCurrentIndex((previndex) => (previndex === 0 ? page.length-1 : previndex - 1))
+    // }
 
     return (
-        <div className="w-screen h-[1180px] sm:h-[800px] relative flex flex-col items-center justify-center lg:mt-20">
+        <div className="w-screen h-[1180px] sm:h-[800px] relative flex flex-col items-center justify-center overflow-hidden pt-20" >
             <img className="w-screen h-full object-cover left-0 top-0 absolute backdrop-blur-sm" src={hutchimg} alt='banner'/>
             <div className="w-full h-full left-0 top-0 absolute bg-white dark:bg-black bg-opacity-5 backdrop-blur-xl dark:bg-opacity-5 dark:backdrop-blur-xl" />
 
-            <div div className='w-screen h-[1180px] flex flex-col items-center justify-center'>
-                { pages[currentIndex] }
-            </div>
-            
+                {/* { pages[currentIndex] } */}
+                <FirstPage />
 
-            <button onClick={navigatePrevious}>
+            {/* <button onClick={navigatePrevious}>
                 <img className="absolute justify-center items-center inline-flex left-[120px] top-[40%] sm:left-[20px] sm:top-[20%] w-8 h-8  lg:w-10 lg:h-10  mac:w-10 mac:h-10 " src={arrowleft} alt='' />
             </button>
             <button onClick={navigateNext} >
                 <img className=" absolute justify-center items-center inline-flex right-[120px] top-[40%] sm:right-[20px] sm:top-[20%] w-8 h-8  lg:w-10 lg:h-10  mac:w-10 mac:h-10 " src={arrowright} alt='' />
-            </button>
+            </button> */}
 
             <div className="w-[70px] h-5 lg:left-[50%] lg:bottom-[5rem] bottom-[2.5rem] absolute bg-gray-300 rounded-xl flex items-center justify-center gap-4">
                 {currentIndex === 0 ? <div className="w-2 h-2  relative bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-2 h-2 relative bg-zinc-500 dark:bg-zinc-950 rounded-full" />}

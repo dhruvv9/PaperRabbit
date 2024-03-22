@@ -1,5 +1,5 @@
 import React from 'react'
-import CommonCards from '../articles_teams_content/CommonCards'
+// import CommonCards from '../articles_teams_content/CommonCards'
 import CommonRows from '../articles_teams_content/CommonRows'
 import BackBar from '../back/BackBar'
 
