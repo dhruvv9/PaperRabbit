@@ -9,7 +9,7 @@ import youtube from "../../assets/footer_assets/youtube.svg";
 
 function Footer() {
     return (
-        <div className='w-screen h-full flex lg:flex-row flex-col items-center justify-center  bg-neutral-100 backdrop-blur-[20px] mt-[100px]'>
+        <div className='w-[100%] h-full flex lg:flex-row flex-col items-center justify-center  bg-neutral-100 backdrop-blur-[20px] mt-[100px]'>
             <div className="lg:w-[1420px] w-full h-full lg:mx-auto lg:h-[496px] relative flex flex-col items-center justify-center">
                 <div className='flex lg:flex-row w-full h-full lg:h-[296px] flex-col items-center justify-evenly'>
                     <div className='w-[250px] h-[250px] flex flex-col items-center justify-evenly' >

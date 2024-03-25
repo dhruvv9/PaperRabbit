@@ -6,7 +6,7 @@ import data from './data.json';
 function GlobalTraction() {
 
   return (
-    <div className="lg:w-[1420px] w-full h-full lg:mx-auto  flex-col  justify-between items-center relative mt-20" >
+    <div className="lg:w-[56%] w-full h-full lg:mx-auto  flex-col  justify-between items-center relative mt-20" >
 
       <div className="w-full relative flex flex-col justify-center items-center">
         <div class="w-[24rem] h-[6rem] relative content-center">
@@ -15,7 +15,7 @@ function GlobalTraction() {
         </div>
       </div>
 
-      <div className="lg:flex w-full h-full place-items-center grid grid-cols-2 grid-rows-2 lg:justify-center lg:items-center relative mt-20" >
+      <div className="lg:flex w-full h-full place-items-center grid grid-cols-2 grid-rows-2 lg:justify-center lg:items-center mac:justify-center mac:items-center relative mt-20" >
         <div className="relative flex flex-col items-center justify-center w-[159px] h-[155px] lg:mx-[8rem]">
           <div className=" text-center text-red-200 text-xl lg:text-[34px] font-normal font-['Revelstoke']">Projects</div>
           <div className=" text-center"> <GlobaltractionCard data={data} id={0} />  </div>
