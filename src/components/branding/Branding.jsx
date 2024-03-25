@@ -25,22 +25,22 @@ function Branding() {
 
             {/* <div className="w-screen lg:w-screen  flex flex-col lg:flex-row items-center justify-center relative "> */}
 
-                <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 lg:w-[58%]  mac:grid mac:grid-cols-2  mac:grid-rows-1 mac:w-[100%] flex flex-col items-center justify-center mac:p-5 lg:mb-20 " >
+                <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 lg:w-[58%]  mac:grid mac:grid-cols-2  mac:grid-rows-1 mac:w-[75%] flex flex-col items-center justify-center mac:p-5 lg:mb-20 " >
                     <div className="w-full relative flex items-center justify-center mt-5">
                         <img
-                            className="w-[406px] h-[310px] lg:w-[700px] lg:h-[528px] mac:w-[500px] mac:h-[328px] relative rounded-[20px] "
+                            className="w-[406px] h-[310px] lg:w-[700px] lg:h-[528px] mac:w-[700px] mac:h-[528px] relative rounded-[20px] "
                             src={hatch}
                             alt=""
                         />
 
-                        <div className="w-[349px] h-[268px] mac:w-[242px] mac:h-[186px] left-[-5rem] bottom-[-4rem] mac:left-[0rem] mac:bottom-[-4rem] hidden absolute  justify-center items-center lg:inline-flex mac:inline-flex">
+                        <div className="w-[349px] h-[268px] mac:w-[242px] mac:h-[186px] left-[-5rem] bottom-[-4rem] mac:left-[-5rem] mac:bottom-[-4rem] hidden absolute  justify-center items-center lg:inline-flex mac:inline-flex">
                             <img
-                                className="mac:w-[242px] mac:h-[186px] rounded-[20px] "
+                                className="w-[242px] h-[186px] rounded-[20px]  "
                                 src={hatch2}
                                 alt=""
                             />
                         </div>
-                        <div className="w-[242px] h-[186px] mac:w-[242px] mac:h-[186px] top-[0rem] right-[-5rem] hidden absolute justify-center items-center lg:inline-flex mac:inline-flex">
+                        <div className="w-[242px] h-[186px] mac:w-[242px] mac:h-[186px] top-[-2rem] right-[-7rem] hidden absolute justify-center items-center lg:inline-flex mac:inline-flex">
                             <img
                                 className="w-[242px] h-[186px] rounded-[20px] "
                                 src={hatch1}
@@ -49,7 +49,7 @@ function Branding() {
                         </div>
 
                         <div
-                            className="w-5 h-5 left-[-10rem] top-[5rem] hidden lg:block relative"
+                            className="w-5 h-5 left-[-10rem] top-[5rem] hidden lg:block mac:block mac:left-[-10rem] mac:top-[5rem] relative"
                             onMouseEnter={() => mousehover(1)}
                             onMouseLeave={() => mousehover(0)}
                         >
@@ -57,7 +57,7 @@ function Branding() {
                             <div className="w-[16.08px] h-[16.08px] left-[1.96px] top-[1.96px] absolute bg-sky-200 rounded-full" />
                         </div>
                         <div
-                            className="w-5 h-5 left-[-31rem] top-[0rem] hidden lg:block relative"
+                            className="w-5 h-5 left-[-31rem] top-[0rem] hidden lg:block mac:block relative"
                             onMouseEnter={() => mousehover(2)}
                             onMouseLeave={() => mousehover(0)}
                         >
@@ -65,7 +65,7 @@ function Branding() {
                             <div className="w-[16.08px] h-[16.08px] left-[1.96px] top-[1.96px] absolute bg-emerald-200 rounded-full" />
                         </div>
                         <div
-                            className="w-5 h-5 left-[-38rem] top-[12rem] hidden lg:block relative "
+                            className="w-5 h-5 left-[-38rem] top-[12rem] hidden lg:block mac:block relative "
                             onMouseEnter={() => mousehover(3)}
                             onMouseLeave={() => mousehover(0)}
                         >
@@ -73,7 +73,7 @@ function Branding() {
                             <div className="w-[16.08px] h-[16.08px] left-[1.96px] top-[1.96px] absolute bg-red-200 rounded-full" />
                         </div>
                         <div
-                            className="w-5 h-5 z-10 left-[-8rem] top-[-5rem] hidden lg:block relative "
+                            className="w-5 h-5 z-10 left-[-8rem] top-[-5rem] hidden lg:block mac:block relative "
                             onMouseEnter={() => mousehover(4)}
                             onMouseLeave={() => mousehover(0)}
                         >
@@ -84,7 +84,7 @@ function Branding() {
                         {/* ----------------------------popups-------------------------------------------- */}
 
                         {mouse && id === 1 && (
-                            <div className="w-80 left-[542px] top-[364px] absolute z-50 flex-col items-center justify-center bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]">
+                            <div className="w-80 left-[542px] top-[364px] mac:left-[472px] mac:top-[364px] absolute z-50 flex-col items-center justify-center bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]">
                                 {/* <div className="w-80 h-[250px] left-0 top-0 relative bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]" /> */}
                                 <div className="p-4 relative text-white text-xl font-bold font-['Inter']">
                                     Perspiciatis unde dolori perspiciatis unde dolori
@@ -102,7 +102,7 @@ function Branding() {
                         )}
 
                         {mouse && id === 2 && (
-                            <div className="w-80  left-[230px] top-[2px] absolute z-50 flex-col items-center justify-center bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]">
+                            <div className="w-80  left-[230px] top-[2px] mac:left-[160px] mac:top-[5px] absolute z-50 flex-col items-center justify-center bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]">
                                 {/* <div className="w-80 h-[250px] left-0 top-0 relative bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]" /> */}
                                 <div className="p-4 relative text-white text-xl font-bold font-['Inter']">
                                     Perspiciatis unde dolori perspiciatis unde dolori
@@ -120,7 +120,7 @@ function Branding() {
                         )}
 
                         {mouse && id === 3 && (
-                            <div className="w-80  left-[140px] top-[155px] absolute z-50 flex-col items-center justify-center bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]">
+                            <div className="w-80  left-[140px] top-[155px] mac:left-[40px] mac:top-[155px] absolute z-50 flex-col items-center justify-center bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]">
                                 {/* <div className="w-80 h-[250px] left-0 top-0 relative bg-black bg-opacity-25 rounded-[20px] backdrop-blur-[20px]" /> */}
                                 <div className="p-4 relative text-white text-xl font-bold font-['Inter']">
                                     Perspiciatis unde dolori perspiciatis unde dolori

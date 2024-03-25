@@ -6,14 +6,17 @@ import React, { useState  } from 'react'
 
 // import arrowleft from '../../assets/bannerimgs/left arrow.png';
 // import arrowright from '../../assets/bannerimgs/right arrow.png';
-import FirstPage from './FirstPage'
+// import FirstPage from './FirstPage'
 // import SecondPage from './SecondPage'
 // import ThirdPage from './ThirdPage'
 import hutchimg from '../../assets/bannerimgs/hutchiconimg.svg'
+import DummyFirstPage from './DummyFirstPage';
 
 function Hutchicons() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
+
+ 
 
     // const page = [day1, day2, day3]
 
@@ -30,12 +33,14 @@ function Hutchicons() {
     // }
 
     return (
-        <div className="w-screen h-[1180px] sm:h-[800px] relative flex flex-col items-center justify-center overflow-hidden pt-20" >
-            <img className="w-screen h-full object-cover left-0 top-0 absolute backdrop-blur-sm" src={hutchimg} alt='banner'/>
+        <div className="w-[100%] h-[1180px] sm:h-[800px] relative flex flex-col items-center justify-center overflow-hidden pt-20" >
+            <img className="w-[100%] h-full object-cover left-0 top-0 absolute backdrop-blur-sm" src={hutchimg} alt='banner'/>
             <div className="w-full h-full left-0 top-0 absolute bg-white dark:bg-black bg-opacity-5 backdrop-blur-xl dark:bg-opacity-5 dark:backdrop-blur-xl" />
 
                 {/* { pages[currentIndex] } */}
-                <FirstPage />
+                {/* <FirstPage />
+                 */}
+                 <DummyFirstPage/>
 
             {/* <button onClick={navigatePrevious}>
                 <img className="absolute justify-center items-center inline-flex left-[120px] top-[40%] sm:left-[20px] sm:top-[20%] w-8 h-8  lg:w-10 lg:h-10  mac:w-10 mac:h-10 " src={arrowleft} alt='' />

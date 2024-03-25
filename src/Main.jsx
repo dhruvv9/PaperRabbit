@@ -6,7 +6,7 @@ import Banner from './components/banner/Banner';
 import Branding from './components/branding/Branding';
 import Clients from './components/clients/Clients';
 import GlobalTraction from './components/globaltraction/GlobalTraction';
-// import Insights from './components/insights/Insights';
+import Insights from './components/insights/Insights';
 import Portfolio from './components/portfolio/Portfolio';
 import Review from './components/review/Review';
 import Services from './components/services/Services';
@@ -32,7 +32,7 @@ function Main(props) {
             <GlobalTraction mode={mode}/>
             <Article />
             <Review mode={mode}/>
-            {/* <Insights /> */}
+            <Insights />
             {/* <Aboutus /> */}
             <Workwithus mode={mode}/>
             <Blog mode={mode}/>

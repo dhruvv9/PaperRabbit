@@ -21,22 +21,22 @@ function Services() {
 
             <div className="w-full h-full  relative flex items-start gap-5 overflow-x-scroll no-scrollbar my-12 lg:mt-20">
 
-                <div className="w-full ml-[20px] lg:ml-[570px] h-[420px] lg:h-[600px] relative">
-                    <img className="w-[260px] lg:w-[340px] h-[420px] lg:h-[598px] left-0 top-0 absolute rounded-[20px]" src={services0} alt='' />
-                    <div className="w-[260px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
+                <div className="w-full ml-[20px] lg:ml-[570px] mac:ml-[253px] h-[460px] lg:h-[600px] relative">
+                    <img className="w-[280px] lg:w-[340px] h-[460px] lg:h-[598px] left-0 top-0 absolute rounded-[20px]" src={services0} alt='' />
+                    <div className="w-[280px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
                         <div className="text-zinc-950 text-xs md:text-sm font-normal font-['Inter'] leading-none">Lorum Ipsum</div>
-                        <div className="w-[260px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>                            <div className="self-stretch h-4 relative">
+                        <div className="w-[280px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>                            <div className="self-stretch h-4 relative">
                             <div className="left-[15px] top-0 absolute text-zinc-950 text-xs md:text-sm font-medium font-['Inter'] leading-none">Explore</div>
                             <div className="w-[7.43px] h-[13px] left-0 top-[1px] absolute flex-col justify-start items-start inline-flex" />
                         </div>
                     </div>
                     <img className="w-[42px] h-[42px] right-2 bottom-2 lg:left-[278px] lg:top-[538px] absolute backdrop-blur-[20px] rounded-full" src={add} alt='' />
                 </div>
-                <div className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] relative">
-                    <img className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services1} alt='' />
-                    <div className="w-[260px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
+                <div className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] relative">
+                    <img className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services1} alt='' />
+                    <div className="w-[280px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
                         <div className="text-zinc-950 text-xs md:text-sm font-normal font-['Inter'] leading-none">Lorum Ipsum</div>
-                        <div className="w-[260px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
+                        <div className="w-[280px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
                         <div className="self-stretch h-4 relative">
                             <div className="left-[15px] top-0 absolute text-zinc-950 text-xs md:text-sm font-medium font-['Inter'] leading-none">Explore</div>
                             <div className="w-[7.43px] h-[13px] left-0 top-[1px] absolute flex-col justify-start items-start inline-flex" />
@@ -44,11 +44,11 @@ function Services() {
                     </div>
                     <img className="w-[42px] h-[42px] right-2 bottom-2 lg:left-[278px] lg:top-[538px] absolute backdrop-blur-[20px] rounded-full" src={add} alt='' />
                 </div>
-                <div className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] relative">
-                    <img className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services2} alt=" " />
-                    <div className="w-[260px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
+                <div className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] relative">
+                    <img className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services2} alt=" " />
+                    <div className="w-[280px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
                         <div className="text-zinc-950 text-xs md:text-sm font-normal font-['Inter'] leading-none">Lorum Ipsum</div>
-                        <div className="w-[260px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
+                        <div className="w-[280px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
                         <div className="self-stretch h-4 relative">
                             <div className="left-[15px] top-0 absolute text-zinc-950 text-xs md:text-sm font-medium font-['Inter'] leading-none">Explore</div>
                             <div className="w-[7.43px] h-[13px] left-0 top-[1px] absolute flex-col justify-start items-start inline-flex" />
@@ -56,11 +56,11 @@ function Services() {
                     </div>
                     <img className="w-[42px] h-[42px] right-2 bottom-2 lg:left-[278px] lg:top-[538px] absolute backdrop-blur-[20px] rounded-full" src={add} alt='' />
                 </div>
-                <div className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] relative">
-                    <img className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services3} alt='' />
-                    <div className="w-[260px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
+                <div className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] relative">
+                    <img className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services3} alt='' />
+                    <div className="w-[280px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
                         <div className="text-zinc-950 text-xs md:text-sm font-normal font-['Inter'] leading-none">Lorum Ipsum</div>
-                        <div className="w-[260px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
+                        <div className="w-[280px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
                         <div className="self-stretch h-4 relative">
                             <div className="left-[15px] top-0 absolute text-zinc-950 text-xs md:text-sm font-medium font-['Inter'] leading-none">Explore</div>
                             <div className="w-[7.43px] h-[13px] left-0 top-[1px] absolute flex-col justify-start items-start inline-flex" />
@@ -68,11 +68,11 @@ function Services() {
                     </div>
                     <img className="w-[42px] h-[42px] right-2 bottom-2 lg:left-[278px] lg:top-[538px] absolute backdrop-blur-[20px] rounded-full" src={add} alt='' />
                 </div>
-                <div className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] relative">
-                    <img className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services1} alt='' />
-                    <div className="w-[260px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
+                <div className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] relative">
+                    <img className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services1} alt='' />
+                    <div className="w-[280px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
                         <div className="text-zinc-950 text-xs md:text-sm font-normal font-['Inter'] leading-none">Lorum Ipsum</div>
-                        <div className="w-[260px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
+                        <div className="w-[280px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
                         <div className="self-stretch h-4 relative">
                             <div className="left-[15px] top-0 absolute text-zinc-950 text-xs md:text-sm font-medium font-['Inter'] leading-none">Explore</div>
                             <div className="w-[7.43px] h-[13px] left-0 top-[1px] absolute flex-col justify-start items-start inline-flex" />
@@ -82,11 +82,11 @@ function Services() {
                 </div>
                 {/* ------------------------dummy ----------------------------------- */}
 
-                <div className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] relative">
-                    <img className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services0} alt='' />
-                    <div className="w-[260px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
+                <div className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] relative">
+                    <img className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services0} alt='' />
+                    <div className="w-[280px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
                         <div className="text-zinc-950 text-xs md:text-sm font-normal font-['Inter'] leading-none">Lorum Ipsum</div>
-                        <div className="w-[260px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
+                        <div className="w-[280px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
                         <div className="self-stretch h-4 relative">
                             <div className="left-[15px] top-0 absolute text-zinc-950 text-xs md:text-sm font-medium font-['Inter'] leading-none">Explore</div>
                             <div className="w-[7.43px] h-[13px] left-0 top-[1px] absolute flex-col justify-start items-start inline-flex" />
@@ -95,11 +95,11 @@ function Services() {
                     <img className="w-[42px] h-[42px] right-2 bottom-2 lg:left-[278px] lg:top-[538px] absolute backdrop-blur-[20px] rounded-full" src={add} alt='' />
                 </div>
 
-                <div className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] relative">
-                    <img className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services0} alt='' />
-                    <div className="w-[260px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
+                <div className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] relative">
+                    <img className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services0} alt='' />
+                    <div className="w-[280px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
                         <div className="text-zinc-950 text-xs md:text-sm font-normal font-['Inter'] leading-none">Lorum Ipsum</div>
-                        <div className="w-[260px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
+                        <div className="w-[280px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
                         <div className="self-stretch h-4 relative">
                             <div className="left-[15px] top-0 absolute text-zinc-950 text-xs md:text-sm font-medium font-['Inter'] leading-none">Explore</div>
                             <div className="w-[7.43px] h-[13px] left-0 top-[1px] absolute flex-col justify-start items-start inline-flex" />
@@ -108,11 +108,11 @@ function Services() {
                     <img className="w-[42px] h-[42px] right-2 bottom-2 lg:left-[278px] lg:top-[538px] absolute backdrop-blur-[20px] rounded-full" src={add} alt='' />
                 </div>
 
-                <div className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] relative">
-                    <img className="w-[260px] lg:w-[340px] h-[420px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services0} alt='' />
-                    <div className="w-[260px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
+                <div className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] relative">
+                    <img className="w-[280px] lg:w-[340px] h-[460px] lg:h-[600px] left-0 top-0 absolute rounded-[20px]" src={services0} alt='' />
+                    <div className="w-[280px] lg:w-[340px] h-[155px] pl-2 md:pl-6 md:pr-[35px] py-10 left-0 top-0 relative rounded-[20px] flex-col justify-center items-start gap-2.5 inline-flex">
                         <div className="text-zinc-950 text-xs md:text-sm font-normal font-['Inter'] leading-none">Lorum Ipsum</div>
-                        <div className="w-[260px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
+                        <div className="w-[280px] text-zinc-950 text-base md:text-2xl font-bold font-['Inter'] leading-normal">Perspiciati lorum ipsum</div>
                         <div className="self-stretch h-4 relative">
                             <div className="left-[15px] top-0 absolute text-zinc-950 text-xs md:text-sm font-medium font-['Inter'] leading-none">Explore</div>
                             <div className="w-[7.43px] h-[13px] left-0 top-[1px] absolute flex-col justify-start items-start inline-flex" />

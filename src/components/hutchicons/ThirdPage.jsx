@@ -2,7 +2,7 @@ import React from 'react'
 
 function ThirdPage() {
   return (
-    <div div className='w-screen h-[1180px] flex flex-col items-center justify-center'>
+    <div div className='w-[100%] h-[1180px] flex flex-col items-center justify-center'>
     ThirdPage
     </div>
   )

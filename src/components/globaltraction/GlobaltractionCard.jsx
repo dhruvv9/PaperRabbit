@@ -43,11 +43,13 @@ console.log(number)
 
   useEffect(() => {
     let start = 0;
-    let end = 100;
+    let end = 10;
 
     if (start === end) return;
 
     let incrementtime = (duration / end) * 1000;
+    console.log(duration, "+",  );
+    console.log(incrementtime);
 
     let timer = setInterval(() => {
       start+=1
