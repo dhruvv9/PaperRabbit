@@ -1,6 +1,6 @@
 import React from 'react'
 
-// import Aboutus from './components/aboutus/Aboutus';
+import Aboutus from './components/aboutus/Aboutus';
 import Article from './components/article/Article';
 import Banner from './components/banner/Banner';
 import Branding from './components/branding/Branding';
@@ -25,7 +25,7 @@ function Main(props) {
         <>
             <Banner mode={mode}/>
             <Branding mode={mode} />
-            <Hutchicons/>
+            <Hutchicons mode={mode} />
             <Services mode={mode} />
             <Clients mode={mode}/>
             <Portfolio />
@@ -33,9 +33,9 @@ function Main(props) {
             <Article />
             <Review mode={mode}/>
             <Insights />
-            {/* <Aboutus /> */}
             <Workwithus mode={mode}/>
             <Blog mode={mode}/>
+            <Aboutus />
 
             {/* <HutchPage mode={mode}/> */}
 

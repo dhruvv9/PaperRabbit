@@ -58,7 +58,7 @@ function Blog() {
                             <div className="text-justify text-black dark:text-white z-20 text-[25px] lg:text-[40px] font-normal font-['Katibeh'] lg:leading-[30px] leading-[17px] lg:p-3 p-3">
                                 Branding is oxygen for the companies identity building...! design creat design tech....</div>
 
-                            <div className="text-justify text-black dark:text-white z-20 text-[12px] lg:text-sm font-normal font-['Inter'] lg:leading-[20px] leading-[13px] lg:p-3 p-3 ">
+                            <div className="text-justify text-black dark:text-white z-20 text-[12px] lg:text-sm mac:text-sm mac:leading-[15px] font-normal font-['Inter'] lg:leading-[20px] leading-[13px] lg:p-3 p-3 ">
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Tempor incididunt ut labore et.                                </div>
