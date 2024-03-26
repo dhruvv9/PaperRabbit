@@ -21,16 +21,12 @@ function Portfoliolayer() {
                     </div>
                     <div className='text-black text-2xl w-[200px] ml-[25rem] mt-6 font-bold font-[Inter] leading-normal'>Company Name</div>
                     <div className='text-black text-2xl w-[120px] ml-[25rem] mt-2 font-bold font-[Inter] leading-normal'>Domain</div>
-
-
-
-
-
-
-                </div>
+                  </div>
                 <div className="w-[full]  relative text-justify ml-[50rem] top-[-165px] flex-row items-center text-black text-2xl font-bold font-['Inter'] leading-[48px]">Perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis undemns omnis undemns<br />perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis undemns omnis undemns<br />perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis undemns omnis undemns </div>
 
             </div>
+
+
             <div className='flex justify-center  '>
 
                 <div className='w-[70rem] gap-[4rem]  flex flex-col  top-[46.5rem] relative  '>
@@ -95,7 +91,7 @@ function Portfoliolayer() {
 
             <div className='flex justify-center  '>
 
-                <div className='w-[88rem] gap-[4rem] flex flex-col  top-[80rem] relative  '>
+                <div className='w-[88rem] gap-[4rem] flex flex-col  top-[77rem] relative  '>
                     <div className=" w-full h-[60px] relative text-black flex justify-center items-center text-[32px] font-bold font-['Inter']   "> Client Expectation </div>
 
 
@@ -150,10 +146,10 @@ function Portfoliolayer() {
             </div>
 
             <div className='flex justify-center '>
+            <div className="w-[88rem] h-[37.766rem] flex justify-center items-center top-[1500px] relative">
+            <div className="w-[148px] h-[43px] mt-[-35rem] relative text-black text-[32px] font-bold font-['Inter'] ">Mockups</div>
 
-            <div className="w-[1420px] h-[572.29px] flex flex-justify-center items-center top-[1500px] relative">
-<div className="w-[148px] h-[43px] left-[636px]  relative text-black text-[32px] font-bold font-['Inter'] leading-loose">Mockups</div>
-<div className="w-[523.03px] h-[431.94px] left-[490.08px] top-[123px] relative">
+            <div className="w-[523.03px] h-[431.94px] left-[490.08px] top-[123px] relative">
 <div className="w-[523.03px] h-[431.94px] left-0 top-0 absolute">
 <div className="w-[382.86px] h-[3.03px] left-[70.08px] top-[418.32px] absolute bg-stone-300 bg-opacity-0 rounded-full shadow" />
 <div className="w-[523.03px] h-[365.71px] left-0 top-0 absolute bg-zinc-100 rounded-md" />
@@ -214,24 +210,35 @@ function Portfoliolayer() {
 </div>
 </div>
 </div>
-</div>
-</div>
+            
+
+            </div>
+
+            </div>
+
+
+
+
+
+           
+
 
 <div className='flex justify-center '>
-<div className="w-full h-[443.29px]  top-[2000px] relative">
-    <div className="w-[263px] h-[43px] left-[579px] top-0 relative text-black text-[32px] font-bold font-['Inter'] leading-loose">Client Testmony</div>
-    <div className="w-[340px] h-[360px] left-0 top-[83.29px] relative">
-        <div className='flex flex-row'>
-        <div className="w-[340px] h-[360px] left-0 top-0 absolute bg-gray-50 bg-opacity-70 rounded-[20px] backdrop-blur-[20px]" />
-        <img className="w-80 h-[340px] left-[10px] top-[10px] relative rounded-[20px]" src= {clientpic} alt=''/>
-    </div>
-    <div className="w-[340px] h-[360px] left-[360px] top-[83px] absolute">
+<div className="w-[1500px] h-[500.29px]   top-[1900px] relative">
+
+<div className="w-[270px] h-[43px] left-[579px] top-0 relative text-black text-[32px] font-bold font-['Inter'] leading-loose">Client Testmony</div>
+
+<div className='flex flex-row w-full mt-[5rem] items-center gap-[5rem]'>
+        <img className="w-75 h-[300px]   relative rounded-[20px]" src= {clientpic} alt=''/>
+
+        <div className="w-[340px] h-[360px]   relative">
         <div className="w-[340px] h-[360px] left-0 top-0 relative bg-gray-50 bg-opacity-70 rounded-[20px] backdrop-blur-[20px]" />
         <div className="left-[10px] top-[20px] absolute "><span className="text-black text-xs font-bold font-['Inter'] leading-3">Client name - </span><span className="text-black text-xs font-normal font-['Inter'] leading-3">Lorem ipsum</span></div>
         <div className="left-[10px] top-[48px] absolute "><span className="text-black text-xs font-bold font-['Inter'] leading-3">Designation - </span><span className="text-black text-xs font-normal font-['Inter'] leading-3">Lorem ipsum</span></div>
         <div className="w-80 h-[276px] left-[10px] top-[74px] absolute text-justify text-black text-sm font-normal font-['Inter'] leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. <br/></div>
     </div>
-    <div className="w-[700px] h-[360px] left-[720px] top-[83.29px] absolute">
+
+    <div className="w-[700px] h-[360px]  relative">
         <div className="w-[700px] h-[360px] left-0 top-0 relative bg-gray-50 bg-opacity-70 rounded-[20px] backdrop-blur-[20px]" >
         <div className="left-[50px] top-[81.29px] absolute origin-top-left rotate-[-22.82deg] text-black text-[32px] font-bold font-['Inter'] leading-loose">lorum</div>
         <div className="left-[258px] top-[154.72px] absolute  origin-top-left rotate-[-1.08deg] text-black text-[32px] font-bold font-['Inter'] leading-loose">lorum</div>
@@ -248,15 +255,23 @@ function Portfoliolayer() {
 
         </div>
     </div>
+        </div>
+    
+    
 </div>
-</div>
-</div>
-
-
-
-
 
 </div>
+
+
+
+
+</div>
+
+
+
+
+
+
 
 
 
