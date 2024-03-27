@@ -72,15 +72,6 @@ function Banner(props) {
 
     const image = useRef();
 
-    // useGSAP(()=>{
-    //     gsap.from(image.current , {
-    //         ease:"back",
-    //         x:'-200',
-    //         duration:1,
-    //         fillOpacity : 10,
-    //     })
-    // },[animateRight])
-
     useGSAP(()=>{
         gsap.from(image.current , {
             ease:"back",
@@ -130,10 +121,10 @@ function Banner(props) {
 
 
             <button onClick={navigatePrevious}>
-                <img className="absolute justify-center z-20 items-center inline-flex left-[120px] top-[40%] w-6 h-5  lg:w-10 lg:h-10  mac:w-8 mac:h-8 " src={arrowleft} alt='' />
+                <img className="absolute justify-center z-20 items-center inline-flex left-[120px] top-[40%] mac:top-[30%] w-6 h-5  lg:w-10 lg:h-10  mac:w-8 mac:h-8 " src={arrowleft} alt='' />
             </button>
             <button onClick={navigateNext} >
-                <img className=" absolute justify-center z-20 items-center inline-flex right-[120px] top-[40%] w-6 h-5  lg:w-10 lg:h-10  mac:w-8 mac:h-8 " src={arrowright} alt='' />
+                <img className=" absolute justify-center z-20 items-center inline-flex right-[120px] top-[40%] mac:top-[30%] w-6 h-5  lg:w-10 lg:h-10  mac:w-8 mac:h-8 " src={arrowright} alt='' />
             </button>
 
             <div className="w-[240px] h-5 lg:left-[50%] lg:bottom-[3rem] bottom-[1.5rem] z-20 absolute bg-gray-300 rounded-xl flex items-center justify-center gap-4">
