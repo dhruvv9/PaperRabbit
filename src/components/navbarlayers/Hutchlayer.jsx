@@ -10,10 +10,8 @@ function Hutchlayer() {
     return (
 
 
-        <div className='w-screen h-[700rem] flex flex-items-center relative bg-neutral-100'>
+        <div className='w-full h-[700rem] flex flex-items-center relative bg-neutral-100'>
             <img className="w-[full] h-430px lg:w-full lg:h-476px left-0 top-0 absolute" src={bannerimg} alt='' ></img>
-
-
 
 
 
@@ -23,7 +21,6 @@ function Hutchlayer() {
                     <div className="left-0 top-[18.67px]  absolute text-red-200 text-[55.67px] lg:left-0 lg:top-[32px] text-8xl font-normal font-['Heaven']  lg:leading-[64px]">Advertising</div>
                     <div className="lg:left-[100px] lg:top-0  text-[37.12px] absolute text-black lg:text-[64px] font-normal font-['Revelstoke'] leading-[64px]">Title</div>
                 </div>
-
 
 
                 <div className="w-[406px]   top-[0]  lg:w-[1420px] lg:h-[full]  lg:top-[0rem] relative ">
@@ -86,63 +83,24 @@ function Hutchlayer() {
 
                 </div>
 
-                   
+
                 <div className=" flex justify-center items-center  relative text-black lg:text-[32px] mt-[20rem] font-bold font-['Inter'] leading-loose">
-                        Packages</div>
+                    Packages</div>
 
                 <div className='grid gap-[30rem] grid-cols-4 w-full items-center mt-[0rem]'>
-
-<div className='w-[450px] h-[876px]  bg-gray-50 bg-opacity-20 rounded-[20px] border border-black backdrop-blur-[20px] relative'>
-
-</div>
-
-<div className='w-[450px] h-[876px]  bg-gray-50 bg-opacity-20 rounded-[20px] border border-black backdrop-blur-[20px] relative'>
-
-</div>
-
-<div className='w-[450px] h-[876px]  bg-gray-50 bg-opacity-20 rounded-[20px] border border-black backdrop-blur-[20px] relative'>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
+                    <div className='w-[450px] h-[876px]  bg-gray-50 bg-opacity-20 rounded-[20px] border border-black backdrop-blur-[20px] relative'>
+                    </div>
+                    <div className='w-[450px] h-[876px]  bg-gray-50 bg-opacity-20 rounded-[20px] border border-black backdrop-blur-[20px] relative'>
+                    </div>
+                    <div className='w-[450px] h-[876px]  bg-gray-50 bg-opacity-20 rounded-[20px] border border-black backdrop-blur-[20px] relative'>
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 
-export default Hutchlayer
+export default Hutchlayer;
 
 
 

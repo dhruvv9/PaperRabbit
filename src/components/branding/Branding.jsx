@@ -23,7 +23,7 @@ function Branding() {
                 </div>
             </div>
 
-            {/* <div className="w-screen lg:w-screen  flex flex-col lg:flex-row items-center justify-center relative "> */}
+            {/* <div className="w-full lg:w-full  flex flex-col lg:flex-row items-center justify-center relative "> */}
 
                 <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 lg:w-[58%]  mac:grid mac:grid-cols-2  mac:grid-rows-1 mac:w-[75%] flex flex-col items-center justify-center mac:p-5 lg:mb-20 " >
                     <div className="w-full relative flex items-center justify-center mt-5">
@@ -156,7 +156,7 @@ function Branding() {
                         )}
                     </div>
 
-                    <div className="w-screen h-full lg:w-full  lg:h-[820px] lg:pl-[7rem] lg:p-0 mac:w-full  mac:h-[820px] mac:pl-[7rem] mac:p-0 relative flex flex-col items-center justify-center gap-5 place-items-center">
+                    <div className="w-full h-full lg:w-full  lg:h-[820px] lg:pl-[7rem] lg:p-0 mac:w-full  mac:h-[820px] mac:pl-[7rem] mac:p-0 relative flex flex-col items-center justify-center gap-5 place-items-center">
                         <div className="relative text-justify text-black dark:text-white text-sm leading-[20px] lg:text-sm font-normal font-['Inter'] p-4 ">
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                             nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,

@@ -51,7 +51,6 @@ function Portfoliolayer() {
                             <img className="w-[130px] h-[140px]  relative rounded-[300px]" src={portfolioimg} alt='' />
                             <div className=" relative  text-black text-2xl font-bold flex justify-center items-center font-['Inter'] leading-normal">ipsum</div></div>
 
-
                     </div>
 
 

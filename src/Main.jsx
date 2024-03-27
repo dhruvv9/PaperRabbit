@@ -16,6 +16,9 @@ import Blog from './components/blog/Blog';
 // import HutchPage from './components/navpages/hutch/HutchPage';
 // import Casestudy from './components/navpages/casestudy/Casestudy';
 import Hutchicons from './components/hutchicons/Hutchicons';
+import Casestudy from './components/navpages/casestudy/Casestudy';
+import TeamsPage from './components/navpages/teams/TeamsPage';
+import Podcast from './components/podcast/Podcast';
 
 
 function Main(props) {
@@ -35,13 +38,17 @@ function Main(props) {
             <Insights />
             <Workwithus mode={mode}/>
             <Blog mode={mode}/>
+            <Podcast/>
             <Aboutus />
 
+{/* <Casestudy/> */}
             {/* <HutchPage mode={mode}/> */}
 
             {/* <ArticlesPage mode={mode}/> */}
             
             {/* <Casestudy mode={mode}/> */}
+
+            {/* <TeamsPage/> */}
         </>
     )
 }
