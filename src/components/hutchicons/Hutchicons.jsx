@@ -33,7 +33,7 @@ function Hutchicons({ mode }) {
     }
 
     return (
-        <div className="w-[100%] h-[1180px] sm:h-[800px] relative flex flex-col items-center justify-center overflow-hidden pt-20" >
+        <div className="w-[100%] h-screen sm:h-[800px] relative flex flex-col items-center justify-center overflow-hidden pt-20" >
             <img className="w-[100%] h-full object-cover left-0 top-0 absolute backdrop-blur-sm" src={hutchimg} alt='banner' />
             <div className="w-full h-full left-0 top-0 absolute bg-white dark:bg-black bg-opacity-5 backdrop-blur-xl dark:bg-opacity-5 dark:backdrop-blur-xl" />
 

@@ -3,14 +3,14 @@ import workwithusimg from "../../assets/workwithus/workwithus.jpg";
 
 function Workwithus() {
   return (
-    <div class="w-full h-80 flex justify-center items-center mt-20 ">
-      <div class="lg:w-[1420px] mac:w-[70%] lg:h-80 w-full h-80 relative mx-5 my-8 text-center flex flex-col lg:flex-row mac:flex-row mac:gap-10 items-center lg:justify-between justify-center ">
+    <div class="w-full h-full flex justify-center items-center mt-20 ">
+      <div class="lg:w-[1420px] mac:w-[70%] lg:h-80 w-full h-72 relative mx-5 my-8 text-center flex flex-col lg:flex-row mac:flex-row mac:gap-10 items-center lg:justify-between justify-center ">
         <img
-          className="lg:w-[1420px] lg:h-80 w-full  h-80 left-0 top-0 absolute rounded-[20px] "
+          className="lg:w-[1420px] lg:h-80 w-full  h-72 left-0 top-0 absolute rounded-[20px] "
           src={workwithusimg}
           alt=""
         />
-        <div className=" lg:h-80 w-full h-80 left-0 top-0  absolute bg-black bg-opacity-5 rounded-[20px] backdrop-blur-[10px]" />
+        <div className=" lg:h-80 w-full h-72 left-0 top-0  absolute bg-black bg-opacity-5 rounded-[20px] backdrop-blur-[10px]" />
 
         <div className="lg:w-full lg:h-full lg:pl-[60px] mac:w-full mac:h-full mac:pl-[60px] flex flex-col justify-center  gap-3 my-10 lg:text-left text-2xl relative text-white dark:text-black lg:text-[40px] font-bold font-['Inter'] leading-none lg:leading-[48px]">
           <div className="w-full flex items-start sm:justify-center gap-4">

@@ -90,7 +90,7 @@ function Banner(props) {
                 <img className="absolute top-0 left-0 right-0 z-10 w-[100%] h-screen object-cover  " src={mode ? images_dark[currentIndex] : images_day[currentIndex]} alt='bannerimage' ref={image} />
             </div>
 
-            {currentIndex % 2 === 0 ? <div className="mx-[20px] z-20  md:right-[5px] sm:relative sm:mb-20 absolute flex flex-col items-end justify-start  w-[450px] sm:w-[350px]  sm:h-[350px] lg:w-[646px] lg:h-[415px] mac:w-[546px] mac:h-[380px] lg:right-[15rem] lg:bottom-[10rem] md:bottom-[5rem] mac:right-[5rem] mac:bottom-[5rem] lg:absolute lg:z-20">
+            {currentIndex % 2 === 0 ? <div className="mx-[20px] z-20  md:right-[5px] sm:relative sm:mb-20 absolute flex flex-col items-end justify-start  w-[450px] sm:w-[350px]  sm:h-[350px] lg:w-[646px] lg:h-[415px] mac:w-[546px] mac:h-[380px] lg:right-[15rem] lg:bottom-[10rem] md:bottom-[5rem] mac:right-[15rem] mac:bottom-[6rem] lg:absolute lg:z-20">
                     <div className="w-full h-full absolute  bg-white dark:bg-black bg-opacity-5 dark:bg-opacity-5 rounded-[20px] backdrop-blur-2xl lg:w-[646px] lg:h-[416px]" />
                     <div className="mr-[22px] mt-[15px] sm:mt-[18px] sm:text-[30px] relative  text-black dark:text-white text-[40px] lg:text-[64px] font-normal font-['Katibeh'] lg:w-[340px] lg:h-[31px] lg:leading-[64px] lg:mt-[30px] lg:mr-[30px] ">What Makes You</div>
                     <div className="mr-[22px] mt-[6px] sm:mt-[0px] sm:text-[45px] relative text-justify text-black dark:text-white text-5xl leading-18 lg:text-8xl mac:text-7xl font-normal font-['Revelstoke'] lg:leading-[64px] lg:mt-[20px] lg:mr-[30px]">{title[currentIndex]}!</div>
@@ -103,7 +103,7 @@ function Banner(props) {
                     </div>
                 </div> :
 
-                <div className="mx-[20px]  md:bottom-[10px] md:right-[5px] z-20 sm:relative sm:mb-20 absolute flex flex-col items-end justify-start  w-[450px] sm:w-[350px]  sm:h-[350px] lg:w-[646px] lg:h-[415px] mac:w-[546px] mac:h-[380px] lg:left-[15rem] lg:bottom-[10rem] mac:left-[5rem] mac:bottom-[5rem] lg:absolute lg:z-20">
+                <div className="mx-[20px]  md:bottom-[10px] md:right-[5px] z-20 sm:relative sm:mb-20 absolute flex flex-col items-end justify-start  w-[450px] sm:w-[350px]  sm:h-[350px] lg:w-[646px] lg:h-[415px] mac:w-[546px] mac:h-[380px] lg:left-[15rem] lg:bottom-[10rem] mac:left-[15rem] mac:bottom-[6rem] lg:absolute lg:z-20">
                     <div className="w-full h-full absolute  bg-white dark:bg-black bg-opacity-5 dark:bg-opacity-5 rounded-[20px] backdrop-blur-2xl lg:w-[646px] lg:h-[416px]" />
                     <div className="mr-[22px] mt-[15px] sm:mt-[18px] sm:text-[30px] relative  text-black dark:text-white text-[40px] lg:text-[64px] font-normal font-['Katibeh'] lg:w-[340px] lg:h-[31px] lg:leading-[64px] lg:mt-[30px] lg:mr-[30px] ">What Makes You</div>
                     <div className="mr-[22px] mt-[6px] sm:mt-[0px] sm:text-[45px] relative text-justify text-black dark:text-white text-5xl leading-18 lg:text-8xl mac:text-7xl font-normal font-['Revelstoke'] lg:leading-[64px] lg:mt-[20px] lg:mr-[30px]">{title[currentIndex]}!</div>
@@ -121,10 +121,10 @@ function Banner(props) {
 
 
             <button onClick={navigatePrevious}>
-                <img className="absolute justify-center z-20 items-center inline-flex left-[120px] top-[40%] mac:top-[30%] w-6 h-5  lg:w-10 lg:h-10  mac:w-8 mac:h-8 " src={arrowleft} alt='' />
+                <img className="absolute justify-center z-20 items-center inline-flex left-[120px] top-[40%] mac:top-[40%] w-6 h-5  lg:w-10 lg:h-10  mac:w-10 mac:h-10 " src={arrowleft} alt='' />
             </button>
             <button onClick={navigateNext} >
-                <img className=" absolute justify-center z-20 items-center inline-flex right-[120px] top-[40%] mac:top-[30%] w-6 h-5  lg:w-10 lg:h-10  mac:w-8 mac:h-8 " src={arrowright} alt='' />
+                <img className=" absolute justify-center z-20 items-center inline-flex right-[120px] top-[40%] mac:top-[40%] w-6 h-5  lg:w-10 lg:h-10  mac:w-10 mac:h-10 " src={arrowright} alt='' />
             </button>
 
             <div className="w-[240px] h-5 lg:left-[50%] lg:bottom-[3rem] bottom-[1.5rem] z-20 absolute bg-gray-300 rounded-xl flex items-center justify-center gap-4">

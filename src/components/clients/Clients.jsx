@@ -94,7 +94,7 @@ function Clients() {
                         ul.insertAdjacentHTML('afterend', ul.outerHTML);
                         ul.nextSibling.setAttribute('aria-hidden', 'true');
                     })"
-                class="w-[100%] h-[220px] lg:w-[55%] mac:w-[70%] relative inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_left,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+                class="w-[100%] h-[220px] lg:w-[55%] mac:w-[74%] relative inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_left,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
             >
                 <ul x-ref="logos" class="h-full flex items-center justify-center md:justify-start relative [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-left">
                     <li className='group/items' >

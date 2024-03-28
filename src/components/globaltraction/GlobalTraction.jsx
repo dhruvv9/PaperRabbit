@@ -20,21 +20,21 @@ function GlobalTraction() {
         </div>
       </div>
 
-      <div className=" w-full h-full place-items-center grid grid-cols-2 grid-rows-2 lg:flex lg:justify-center lg:items-center mac:flex mac:justify-evenly mac:items-center mac:w-[70%] relative mt-20" >
-        <div className="relative flex flex-col items-center justify-center w-[159px] h-[155px] lg:mx-[8rem]">
-          <div className=" text-center text-red-200 text-xl lg:text-[34px] font-normal font-['Revelstoke']">Projects</div>
+      <div className=" w-full h-full place-items-center grid grid-cols-2 grid-rows-2 lg:flex lg:justify-center lg:items-center mac:flex mac:justify-center mac:items-center mac:w-[74%] relative mt-20" >
+        <div className="relative flex flex-col items-center justify-center w-[159px] h-[155px] lg:mx-[8rem] mac:mx-[8rem]">
+          <div className=" text-center text-red-200 text-xl lg:text-[34px] mac:text-[34px] font-normal font-['Revelstoke']">Projects</div>
           <div className=" text-center"> <GlobaltractionCard data={one} id={0} />  </div>
         </div>
-        <div className="relative flex flex-col items-center justify-center w-[131px] h-[155px] lg:mx-[8rem]">
-          <div className=" text-center text-emerald-200 text-xl lg:text-[34px] font-normal font-['Revelstoke']">StartUps</div>
+        <div className="relative flex flex-col items-center justify-center w-[131px] h-[155px] lg:mx-[8rem] mac:mx-[8rem]">
+          <div className=" text-center text-emerald-200 text-xl lg:text-[34px] mac:text-[34px] font-normal font-['Revelstoke']">StartUps</div>
           <div className=" text-center"><GlobaltractionCard data={two} id={1} /> </div>
         </div>
-        <div className="relative flex flex-col items-center justify-center w-[154px] h-[155px] lg:mx-[8rem]">
-          <div className="text-center text-sky-200 text-xl lg:text-[34px] font-normal font-['Revelstoke']"> Countries</div>
+        <div className="relative flex flex-col items-center justify-center w-[154px] h-[155px] lg:mx-[8rem] mac:mx-[8rem]">
+          <div className="text-center text-sky-200 text-xl lg:text-[34px] mac:text-[34px] font-normal font-['Revelstoke']"> Countries</div>
           <div className=" text-center"><GlobaltractionCard data={three} id={2} /> </div>
         </div>
-        <div className="relative flex flex-col items-center justify-center w-[120px] h-[155px] lg:mx-[8rem]">
-          <div className=" text-center text-amber-200 text-xl lg:text-[34px] font-normal font-['Revelstoke']">Years  </div>
+        <div className="relative flex flex-col items-center justify-center w-[120px] h-[155px] lg:mx-[8rem] mac:mx-[8rem]">
+          <div className=" text-center text-amber-200 text-xl lg:text-[34px] mac:text-[34px] font-normal font-['Revelstoke']">Years  </div>
           <div className=" text-center"><GlobaltractionCard data={four} id={3} /> </div>
         </div>
       </div>

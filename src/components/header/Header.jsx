@@ -32,14 +32,16 @@ function Header(props) {
   return (
     <div className="fixed top-0 w-[100%] lg:h-11 h-12 bg-gray-50 dark:bg-black  z-50 flex justify-center items-center  bg-opacity-50 backdrop-blur-sm dark:bg-opacity-50 dark:backdrop-blur-sm">
 
-      <div className="lg:w-[57%] mac:w-[70%] w-full  h-11 relative flex items-center justify-between p-3">
+      <div className="lg:w-[57%]  mac:max-w-[73%] w-full   h-11 relative flex items-center justify-between">
         {/* <div className="h-full text-zinc-950 dark:text-white relative lg:text-[2rem] text-[1.5rem] font-normal font-['Revelstoke'] "> */}
-        <Link to='/' className="h-11 text-zinc-950 dark:text-white relative lg:text-[2rem] text-[1.5rem] font-normal font-['Revelstoke'] flex justify-center items-center object-contain ">
+        <Link to='/'>
+          <div className="h-11  text-zinc-950 dark:text-white relative lg:text-[2rem] text-[1.7rem] font-normal font-['Revelstoke'] flex justify-center items-center object-contain ">
           PAPER RABBIT
+          </div>
         </Link>
         {/* </div> */}
 
-        <div className=" h-full w-[70%] flex items-center gap-4 relative justify-evenly sm:hidden md:hidden ">
+        <div className=" h-full w-[63%] relative grid grid-cols-10 grid-rows-1 sm:hidden md:hidden ">
 
           <div className={`${hide ? ' flex-col  h-full text-center cursor-pointer  flex items-center justify-center' : ' flex-col  h-full text-center cursor-pointer  flex items-center justify-center group/item'}`} onClick={disappear}>
             <Link to='/'>
@@ -91,6 +93,19 @@ function Header(props) {
 
           <div className={`${hide ? ' flex-col   h-full text-center cursor-pointer  flex items-center justify-center' : ' flex-col   h-full text-center cursor-pointer  flex items-center justify-center group/item'}`} onClick={disappear}>
             <div className=" text-zinc-950 dark:text-white text-sm mac:text-xs font-normal font-['Inter'] leading-normal ">
+              Carrer
+            </div>
+            <AboutUs />
+          </div>
+
+          <div className={`${hide ? ' flex-col   h-full text-center cursor-pointer  flex items-center justify-center' : ' flex-col   h-full text-center cursor-pointer  flex items-center justify-center group/item'}`} onClick={disappear}>
+            <div className=" text-zinc-950 dark:text-white text-sm mac:text-xs font-normal font-['Inter'] leading-normal ">
+              Store            </div>
+            <AboutUs />
+          </div>
+
+          <div className={`${hide ? ' flex-col   h-full text-center cursor-pointer  flex items-center justify-center' : ' flex-col   h-full text-center cursor-pointer  flex items-center justify-center group/item'}`} onClick={disappear}>
+            <div className=" text-zinc-950 dark:text-white text-sm mac:text-xs font-normal font-['Inter'] leading-normal ">
               World
             </div>
             {/* <World /> */}
@@ -104,11 +119,11 @@ function Header(props) {
           </div>
         </div>
 
-        <div className="h-full  relative" >
+        <div className="h-full relative" >
           {mode ? <img className="w-10 h-full" src={darkimg} alt="darkmode" onClick={modeChange} /> : <img className="w-10 h-full" src={dayimg} alt="darkmode" onClick={modeChange} />}
         </div>
 
-        <div className=" relative flex items-end justify-between gap-1">
+        <div className="relative flex items-end justify-between gap-1">
           {mode ? <img className="w-7 h-7" src={search} alt="image1" onClick={modeChange} /> : <img className="w-7 h-7" src={search} alt="image1" onClick={modeChange} />}
           {mode ? <img className="block-bg w-9 h-9" src={lightpr} alt="image2" onClick={modeChange} /> : <img className="block-bg w-9 h-9" src={darkpr} alt="image2" onClick={modeChange} />}
 
