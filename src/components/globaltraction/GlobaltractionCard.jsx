@@ -37,7 +37,7 @@ function GlobaltractionCard(props) {
 
   return (
     < div key={id} ref={ref} className='h-fit' >
-      <span className="text-black dark:text-white text-[40px] lg:text-[84px] font-normal font-['Revelstoke']">{ 1 }</span><span className="text-red-200 text-[40px] lg:text-[84px] font-normal font-['Revelstoke']">+</span>
+      <span className="text-black dark:text-white text-[40px] lg:text-[84px] mac:text-[84px] font-normal font-['Revelstoke']">{ 1 }</span><span className="text-red-200 text-[40px] lg:text-[84px] mac:text-[84px] font-normal font-['Revelstoke']">+</span>
     </div>
   )
 }

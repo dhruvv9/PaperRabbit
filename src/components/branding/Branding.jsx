@@ -33,14 +33,14 @@ function Branding() {
                             alt=""
                         />
 
-                        <div className="w-[349px] h-[268px] mac:w-[242px] mac:h-[186px] left-[-5rem] bottom-[-4rem] mac:left-[-5rem] mac:bottom-[-4rem] hidden absolute  justify-center items-center lg:inline-flex mac:inline-flex">
+                        <div className="w-[349px] h-[268px] mac:w-[242px] mac:h-[186px] left-[-4rem] bottom-[-4rem] mac:left-[-5rem] mac:bottom-[-4rem] hidden absolute  justify-center items-center lg:inline-flex mac:inline-flex">
                             <img
                                 className="w-[242px] h-[186px] rounded-[20px]  "
                                 src={hatch2}
                                 alt=""
                             />
                         </div>
-                        <div className="w-[242px] h-[186px] mac:w-[242px] mac:h-[186px] top-[-2rem] right-[-7rem] hidden absolute justify-center items-center lg:inline-flex mac:inline-flex">
+                        <div className="w-[242px] h-[186px] mac:w-[242px] mac:h-[186px] top-[-2rem] right-[-5rem] hidden absolute justify-center items-center lg:inline-flex mac:inline-flex">
                             <img
                                 className="w-[242px] h-[186px] rounded-[20px] "
                                 src={hatch1}

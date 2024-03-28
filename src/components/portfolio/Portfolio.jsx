@@ -17,7 +17,7 @@ function Portfolio() {
                     </div>
                 </div>
 
-                <div className="lg:w-[57%] mac:w-[75%] w-[100%] lg:h-[700px] mac:h-[500px] h-[950px] sm:h-[700px] p-4 sm:p-0 relative gap-4 lg:grid lg:grid-cols-2 lg:grid-rows-2 mac:grid-cols-2 mac:grid-rows-2 grid grid-cols-1 grid-rows-4">
+                <div className="lg:w-[57%] mac:w-[77%] w-[100%] lg:h-[700px] mac:h-[633px] h-[950px] sm:h-[700px] sm:p-0 relative gap-4 lg:grid lg:grid-cols-2 lg:grid-rows-2 mac:grid-cols-2 mac:grid-rows-2 grid grid-cols-1 grid-rows-4">
 
                     <div className="w-full h-full relative m-1 ">
                         <img className=" w-full h-full  left-0 top-0  absolute rounded-[20px]" src={portfolio1} alt='' />

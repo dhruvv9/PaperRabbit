@@ -17,7 +17,7 @@ function Article() {
                 </div>
             </div>
 
-            <div className="lg:w-[56%] mac:w-[70%] w-[95%] h-full grid grid-rows-1 grid-cols-4 md:grid-cols-2 md:grid-rows-2 sm:grid-cols-2 sm:grid-rows-2 gap-4 mt-20 sm:p-2 md:p-2">
+            <div className="lg:w-[56%] mac:w-[74%] w-[95%] h-full grid grid-rows-1 grid-cols-4 md:grid-cols-2 md:grid-rows-2 sm:grid-cols-2 sm:grid-rows-2 gap-4 mt-20 sm:p-2 md:p-2">
                 <div className="w-full h-full relative  group/items">
                     <img className="w-full h-full z-20 rounded-[20px]" src={article1} alt='' />
                     <div className=" w-full h-full -z-10 left-0 top-0  absolute bg-emerald-200 rounded-[20px]" />

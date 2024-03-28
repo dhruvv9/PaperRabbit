@@ -19,6 +19,8 @@ import Hutchicons from './components/hutchicons/Hutchicons';
 import Casestudy from './components/navpages/casestudy/Casestudy';
 import TeamsPage from './components/navpages/teams/TeamsPage';
 import Podcast from './components/podcast/Podcast';
+import DummyBranding from './components/branding/DummyBranding';
+import DummyBanner from './components/banner/DummyBanner';
 
 
 function Main(props) {
@@ -26,8 +28,10 @@ function Main(props) {
     const {mode} = props;
     return (
         <>
-            <Banner mode={mode}/>
-            <Branding mode={mode} />
+            {/* <Banner mode={mode}/> */}
+            <DummyBanner mode={mode} />
+            <DummyBranding mode={mode} />
+            {/* <Branding mode={mode} /> */}
             <Hutchicons mode={mode} />
             <Services mode={mode} />
             <Clients mode={mode}/>

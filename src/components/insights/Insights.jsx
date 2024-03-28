@@ -23,12 +23,17 @@ function Insights() {
 
             <div className="w-full lg:h-[510px] h-[460px] relative flex items-start gap-4 overflow-x-scroll no-scrollbar mt-10">
 
-                <div className="lg:w-[340px] w-[280px] lg:h-[510px] h-[460px] relative flex items-end justify-center lg:ml-[570px] mac:ml-[250px] ml-[50px]">
+                <div className="lg:w-[340px] w-[306px] lg:h-[510px] h-[460px] relative flex items-end justify-center lg:ml-[570px] mac:ml-[230px] ml-[50px]">
                     {/* <div className="w-[66px] h-[65px] bg-black absolute bg-opacity-25 rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px]" /> */}
 
+                    <div className="absolute top-0 left-0 w-10 h-10 z-30 text-black dark:text-white lg:w-16 lg:h-16 mac:w-14 mac:h-14 flex flex-col items-center justify-center text-[12px] lg:text-[32px] mac:text-[26px] font-bold font-['Katibeh'] rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px]">
+                        <div className='w-full h-full absolute rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px] ' />
+                        334
+                    </div>
 
-                    <img className="lg:w-[340px]  w-[280px] lg:h-[510px] h-[460px] absolute  rounded-[20px]" src={insight1} alt="review image1" />
-                    <div className=" lg:w-[340px]  w-[280px] bg-white dark:bg-black bg-opacity-5 backdrop-blur-xl dark:bg-opacity-5 dark:backdrop-blur-xl  opacity-95 rounded-[10px] p-4 m-4 relative text-justify h-[250px]">
+
+                    <img className="lg:w-[340px]  w-[306px] lg:h-[510px] h-[460px] absolute  rounded-[20px]" src={insight1} alt="review image1" />
+                    <div className=" lg:w-[340px]  w-[306px] bg-white dark:bg-black bg-opacity-5 backdrop-blur-xl dark:bg-opacity-5 dark:backdrop-blur-xl  opacity-95 rounded-[10px] p-4 m-4 relative text-justify h-[250px]">
 
                         <div className='absolute top-[-1.5rem] z-10 w-[130px] h-6 bg-red-200 rounded-tl-[10px] rounded-tr-[10px] backdrop-blur-[20px] items-center justify-center flex'>
                             New
