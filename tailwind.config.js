@@ -2,24 +2,24 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    screens: {
-      'sm': { 'max': '767px' },
-      // => @media (min-width: 640px and max-width: 767px) { ... }
+    // screens: {
+    //   // 'sm': { 'max': '767px' },
+    //   // // => @media (min-width: 640px and max-width: 767px) { ... }
 
-      'md': { 'min': '768px', 'max': '1024px' },
-      // => @media (min-width: 768px and max-width: 1023px) { ... }
+    //   // 'md': { 'min': '768px', 'max': '1024px' },
+    //   // // => @media (min-width: 768px and max-width: 1023px) { ... }
 
-      'lg': { 'min': '1730px' },
+    //   // 'lg': { 'min': '1730px' },
 
-      'mac': { 'min': '1025px', 'max': '1730px' },
-      // // => @media (min-width: 1024px and max-width: 1279px) { ... }
+    //   // 'mac': { 'min': '1025px', 'max': '1730px' },
+    //   // // => @media (min-width: 1024px and max-width: 1279px) { ... }
 
-      // 'xl': {'min': '1280px', 'max': '1535px'},
-      // // => @media (min-width: 1280px and max-width: 1535px) { ... }
+    //   // 'xl': {'min': '1280px', 'max': '1535px'},
+    //   // // => @media (min-width: 1280px and max-width: 1535px) { ... }
 
-      // '2xl': {'min': '1536px'},
-      // // => @media (min-width: 1536px) { ... }
-    },
+    //   // '2xl': {'min': '1536px'},
+    //   // // => @media (min-width: 1536px) { ... }
+    // },
     extend: {
       fontFamily: {
         custom: ['Revelstoke', 'Heaven']
