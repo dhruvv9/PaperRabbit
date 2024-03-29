@@ -21,6 +21,7 @@ import TeamsPage from './components/navpages/teams/TeamsPage';
 import Podcast from './components/podcast/Podcast';
 import DummyBranding from './components/branding/DummyBranding';
 import DummyBanner from './components/banner/DummyBanner';
+import DummyServices from './components/services/DummyServices';
 
 
 function Main(props) {
@@ -33,16 +34,17 @@ function Main(props) {
             <DummyBranding mode={mode} />
             {/* <Branding mode={mode} /> */}
             <Hutchicons mode={mode} />
-            <Services mode={mode} />
+            {/* <Services mode={mode} /> */}
+            <DummyServices/>
             <Clients mode={mode}/>
             <Portfolio />
             <GlobalTraction mode={mode}/>
             <Article />
             <Review mode={mode}/>
-            <Insights />
             <Workwithus mode={mode}/>
             <Blog mode={mode}/>
             <Podcast/>
+            <Insights />
             <Aboutus />
 
 {/* <Casestudy/> */}
