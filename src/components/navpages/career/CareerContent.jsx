@@ -26,6 +26,11 @@ function CareerContent() {
 
                 <div className=" w-[24rem]  lg:w-full  lg:mt-[10rem] lg:text-center top-0 justify-items-start lg:justify-center lg:items-center text-black text:[xl] lg:text-[3rem] font-bold font-['Inter'] leading-loose">Why to join Paper Rabbit?</div>
 
+
+
+
+
+
                 <div className='  grid gap-2 grid-cols-2 h-[32rem] lg:flex lg:flex-row lg:h-full mt-[4rem] justify-center items-center  lg:gap-5 '>
 
                     <div className='sm:w-[12rem] sm:h- flex flex-col h-full  items-center justify-start gap-4 lg:gap-8 flex- relative'>
