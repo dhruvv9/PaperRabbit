@@ -33,10 +33,10 @@ import gsap from "gsap";
 
 gsap.registerPlugin(useGSAP);
 
-function FirstPage({mode}) {
+function FirstPage({ mode }) {
 
     const hutchicons = useRef();
-    const isInView = useInView(hutchicons ,  { once: true }) 
+    const isInView = useInView(hutchicons, { once: true })
 
     // useEffect(()=>{
     //     console.log('Element is in view', isInView);
@@ -44,112 +44,148 @@ function FirstPage({mode}) {
 
     useGSAP(() => {
         gsap.from(".top", {
-            autoAlpha: -1, 
+            autoAlpha: -1,
             stagger: 0.1,
             // duration: 1,
 
             scale: -1,
-            transformOrigin : "center center"
+            transformOrigin: "center center"
         }
         );
-    }, { scope: hutchicons , dependencies: [isInView] } )
+    }, { scope: hutchicons, dependencies: [isInView] })
 
 
 
     return (
-        <div div className='w-full h-full flex flex-col items-center justify-center scroll-smooth'  >
-        <div className='w-full h-full flex flex-col items-center justify-center gap-20 sm:gap-16' ref={hutchicons} >
-    
-            <div className=" relative flex gap-20 sm:gap-4 "  ref={hutchicons}>
-                <div className=" w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center " >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark1 : day1} />
+        <div div className='w-full h-full flex flex-col items-center justify-center  scroll-smooth '  >
+            <div className='w-full h-full flex flex-col items-center justify-center sm:items-center sm:justify-start gap-20 sm:gap-16' ref={hutchicons} >
+
+                <div className=" relative flex gap-20 sm:gap-8 " ref={hutchicons}>
+                    <div className=" w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center " >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark1 : day1} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
                     </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                </div>
-    
-                <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark2 : day2} />
+
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark2 : day2} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
                     </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                </div>
-    
-                <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark3 : day3} />
+
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark3 : day3} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
                     </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                </div>
-                <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark4 : day4} />
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top sm:hidden">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark4 : day4} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
                     </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
                 </div>
+
+                <div className='flex relative gap-20 sm:gap-8' ref={hutchicons}>
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top hidden sm:block">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark4 : day4} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark5 : day5} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center" >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark6 : day6} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top sm:hidden">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center" >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark7 : day7} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top sm:hidden">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark8 : day8} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top sm:hidden">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark9 : day9} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+
+                </div>
+
+
+                <div className='flex relative gap-40 sm:gap-8' ref={hutchicons}>
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top hidden sm:block">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center" >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark7 : day7} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top hidden sm:block">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark8 : day8} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top lg:hidden mac:hidden md:hidden ">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark9 : day9} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+
+
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top sm:hidden ">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center" >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark1 : day10} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top sm:hidden">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark1 : day11} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+                </div>
+
+
+                <div className='relative gap-40 sm:gap-8 hidden sm:flex' ref={hutchicons}>
+
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center" >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark1 : day10} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+                    <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
+                        <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
+                            <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark1 : day11} />
+                        </div>
+                        <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
+                    </div>
+                </div>
+
             </div>
-    
-            <div className='flex relative gap-20 sm:gap-4'  ref={hutchicons}>
-                <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark5 : day5} />
-                    </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                </div>
-                <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center" >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark6 : day6} />
-                    </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                </div>
-                <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center" >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark7 : day7} />
-                    </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                </div>
-    
-                <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark8 : day8} />
-                    </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                </div>
-                <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top sm:hidden">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark9 : day9} />
-                    </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                </div>
-    
-            </div>
-    
-    
-            <div className='flex relative gap-40 sm:gap-8'  ref={hutchicons}>
-                <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top lg:hidden mac:hidden md:hidden ">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark9 : day9} />
-                    </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                </div>
-    
-    
-                <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center" >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark1 : day10} />
-                    </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                </div>
-                <div className="w-[9rem] h-[10rem] sm:w-[5rem] sm:h-[6rem] md:w-[5.5rem] md:h-[6rem] relative top ">
-                    <div className="w-[8.5rem] h-[8.5rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative bg-gray-300 rounded-full shadow flex flex-col items-center justify-center"  >
-                        <img className="w-[8rem] h-[8rem] sm:w-[5rem] sm:h-[5rem] md:w-[5.5rem] md:h-[6rem] relative rounded-full object-cover" alt="image1" src={mode ? dark1 : day11} />
-                    </div>
-                    <div className="relative text-center text-white text-lg sm:text-xs md:text-sm font-normal font-['Revelstoke']">Breath</div>
-                </div>
-            </div>
-    
         </div>
-    </div>
     )
 }
 

@@ -56,59 +56,57 @@ function DummyBanner(props) {
         setCurrentIndex((preIndex) => (preIndex === images_day.length - 1 ? 0 : preIndex + 1));
         // setAnimateRight(!animateRight)
         setAnimate(!animate)
-        setPos(!pos)
-            console.log(pos);
-        if(pos){
-            setPosition('start')
-            setleftRight('ml')
-        }else{
-            setPosition('end')
-            setleftRight('mr')
 
-        }
 
     };
     const navigatePrevious = () => {
         setCurrentIndex((preIndex) => (preIndex === 0 ? images_day.length - 1 : preIndex - 1));
         // setAnimateRight(!animateRight)
         setAnimate(!animate)
-        setPos(!pos)
 
-        if(pos){
-            setPosition('start')
-        }else{
-            setPosition('end')
-        }
     }
 
 
 
-    const image = useRef();
+    // const image = useRef();
 
-    useGSAP(() => {
-        gsap.from(image.current, {
-            // ease:"back",
-            autoAlpha: 10,
-            // y:'-200',
-            scale: 1.2,
-            duration: 1.05,
-            // yoyo : true,
-            // autoAlpha : 0
-        })
+    // useGSAP(() => {
+    //     gsap.from(image.current, {
+    //         // ease:"back",
+    //         autoAlpha: 10,
+    //         // y:'-200',
+    //         scale: 1.2,
+    //         duration: 1.05,
+    //         // yoyo : true,
+    //         // autoAlpha : 0
+    //     })
 
-    }, [animate])
+    // }, [animate])
 
     return (
         <div className = {`w-[100%] h-screen animate relative flex items-end justify-${position} overflow-hidden`}>
 
             <div className="w-[100%] h-screen absolute overflow-hidden" >
-                <img className="absolute top-0 left-0 right-0 z-10 w-[100%] h-screen object-cover  " src={mode ? images_dark[currentIndex] : images_day[currentIndex]} alt='bannerimage' ref={image} />
+                <img className="absolute top-0 left-0 right-0 z-10 w-[100%] h-screen object-cover  " src={mode ? images_dark[currentIndex] : images_day[currentIndex]} alt='bannerimage' />
             </div>
 
-            <div className={`mx-[20px] z-20   flex flex-col items-end justify-start max-w-[583px]  h-[374px] relative lg:${leftRight}-52  mb-[93px]`}>
+            {currentIndex % 2 === 0 ? <div className={`mx-[20px] z-20   flex flex-col items-end justify-start max-w-[583px]  h-[330px] relative lg:mr-52  mb-[93px]`}>
                 <div className="w-full h-full absolute  bg-white dark:bg-black bg-opacity-5 dark:bg-opacity-5 rounded-[20px] backdrop-blur-2xl " />
-                <div className="mr-[22px] mt-[15px] sm:mt-[18px] sm:text-[30px] relative  text-black dark:text-white text-[40px] lg:text-[64px] font-normal font-['Katibeh']  lg:h-[31px] h-fit lg:leading-[64px] lg:mt-[30px] lg:mr-[30px] leading-none ">What Makes You</div>
-                <div className="mr-[22px] mt-[6px] sm:mt-[0px] sm:text-[45px] relative text-black dark:text-white text-5xl  lg:text-8xl font-normal font-['Revelstoke'] lg:leading-[64px]  lg:mt-[20px] lg:mr-[30px]">{title[currentIndex]}!</div>
+                <div className="mr-[22px] mt-[15px] sm:mt-[18px] sm:text-[30px] relative  text-black dark:text-white text-[40px] lg:text-[64px] font-normal font-['Katibeh']  lg:h-[31px] h-fit lg:leading-[64px] lg:mt-[30px] lg:mr-[30px] leading-none ">What Makes You <br /> <span>{title[currentIndex]}!</span> </div>
+                {/* <div className="mr-[22px] mt-[6px] sm:mt-[0px] sm:text-[45px] relative text-black dark:text-white text-5xl  lg:text-8xl font-normal font-['Revelstoke'] lg:leading-[64px]  lg:mt-[20px] lg:mr-[30px]"></div> */}
+                <div className="mr-[22px] mt-[10px] ml-[20px] sm:text-[12px] relative text-left text-black dark:text-white text-[14px] lg:text-[15px] font-normal font-['Inter'] leading-normal lg:mt-[30px] lg:mr-[30px]">We are barnd enthusiasts. We are storyteller. We are a full service creative agency Combining strategic thinking and sharp design to build great brands in this cut throat business competition.</div>
+
+                <div className="mr-[22px] mt-[10px] sm:text-[30px] relative text-justify text-black dark:text-white text-[32px] font-normal font-['Heaven'] leading-normal lg:text-5xl  lg:mt-[15px] lg:mr-[30px]"># What makes you creative</div>
+
+                <div className="mr-[22px] mt-[14px] h-[64px] w-[10rem]  lg:h-11 relative lg:mt-[15px] lg:mr-[30px]">
+                    <button className="l w-[9rem] h-11  bg-zinc-950 dark:bg-white rounded-[10px] text-center text-white dark:text-black text-xs lg:text-sm font-normal font-['Inter'] leading-none ">Let's Make Art</button>
+                </div>
+            </div>
+            :
+            <div className={`mx-[20px] z-20   flex flex-col items-end justify-start max-w-[583px]  h-[374px] relative lg:ml-52  mb-[93px]`}>
+                <div className="w-full h-full absolute  bg-white dark:bg-black bg-opacity-5 dark:bg-opacity-5 rounded-[20px] backdrop-blur-2xl " />
+                <div className="mr-[22px] mt-[15px] sm:mt-[18px] sm:text-[30px] relative  text-black dark:text-white text-[40px] lg:text-[64px] font-normal font-['Katibeh']  lg:h-[31px] h-fit lg:leading-[64px] lg:mt-[30px] lg:mr-[30px] leading-none ">What Makes You <br /> <span>{title[currentIndex]}!</span></div>
+                {/* <div className="mr-[22px] mt-[6px] sm:mt-[0px] sm:text-[45px] relative text-black dark:text-white text-5xl  lg:text-8xl font-normal font-['Revelstoke'] lg:leading-[64px]  lg:mt-[20px] lg:mr-[30px]"></div> */}
                 <div className="mr-[22px] mt-[10px] ml-[20px] sm:text-[14px] relative text-left text-black dark:text-white text-[14px] lg:text-[15px] font-normal font-['Inter'] leading-normal lg:mt-[30px] lg:mr-[30px]">We are barnd enthusiasts. We are storyteller. We are a full service creative agency Combining strategic thinking and sharp design to build great brands in this cut throat business competition.</div>
 
                 <div className="mr-[22px] mt-[10px] sm:text-[30px] relative text-justify text-black dark:text-white text-[32px] font-normal font-['Heaven'] leading-normal lg:text-5xl  lg:mt-[15px] lg:mr-[30px]"># What makes you creative</div>
@@ -117,6 +115,7 @@ function DummyBanner(props) {
                     <button className="l w-[9rem] h-11  bg-zinc-950 dark:bg-white rounded-[10px] text-center text-white dark:text-black text-xs lg:text-sm font-normal font-['Inter'] leading-none ">Let's Make Art</button>
                 </div>
             </div>
+            }
 {/* 
             {(currentIndex + 1) % 2 === 0 ? <div className="mx-[20px] z-20   flex flex-col items-end justify-start max-w-[583px]  h-[374px] relative lg:ml-52  mb-[93px]">
                 <div className="w-full h-full absolute  bg-white dark:bg-black bg-opacity-5 dark:bg-opacity-5 rounded-[20px] backdrop-blur-2xl " />
