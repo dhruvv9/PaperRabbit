@@ -13,7 +13,11 @@ function CareerContent2() {
             <div className=" w-[23rem] lg:w-full  h-[24rem] lg:h-full justify-col lg:flex lg:justify-center lg:item-center  relative">
                 <div className="w-full lg:w-[1420px] h-80 left-0 top-0 relative bg-gray-50 bg-opacity-70 rounded-[20px] backdrop-blur-[20px]" >
 
-            
+                
+
+
+
+
                     <div className=" w-[22rem] lg:w-[39rem] left-[1.25rem] lg:left-[2.5rem] top-1.25 lg:top-[2.5rem] relative text-black text-[2rem] lg:text-[2.5rem] font-normal font-['Katibeh'] leading-10">Perspiciatis unde omnis perspiciatis unde omnis</div>
                     <div className="w-[22.875rem] lg:w-[83rem] lg:h-[6.675rem] h-[16.372rem] l-[1.25rem] lg:left-[2.5rem] lg:top-[5.625rem] top-[3.375rem] relative text-justify text-black text-xs lg:text-sm font-normal font-['Inter'] leading-normal">perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis perspicis perspiciatis unde omnis perspiciatisunde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis <br />perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatisunde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde omnis perspiciatis unde. </div>
                    

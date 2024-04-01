@@ -5,8 +5,8 @@ import backarrow from '../../../assets/headerimg/Vector.png'
 function BackBar(props) {
     const name = props.name;
     return (
-        <div className="w-full  relative flex flex-col items-center justify-center mt-2">
-            <div className="relative h-12 lg:w-[45%] mac:w-[70%] w-full flex justify-between items-center mx-10">
+        <div className="w-full relative flex flex-col items-center justify-center">
+            <div className="relative h-12 lg:w-[45%] w-full flex justify-between items-center mx-10">
             <div className="flex flex-col justify-center gap-4 items-end h-full">
                 <div className="flex justify-center items-center text-zinc-950 text-xl font-bold font-['Inter'] leading-[15px]">
                     {name}

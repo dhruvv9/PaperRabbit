@@ -3,12 +3,12 @@ import image from '../../../assets/casestudyimg/img.png'
 
 function CasestudyContentReverse() {
     return (
-        <div className="lg:w-[55%] mac:w-[70%] w-full h-full relative flex lg:flex-row-reverse mac:flex-row-reverse flex-col justify-center items-center lg:p-0 p-3 " >
+        <div className="lg:w-[55%] w-screen h-full relative flex lg:flex-row-reverse flex-col justify-center items-center lg:p-0 p-3 " >
             <div className="" >
                 <img className="w-full h-full relative rounded-[20px]" src={image} alt="services" />
             </div>
 
-            <div className="lg:w-[50%] mac:w-[50%] lg:h-[31rem] w-full h-full relative flex flex-col items-center justify-center lg:ml-[1.2rem] m-2  gap-10 p-4" >
+            <div className="lg:w-[50%] lg:h-[31rem] w-full h-full relative flex flex-col items-center justify-center lg:ml-[1.2rem] m-2  gap-10 p-4" >
                 <div className="flex flex-col items-center justify-center relative text-black text-2xl font-bold font-['Inter'] leading-normal ">
                     halo impact
                 </div>

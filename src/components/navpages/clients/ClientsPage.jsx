@@ -6,8 +6,8 @@ function ClientsPage() {
   return (
     <div className='flex flex-col relative mt-[52px]'>
       <BackBar name='Clients' />
-      <div className='w-full h-full flex flex-col items-center justify-center mt-10'>
-        <div className='lg:w-[56%] mac:w-[70%] w-full grid lg:grid-cols-4 lg:grid-rows-1 mac:grid-cols-4 mac:grid-rows-1 grid-cols-2 grid-rows-2 gap-5'>
+      <div className='w-screen h-full flex flex-col items-center justify-center mt-10'>
+        <div className='lg:w-[88rem] w-screen grid lg:grid-cols-4 lg:grid-rows-1 grid-cols-2 grid-rows-2 gap-5'>
           <ClientsContent />
           <ClientsContent />
           <ClientsContent />
