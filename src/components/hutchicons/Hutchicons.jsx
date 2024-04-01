@@ -41,20 +41,20 @@ function Hutchicons({ mode }) {
 
             {/* <Dummy2 mode={mode} /> */}
 
-            <button onClick={navigatePrevious}>
-                <img className="absolute justify-center items-center inline-flex left-[120px] top-[40%] sm:left-[20px] sm:top-[20%] w-8 h-8  lg:w-10 lg:h-10  mac:w-10 mac:h-10 " src={arrowleft} alt='' />
+            <button onClick={navigatePrevious} className='left-0 top-[40%]  sm:bottom-10 sm:left-0 md:bottom-10 md:left-0 z-20 absolute w-8 h-8'>
+                <img className=" justify-center items-center inline-flex  " src={arrowleft} alt='' />
             </button>
-            <button onClick={navigateNext} >
-                <img className=" absolute justify-center items-center inline-flex right-[120px] top-[40%] sm:right-[20px] sm:top-[20%] w-8 h-8  lg:w-10 lg:h-10  mac:w-10 mac:h-10 " src={arrowright} alt='' />
+            <button onClick={navigateNext} className='sm:bottom-10 sm:right-0 right-0 top-[40%] z-20 absolute w-8 h-8' >
+                <img className=" absolute justify-center items-center inline-flex right-[120px] sm:right-[20px] sm:bottom-[0%] w-8 h-8  lg:w-10 lg:h-10  mac:w-9 mac:h-9 mac:right-[50px]" src={arrowright} alt='' />
             </button>
 
-            <div className="w-[70px] h-5 lg:left-[50%] lg:bottom-[5rem] bottom-[2.5rem] absolute bg-gray-300 rounded-xl flex items-center justify-center gap-4">
-                {currentIndex === 0 ? <div className="w-2 h-2  relative bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-2 h-2 relative bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
-                {currentIndex === 1 ? <div className="w-2 h-2  relative bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-2 h-2 relative bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
-                {currentIndex === 2 ? <div className="w-2 h-2  relative bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-2 h-2 relative bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
+            <div className="w-[120px] h-10 lg:left-[50%] lg:bottom-[5rem] bottom-10 absolute bg-gray-300 rounded-[2rem] flex items-center justify-center gap-4">
+                {currentIndex === 0 ? <div className="w-5 h-5  relative bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-5 h-5 relative bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
+                {currentIndex === 1 ? <div className="w-5 h-5  relative bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-5 h-5 relative bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
+                {currentIndex === 2 ? <div className="w-5 h-5  relative bg-zinc-900 dark:bg-white rounded-full" /> : <div className="w-5 h-5 relative bg-zinc-500 dark:bg-zinc-950 rounded-full" />}
             </div>
 
-            <div className="w-[151.48px] h-[120px] left-[177px] top-[528px] absolute">
+            {/* <div className="w-[151.48px] h-[120px] left-[177px] top-[528px] absolute">
                 <div className="w-[46.34px] h-[120px] left-[105.14px] top-0 absolute bg-white bg-opacity-25 rounded-[50px] shadow border border-gray-50 border-opacity-50" />
                 <div className="w-[88.54px] left-[57px] top-[7.42px] absolute">
                     <div className="w-[34.46px] h-[34.46px] left-[54.08px] top-0 absolute">
@@ -78,7 +78,7 @@ function Hutchicons({ mode }) {
                     </div>
                     <div className="w-[86.44px] h-[26.89px] left-0 top-0 absolute text-right text-black text-sm font-normal font-['Revelstoke']">Trending</div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
 

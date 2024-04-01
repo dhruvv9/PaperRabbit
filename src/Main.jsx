@@ -29,13 +29,13 @@ function Main(props) {
     const {mode} = props;
     return (
         <>
-            {/* <Banner mode={mode}/> */}
-            <DummyBanner mode={mode} />
+            <Banner mode={mode}/>
+            {/* <DummyBanner mode={mode} /> */}
             <DummyBranding mode={mode} />
             {/* <Branding mode={mode} /> */}
             <Hutchicons mode={mode} />
-            {/* <Services mode={mode} /> */}
-            <DummyServices/>
+            <Services mode={mode} />
+            {/* <DummyServices/> */}
             <Clients mode={mode}/>
             <Portfolio />
             <GlobalTraction mode={mode}/>

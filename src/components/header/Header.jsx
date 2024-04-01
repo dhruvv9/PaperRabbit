@@ -32,7 +32,7 @@ function Header(props) {
   return (
     <div className="fixed top-0 w-[100%] h-11 bg-gray-50 dark:bg-black  z-50 flex justify-center items-center  bg-opacity-50 backdrop-blur-sm dark:bg-opacity-50 dark:backdrop-blur-sm">
 
-      <div className="lg:w-[74%] w-full  h-11 relative flex items-center justify-between">
+      <div className="lg:w-[74%] mac:w-[74%] w-full  h-11 relative flex items-center justify-between sm:p-2 md:p-2">
         {/* <div className="h-full text-zinc-950 dark:text-white relative lg:text-[2rem] text-[1.5rem] font-normal font-['Revelstoke'] "> */}
         <Link to='/'>
           <div className="h-11  text-zinc-950 dark:text-white relative lg:text-[2rem] text-[1.7rem] font-normal font-['Revelstoke'] flex justify-center items-center object-contain ">
@@ -41,7 +41,7 @@ function Header(props) {
         </Link>
         {/* </div> */}
 
-        <div className="h-full w-[63%] relative lg:grid grid-cols-10 grid-rows-1 hidden  ">
+        <div className="h-full w-[68%]  relative lg:grid mac:grid grid-cols-10 grid-rows-1 hidden  ">
 
           <div className={`${hide ? ' flex-col  h-full text-center cursor-pointer  flex items-center justify-center' : ' flex-col  h-full text-center cursor-pointer  flex items-center justify-center group/item'}`} onClick={disappear} onMouseEnter={disappear}>
             <Link to='/'>
@@ -119,7 +119,7 @@ function Header(props) {
           </div>
         </div>
 
-        <div className="h-full relative" >
+        <div className="h-full relative sm:hidden md:hidden " >
           {mode ? <img className="w-10 h-full" src={darkimg} alt="darkmode" onClick={modeChange} /> : <img className="w-10 h-full" src={dayimg} alt="darkmode" onClick={modeChange} />}
         </div>
 

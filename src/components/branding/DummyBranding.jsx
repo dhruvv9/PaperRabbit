@@ -17,7 +17,7 @@ function DummyBranding() {
     };
 
     return (
-        <div className="w-full z-20 relative flex flex-col items-center justify-start gap-12  bg-white dark:bg-black h-screen">
+        <div className="w-full z-20 relative flex flex-col items-center justify-start gap-12  bg-white dark:bg-black h-screen mac:h-[880px] sm:h-[1020px] ">
 
             <div className="w-full relative flex flex-col justify-center items-center pt-10 lg:pt-20">
                 <div class="w-[24rem] h-[6rem] relative content-center">
@@ -28,10 +28,10 @@ function DummyBranding() {
 
             {/* <div className="w-full sam-full  flex flex-col lg:flex-row items-center justify-center relative "> */}
 
-            <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 sam-[58%] lg:max-w-[58%] mac:max-w-[75%]   mac:grid mac:grid-cols-2  mac:grid-rows-1 ram-[75%] flex flex-col items-center justify-center  lg:mb-20 " >
+            <div className="lg:grid lg:grid-cols-2 relative lg:grid-rows-1 sam-[58%] lg:max-w-[58%] mac:w-[75%]  mac:grid mac:grid-cols-2  mac:grid-rows-1 ram-[75%] flex flex-col items-center justify-center  lg:mb-20 " >
                 <div className=" relative flex items-center justify-center mt-5">
                     <img
-                        className=" lg:min-w-[100%]  mac:min-w-[100%]"
+                        className=" lg:min-w-[100%]  mac:min-w-[100%] sm:w-[90%] "
                         src={hatch}
                         alt=""
                     />
