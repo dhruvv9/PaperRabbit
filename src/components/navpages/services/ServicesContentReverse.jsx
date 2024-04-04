@@ -3,12 +3,12 @@ import servicesImage from "../../../assets/services/servicesPage/img.png"
 
 function ServicesContentReverse({name}) {
   return (
-    <div className="lg:w-[55%] w-screen h-full relative flex lg:flex-row-reverse flex-col justify-center items-center lg:p-0 p-3 " >
+    <div className="lg:w-[56%] mac:w-[74%] w-full h-full relative flex lg:flex-row-reverse mac:flex-row-reverse flex-col justify-center items-center lg:p-0 mac:p-0 p-3 " >
     <div className="" >
         <img className="w-full h-full relative rounded-[20px]" src={servicesImage} alt="services" />
     </div>
 
-    <div className="lg:w-[50%] lg:h-[31rem] w-full h-full flex flex-col items-center justify-start gap-5 lg:mr-[1.2rem] m-2" >
+    <div className="lg:w-[50%] lg:h-[31rem] w-full h-full flex flex-col items-center justify-start gap-5 lg:mr-[1.2rem] mac:mr-[1.2rem] m-2" >
         <div className="flex flex-col items-center justify-center text-black text-2xl font-bold font-['Inter'] leading-normal ">
             {name ? name : 'none'}
         </div>

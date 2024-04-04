@@ -41,11 +41,11 @@ function Hutchicons({ mode }) {
 
             {/* <Dummy2 mode={mode} /> */}
 
-            <button onClick={navigatePrevious} className='left-0 top-[40%]  sm:bottom-10 sm:left-0 md:bottom-10 md:left-0 z-20 absolute w-8 h-8'>
+            <button onClick={navigatePrevious} className='mac:left-0 mac:top-[40%] lg:left-0 lg:top-[40%]  bottom-10 left-10 z-20 absolute w-8 h-8'>
                 <img className=" justify-center items-center inline-flex  " src={arrowleft} alt='' />
             </button>
-            <button onClick={navigateNext} className='sm:bottom-10 sm:right-0 right-0 top-[40%] z-20 absolute w-8 h-8' >
-                <img className=" absolute justify-center items-center inline-flex right-[120px] sm:right-[20px] sm:bottom-[0%] w-8 h-8  lg:w-10 lg:h-10  mac:w-9 mac:h-9 mac:right-[50px]" src={arrowright} alt='' />
+            <button onClick={navigateNext} className='mac:right-0 mac:top-[40%] lg:right-0 lg:top-[40%]  bottom-10 right-10  z-20 absolute w-8 h-8' >
+                <img className=" justify-center items-center inline-flex" src={arrowright} alt='' />
             </button>
 
             <div className="w-[120px] h-10 lg:left-[50%] lg:bottom-[5rem] bottom-10 absolute bg-gray-300 rounded-[2rem] flex items-center justify-center gap-4">

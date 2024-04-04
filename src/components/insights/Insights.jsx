@@ -10,10 +10,11 @@ function Insights() {
     return (
         <div className="w-full h-full relative pb-14 flex-col justify-start items-center gap-[0.18px] inline-flex mt-20">
 
-            <div className="w-full h-full relative flex flex-col justify-center items-center">
+  
+<div className="w-full h-full relative flex flex-col justify-center items-center pt-10 lg:pt-20">
                 <div class="w-[24rem] h-[6rem] relative content-center">
-                    <div class="w-full left-0 top-[2.1rem] absolute text-red-200 lg:text-8xl text-[3.5rem] font-normal font-['Heaven'] leading-[64px] flex flex-col items-center justify-center">Advertising</div>
-                    <div class="w-full left-0 top-0 absolute text-black dark:text-white lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">Insight</div>
+                    <div class="w-full left-0 top-[2.1rem] absolute text-red-200 lg:text-8xl mac:text-7xl text-[3.5rem] font-normal font-['Heaven'] leading-[64px] flex flex-col items-center justify-center">Advertising</div>
+                    <div class="w-full left-0 top-0 absolute text-black dark:text-white lg:text-[4rem] mac:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">Insight</div>
                 </div>
             </div>
 
@@ -21,9 +22,9 @@ function Insights() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <br /><br />
             </div>
 
-            <div className="w-full lg:h-[510px] h-[460px] relative flex items-start gap-4 overflow-x-scroll no-scrollbar mt-10">
+            <div className="w-full lg:h-[510px] mac:h-[460px] h-[400px] relative flex items-start gap-4 overflow-x-scroll no-scrollbar mt-10">
 
-                <div className="lg:w-[340px] w-[306px] lg:h-[510px] h-[460px] relative flex items-end justify-center lg:ml-[570px] mac:ml-[230px] ml-[50px]">
+                <div className="lg:w-[340px] mac:w-[306px] w-[240px] lg:h-[510px] mac:h-[460px] h-[400px] relative flex items-end justify-center lg:ml-[570px] ml-[13%] ">
                     {/* <div className="w-[66px] h-[65px] bg-black absolute bg-opacity-25 rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px]" /> */}
 
                     <div className="absolute top-0 left-0 w-10 h-10 z-30 text-black dark:text-white lg:w-16 lg:h-16 mac:w-14 mac:h-14 flex flex-col items-center justify-center text-[12px] lg:text-[32px] mac:text-[26px] font-bold font-['Katibeh'] rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px]">
@@ -32,8 +33,8 @@ function Insights() {
                     </div>
 
 
-                    <img className="lg:w-[340px]  w-[306px] lg:h-[510px] h-[460px] absolute  rounded-[20px]" src={insight1} alt="review image1" />
-                    <div className=" lg:w-[340px]  w-[306px] bg-white dark:bg-black bg-opacity-5 backdrop-blur-xl dark:bg-opacity-5 dark:backdrop-blur-xl  opacity-95 rounded-[10px] p-4 m-2 relative text-justify h-[250px]">
+                    <img className="lg:w-[340px]  mac:w-[306px] w-[240px] lg:h-[510px] mac:h-[460px] h-[400px] absolute  rounded-[20px]" src={insight1} alt="review image1" />
+                    <div className=" lg:w-[340px]  mac:w-[306px] w-[240px] bg-white dark:bg-black bg-opacity-5 backdrop-blur-xl dark:bg-opacity-5 dark:backdrop-blur-xl  opacity-95 rounded-[10px] p-4 m-2 relative text-justify h-[250px]">
 
                         <div className='absolute top-[-1.5rem] z-10 w-[90px] h-6 bg-red-200 rounded-tl-[10px] rounded-tr-[10px] backdrop-blur-[20px] items-center justify-center flex'>
                             New
@@ -55,6 +56,11 @@ function Insights() {
                 <InsightsCards insightimg={insight2} />
 
 
+            </div>
+
+
+            <div className="w-[122px] h-11 relative mt-20">
+                <button className="w-[122px] h-11  bg-zinc-950 rounded-[10px] text-center text-white text-xs md:text-sm font-normal font-['Inter'] leading-none ">View More</button>
             </div>
         </div>
     )
