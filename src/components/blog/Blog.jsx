@@ -11,16 +11,17 @@ function Blog() {
     return (
         <div className="w-full h-[70%] relative flex flex-col items-center justify-start mt-10 lg:mt-20 ">
 
-            <div className="w-full h-full relative flex flex-col justify-center items-center">
+
+            <div className="w-full h-full relative flex flex-col justify-center items-center pt-10 lg:pt-20">
                 <div class="w-[24rem] h-[6rem] relative content-center">
-                    <div class="w-full left-0 top-[2.1rem] absolute text-red-200 lg:text-8xl text-[3.5rem] font-normal font-['Heaven'] leading-[64px] flex flex-col items-center justify-center">Definitions</div>
-                    <div class="w-full left-0 top-0 absolute text-black dark:text-white lg:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">Blog</div>
+                    <div class="w-full left-0 top-[2.1rem] absolute text-red-200 lg:text-8xl mac:text-7xl text-[3.5rem] font-normal font-['Heaven'] leading-[64px] flex flex-col items-center justify-center">defination</div>
+                    <div class="w-full left-0 top-0 absolute text-black dark:text-white lg:text-[4rem] mac:text-[4rem] text-[2.5rem] font-normal font-['Revelstoke'] leading-[64px] flex flex-col items-center justify-center">blog</div>
                 </div>
             </div>
 
             <div className="w-full h-fit relative flex items-start gap-5 overflow-x-scroll no-scrollbar mt-20 ">
 
-            <div className="w-full  h-[542px]  sm:h-[420px] sm:w-[240px] lg:h-[600px] relative flex flex-col justify-end items-start ml-[13%] ">
+                <div className="w-full  h-[542px]  sm:h-[420px] sm:w-[240px] lg:h-[600px] relative flex flex-col justify-end items-start ml-[13%] ">
                     <img className="w-[306px] lg:w-[340px]  h-[542px] sm:h-[420px] sm:w-[240px] lg:h-[598px] left-0 top-0 absolute  rounded-[20px]" src={blog1} alt='' />
 
                     <div className="absolute top-0 left-0 w-10 h-10 z-30 text-black dark:text-white lg:w-16 lg:h-16 mac:w-14 mac:h-14 flex flex-col items-center justify-center text-[12px] lg:text-[32px] mac:text-[26px] font-bold font-['Katibeh'] rounded-tl-[20px] rounded-br-[20px] backdrop-blur-[20px]">
@@ -74,17 +75,17 @@ function Blog() {
                         </div>
                     </div>
                 </div>
-                <BlogCards blogsimg = {blog2} />
-               <BlogCards blogsimg = {blog3} />
-               <BlogCards blogsimg = {blog4} />
-               <BlogCards blogsimg = {blog1} />
-               <BlogCards blogsimg = {blog2} />
-               <BlogCards blogsimg = {blog3} />
-               <BlogCards blogsimg = {blog4} />
-               <BlogCards blogsimg = {blog4} />
-               <BlogCards blogsimg = {blog1} />
-               <BlogCards blogsimg = {blog2} />
-               <BlogCards blogsimg = {blog3} />
+                <BlogCards blogsimg={blog2} />
+                <BlogCards blogsimg={blog3} />
+                <BlogCards blogsimg={blog4} />
+                <BlogCards blogsimg={blog1} />
+                <BlogCards blogsimg={blog2} />
+                <BlogCards blogsimg={blog3} />
+                <BlogCards blogsimg={blog4} />
+                <BlogCards blogsimg={blog4} />
+                <BlogCards blogsimg={blog1} />
+                <BlogCards blogsimg={blog2} />
+                <BlogCards blogsimg={blog3} />
             </div>
 
             <div className="w-[122px] h-11 relative mt-20">

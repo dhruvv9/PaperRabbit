@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import search from "../../assets/portfolioimg/Icons/search_24px.svg";
 import Hutch from "./subnavbars/Hutch";
 import Services from "./subnavbars/Services";
@@ -23,27 +23,44 @@ function Header(props) {
     setMode(!mode)
   }
 
-  const [hide, setHide] = useState(true);
+  const [hide, setHide] = useState(false);
+
+  let navi = useRef(null);
 
   const disappear = () => {
-    setHide(!hide)
+  
+      ///temp
+      setHide(!hide);
+
+
+    // if (hide) {
+    //   setHide(!hide);
+    //   navi.current.classList.remove("ani")
+    //   navi.current.classList.add("noani")
+    // }
+    // else {
+    //   setHide(!hide);
+    //   navi.current.classList.remove("noani")
+    //   navi.current.classList.add("ani")
+    // }
+
   }
 
   return (
     <div className="fixed top-0 w-[100%] h-11 bg-gray-50 dark:bg-black  z-50 flex justify-center items-center  bg-opacity-50 backdrop-blur-sm dark:bg-opacity-50 dark:backdrop-blur-sm">
 
-      <div className="lg:w-[74%] mac:w-[74%] w-full  h-11 relative flex items-center justify-between sm:p-2 md:p-2">
+      <div className="lg:w-[74%] mac:w-[74%] w-full z-40  h-11 relative flex items-center justify-between sm:p-2 md:p-2">
         {/* <div className="h-full text-zinc-950 dark:text-white relative lg:text-[2rem] text-[1.5rem] font-normal font-['Revelstoke'] "> */}
         <Link to='/'>
           <div className="h-11  text-zinc-950 dark:text-white relative lg:text-[2rem] text-[1.7rem] font-normal font-['Revelstoke'] flex justify-center items-center object-contain ">
-          PAPER RABBIT
+            PAPER RABBIT
           </div>
         </Link>
         {/* </div> */}
 
         <div className="h-full w-[68%]  relative lg:grid mac:grid grid-cols-10 grid-rows-1 hidden  ">
 
-          <div className={`${hide ? ' flex-col  h-full text-center cursor-pointer  flex items-center justify-center' : ' flex-col  h-full text-center cursor-pointer  flex items-center justify-center group/item'}`} onClick={disappear} onMouseEnter={disappear}>
+          <div className={`${hide ? ' flex-col  h-full text-center cursor-pointer  flex items-center justify-center' : ' flex-col  h-full text-center cursor-pointer  flex items-center justify-center group/item'}`} onClick={disappear}>
             <Link to='/'>
               <div className=" text-zinc-950 dark:text-white  text-sm mac:text-xs font-normal font-['Inter'] leading-normal ">
                 Home
@@ -51,13 +68,13 @@ function Header(props) {
             </Link>
           </div>
 
-          <div className={`${hide ? ' flex-col   h-full text-center cursor-pointer  flex items-center justify-center' : ' flex-col   h-full text-center cursor-pointer  flex items-center justify-center '}`} onClick={disappear} onMouseEnter={disappear}>
+          <div className={`${hide ? ' flex-col   h-full text-center cursor-pointer  flex items-center justify-center' : ' flex-col   h-full text-center cursor-pointer  flex items-center justify-center group/item '}`} onClick={disappear}>
             <Link to='/hutch'>
               <div className="text-zinc-950 dark:text-white text-sm mac:text-xs font-normal font-['Inter'] leading-normal ">
                 Hutch
               </div>
-              {/* <Hutch hide={hide}  /> */}
             </Link>
+            <Hutch />
           </div>
 
 
@@ -119,6 +136,8 @@ function Header(props) {
           </div>
         </div>
 
+
+
         <div className="h-full relative sm:hidden md:hidden " >
           {mode ? <img className="w-10 h-full" src={darkimg} alt="darkmode" onClick={modeChange} /> : <img className="w-10 h-full" src={dayimg} alt="darkmode" onClick={modeChange} />}
         </div>
@@ -132,6 +151,15 @@ function Header(props) {
         </div>
       </div>
       {/* </div> */}
+
+
+
+
+
+
+
+
+
     </div>
 
   );

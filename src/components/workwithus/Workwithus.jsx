@@ -4,7 +4,7 @@ import workwithusimg from "../../assets/workwithus/workwithus.jpg";
 function Workwithus() {
   return (
     <div class="w-full h-full flex justify-center items-center mt-20 ">
-      <div class="lg:w-[1420px] mac:w-[70%] lg:h-80 w-full h-72 relative mx-5 my-8 text-center flex flex-col lg:flex-row mac:flex-row mac:gap-10 items-center lg:justify-between justify-center ">
+      <div class="lg:w-[56%] mac:w-[74%] lg:h-80 w-full h-72 relative mx-5 my-8 text-center flex flex-col lg:flex-row mac:flex-row mac:gap-10 items-center lg:justify-between justify-center ">
         <img
           className="lg:w-[1420px] lg:h-80 w-full  h-72 left-0 top-0 absolute rounded-[20px] "
           src={workwithusimg}

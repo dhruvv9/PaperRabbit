@@ -11,6 +11,7 @@ import { useState } from "react";
 import ArticlesPage from "./components/navpages/articles/ArticlesPage";
 import TeamsPage from "./components/navpages/teams/TeamsPage";
 import HutchPage from "./components/navpages/hutch/HutchPage";
+import Hutchlayer from "./components/navbarlayers/Hutchlayer";
 
 function App() {
   const names = ['shyam', 'dhruv']
@@ -29,6 +30,8 @@ function App() {
           <Route path='/articles' element={<ArticlesPage/>} />
           <Route path='/teams' element={<TeamsPage/>} />
           <Route path='/hutch' element={<HutchPage/>} />
+          <Route path='/branding' element={<Hutchlayer/>} />
+
         </Routes>
         <Footer />
       </Router>

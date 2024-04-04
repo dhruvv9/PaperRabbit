@@ -1,41 +1,16 @@
 import React, { useEffect } from 'react'
-
-import { useRef } from 'react';
-
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-
-gsap.registerPlugin(useGSAP);
+import { Link } from 'react-router-dom';
 
 
-function Hutch(props) {
-
-    const hide = props.hide;
-    // console.log(hide);
-    const navi = useRef();
-
-
-    // useEffect(()=>{
-    //     navi.current.add
-    // })
-
-    useGSAP(()=>{
-        gsap.from( navi.current ,
-            {
-             autoAlpha : 1,
-             duration : 2,
-             
-            }
-        )
-    },[hide])
+function Hutch() {
 
     return (
-         <div ref={navi} className=" w-full top-10 left-0 right-20 fixed h-[360px] z-10 flex justify-center items-center gap-4 bg-gray-50 dark:bg-black bg-opacity-70 backdrop-blur-2xl none invisible dark:bg-opacity-70 dark:backdrop-blur-2xl  ">
+        <div className=" w-full top-10 left-0 right-20 fixed h-[360px] z-50  gap-4 bg-gray-50 dark:bg-black bg-opacity-70 backdrop-blur-2xl dark:bg-opacity-70 dark:backdrop-blur-2xl invisible group-hover/item:visible">
         <div className=" lg:w-full top-0 h-[360px] absolute bg-gray-50 dark:bg-black bg-opacity-70 backdrop-blur-2xl dark:bg-opacity-70 dark:backdrop-blur-2xl" />
-            <div className=' lg:w-[58rem] flex justify-start items-start gap-5'>
+            <div className='absolute left-[24%] top-[10%] lg:w-[58rem] flex justify-start items-start gap-5'>
                 <div className="relative flex flex-col items-start justify-start mx-5">
                     <div className="text-neutral-600 dark:text-neutral-50 text-xs font-light font-['Inter'] leading-none">Hutch</div>
-                    <div className=" text-black dark:text-white text-2xl font-semibold font-['Inter'] leading-normal mt-[20px] ">Branding</div>
+                    <Link to='/branding'><div className=" text-black dark:text-white text-2xl font-semibold font-['Inter'] leading-normal mt-[20px] ">Branding</div></Link> 
                     <div className=" text-black dark:text-white text-2xl font-semibold font-['Inter'] leading-normal mt-[16px]">Advertising</div>
                     <div className=" text-black dark:text-white text-2xl font-semibold font-['Inter'] leading-normal mt-[16px]">Consulting</div>
                     <div className=" text-black dark:text-white text-2xl font-semibold font-['Inter'] leading-normal mt-[16px]">Analysis & Strategies</div>

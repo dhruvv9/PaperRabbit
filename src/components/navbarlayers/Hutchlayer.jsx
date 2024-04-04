@@ -14,14 +14,8 @@ function Hutchlayer() {
         <div className='w-full h-[] flex flex-items-center relative bg-neutral-100'>
             <img className="w-[full]  lg:w-full  left-0 top-0 absolute" src={bannerimg} alt='' ></img>
 
-
-
-
-
             <div className=' flex flex-col justify-center items-center h-[370rem] mac:w-[100%] lg:w-[56%]   w-screen mt-[10rem] lg:ml-[37rem] '>
-
-
-
+                
                 <div className=" h-14     relative">
                     <div className=" relative text-red-200 text-[3.479rem] text-8xl font-normal font-['Heaven']  ">Advertising</div>
                     <div className="    text-[2.32rem] relative text-black  font-normal font-['Revelstoke'] leading-[64px]">Title</div>
@@ -58,7 +52,7 @@ function Hutchlayer() {
 
 
 
-               
+
 
                 <img className="w-[full ]   mt-[10rem] lg:h-[500px]  lg:top-[0rem] relative " src={bannerimg} alt='' />
 
@@ -85,7 +79,7 @@ function Hutchlayer() {
                     <div className=' w-[100%] lg:w-[140%] h-[876px]  bg-gray-50 bg-opacity-20 rounded-[20px] border border-black backdrop-blur-[20px] relative'>
 
                     </div>
-                    </div>
+                </div>
 
 
 
